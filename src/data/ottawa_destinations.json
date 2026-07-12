@@ -1,0 +1,1263 @@
+[
+  {
+    "id": "ottawa-gatineau-park",
+    "name": "Gatineau Park",
+    "city_base": "Ottawa",
+    "region": "Quebec, near Chelsea/Gatineau",
+    "address": "33 Scott Rd, Chelsea, QC J9B 1S5",
+    "distance_km": 15,
+    "travel_time_min": 25,
+    "category": "hiking",
+    "tags": [
+      "nature",
+      "lookout",
+      "dog-friendly",
+      "seasonal-colors",
+      "lakes"
+    ],
+    "description": "A massive forested park right on the city's edge, with lakes, the Eardley Escarpment cliffs, and dozens of trails for every fitness level.",
+    "why_visit_today": "In fall this is one of the best spots for colorful foliage in the entire National Capital Region.",
+    "recommended_activities": [
+      "hiking",
+      "photography",
+      "picnic",
+      "swimming (summer)"
+    ],
+    "what_to_bring": [
+      "hiking shoes",
+      "water",
+      "camera",
+      "cash for parking"
+    ],
+    "recommended_duration": "half day",
+    "seasonal_notes": "Open year-round; Champlain Lookout is especially popular in September-October",
+    "accessibility_notes": "Main trails and Visitor Centre are wheelchair accessible, some trails are rocky and difficult",
+    "parking": "paid",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "family",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-luskville-falls",
+    "name": "Luskville Falls",
+    "city_base": "Ottawa",
+    "region": "Quebec, Gatineau Park",
+    "address": "Luskville, QC (Gatineau Park, off Hwy 148)",
+    "distance_km": 35,
+    "travel_time_min": 35,
+    "category": "hiking",
+    "tags": [
+      "waterfall",
+      "steep-trail",
+      "viewpoint"
+    ],
+    "description": "A steep but short trail alongside a small waterfall, leading to a panoramic view of the Ottawa Valley.",
+    "why_visit_today": "A great option if you want a physical challenge rewarded with a view from the top in just a couple hours.",
+    "recommended_activities": [
+      "hiking",
+      "photography"
+    ],
+    "what_to_bring": [
+      "hiking shoes",
+      "water",
+      "camera"
+    ],
+    "recommended_duration": "2-3 hours",
+    "seasonal_notes": "Best in spring (more water) and fall (foliage); can be slippery after rain",
+    "accessibility_notes": "Steep rocky climb, not suitable for wheelchairs or limited mobility",
+    "parking": "free",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-mer-bleue-bog",
+    "name": "Mer Bleue Bog Boardwalk",
+    "city_base": "Ottawa",
+    "region": "Ottawa, Ontario",
+    "address": "200 Ridge Rd, Ottawa, ON K1B",
+    "distance_km": 20,
+    "travel_time_min": 25,
+    "category": "nature",
+    "tags": [
+      "boardwalk",
+      "unique-ecosystem",
+      "flat-trail",
+      "birdwatching"
+    ],
+    "description": "A unique ice-age bog with a wooden boardwalk trail crossing mossy hummocks, feeling like another planet.",
+    "why_visit_today": "An easy flat walk for anyone who wants an unusual landscape without much physical effort.",
+    "recommended_activities": [
+      "walking",
+      "photography",
+      "birdwatching"
+    ],
+    "what_to_bring": [
+      "camera",
+      "insect repellent (summer)"
+    ],
+    "recommended_duration": "2-3 hours",
+    "seasonal_notes": "Beautiful year-round, snowshoeing in winter",
+    "accessibility_notes": "Boardwalk is flat and wheelchair-friendly for most of the route",
+    "parking": "free",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "family",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-canadian-museum-history",
+    "name": "Canadian Museum of History",
+    "city_base": "Ottawa",
+    "region": "Gatineau, Quebec",
+    "address": "100 Laurier St, Gatineau, QC J8X 4H2",
+    "distance_km": 5,
+    "travel_time_min": 10,
+    "category": "museum",
+    "tags": [
+      "indoor",
+      "history",
+      "family-friendly",
+      "riverside-view"
+    ],
+    "description": "One of Canada's largest museums, with exhibits on Indigenous history and colonization, plus a view of Parliament Hill across the river.",
+    "why_visit_today": "A great option on a rainy or cold day, without giving up a view of the city.",
+    "recommended_activities": [
+      "museum visit",
+      "photography"
+    ],
+    "what_to_bring": [
+      "comfortable shoes"
+    ],
+    "recommended_duration": "half day",
+    "seasonal_notes": "Open year-round, hours may vary by season",
+    "accessibility_notes": "Fully wheelchair accessible",
+    "parking": "paid",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-national-gallery",
+    "name": "National Gallery of Canada",
+    "city_base": "Ottawa",
+    "region": "Ottawa, Ontario",
+    "address": "380 Sussex Dr, Ottawa, ON K1N 9N4",
+    "distance_km": 3,
+    "travel_time_min": 8,
+    "category": "art",
+    "tags": [
+      "indoor",
+      "contemporary-art",
+      "architecture",
+      "downtown"
+    ],
+    "description": "The national art gallery, known for its striking glass architecture and the giant spider sculpture Maman at the entrance.",
+    "why_visit_today": "A compact, inspiring trip in the heart of the city if you want culture without leaving town.",
+    "recommended_activities": [
+      "art viewing",
+      "photography"
+    ],
+    "what_to_bring": [
+      "comfortable shoes"
+    ],
+    "recommended_duration": "2-3 hours",
+    "seasonal_notes": "Open year-round",
+    "accessibility_notes": "Fully wheelchair accessible",
+    "parking": "paid",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-wakefield-village",
+    "name": "Wakefield Village",
+    "city_base": "Ottawa",
+    "region": "Quebec, near Gatineau Park",
+    "address": "Wakefield, QC J0X 3G0",
+    "distance_km": 35,
+    "travel_time_min": 40,
+    "category": "small_town",
+    "tags": [
+      "charming",
+      "coffee",
+      "covered-bridge",
+      "riverside"
+    ],
+    "description": "A small picturesque village with a covered bridge, local cafes and shops, along the Gatineau River.",
+    "why_visit_today": "Perfect for an unhurried day of coffee, walking, and a Gatineau Park stop along the way.",
+    "recommended_activities": [
+      "walking",
+      "coffee",
+      "shopping",
+      "photography"
+    ],
+    "what_to_bring": [
+      "cash",
+      "camera"
+    ],
+    "recommended_duration": "half day",
+    "seasonal_notes": "Pleasant year-round, especially scenic in fall",
+    "accessibility_notes": "Village center is largely walkable and flat",
+    "parking": "free",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "family",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-vincent-massey-park",
+    "name": "Vincent Massey Park",
+    "city_base": "Ottawa",
+    "region": "Ottawa, Ontario",
+    "address": "Riverside Dr, Ottawa, ON K1H",
+    "distance_km": 8,
+    "travel_time_min": 15,
+    "category": "relaxing",
+    "tags": [
+      "riverside",
+      "picnic",
+      "flat-trail",
+      "dog-friendly"
+    ],
+    "description": "A calm park along the Rideau River with shaded picnic areas and easy trails.",
+    "why_visit_today": "Good when you want relaxed time in nature without a long drive.",
+    "recommended_activities": [
+      "picnic",
+      "walking",
+      "relaxing"
+    ],
+    "what_to_bring": [
+      "picnic blanket",
+      "snacks"
+    ],
+    "recommended_duration": "2-3 hours",
+    "seasonal_notes": "Best in spring, summer, and fall",
+    "accessibility_notes": "Mostly flat, wheelchair accessible",
+    "parking": "free",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "family",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-diefenbunker",
+    "name": "Diefenbunker: Canada's Cold War Museum",
+    "city_base": "Ottawa",
+    "region": "Carp, Ontario",
+    "address": "3929 Carp Rd, Carp, ON K0A 1L0",
+    "distance_km": 30,
+    "travel_time_min": 35,
+    "category": "museum",
+    "tags": [
+      "underground",
+      "history",
+      "cold-war",
+      "unusual"
+    ],
+    "description": "An underground Cold War-era bunker turned museum — four floors below ground with original interiors.",
+    "why_visit_today": "An unusual alternative to a regular museum, great for a rainy day and history buffs.",
+    "recommended_activities": [
+      "guided tour",
+      "museum visit"
+    ],
+    "what_to_bring": [
+      "light jacket (cool underground)"
+    ],
+    "recommended_duration": "half day",
+    "seasonal_notes": "Open year-round, booking a tour in advance is recommended",
+    "accessibility_notes": "Partially accessible, there's an elevator but not all areas are wheelchair-friendly",
+    "parking": "free",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-omega-park",
+    "name": "Parc Omega",
+    "city_base": "Ottawa",
+    "region": "Montebello, Quebec",
+    "address": "399 Route 323, Montebello, QC J0V 1L0",
+    "distance_km": 65,
+    "travel_time_min": 60,
+    "category": "animals",
+    "tags": [
+      "wildlife",
+      "drive-through",
+      "family-friendly",
+      "nature"
+    ],
+    "description": "A wildlife park where you can drive among free-roaming deer, bison, wolves, and bears.",
+    "why_visit_today": "One of the few ways to see Canadian wildlife up close without heading far north.",
+    "recommended_activities": [
+      "wildlife watching",
+      "driving tour",
+      "hiking trails"
+    ],
+    "what_to_bring": [
+      "camera",
+      "carrots (for feeding deer, sold on site)",
+      "snacks"
+    ],
+    "recommended_duration": "full day",
+    "seasonal_notes": "Open year-round, animals are more active in the morning",
+    "accessibility_notes": "Most of the route is driven by car, accessible for people with limited mobility",
+    "parking": "free",
+    "companions_fit": [
+      "couple",
+      "friends",
+      "family"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-major-hill-park",
+    "name": "Major's Hill Park",
+    "city_base": "Ottawa",
+    "region": "Ottawa, Ontario",
+    "address": "2 Mackenzie Ave, Ottawa, ON K1N",
+    "distance_km": 2,
+    "travel_time_min": 6,
+    "category": "relaxing",
+    "tags": [
+      "viewpoint",
+      "downtown",
+      "parliament-view",
+      "free"
+    ],
+    "description": "A green hill in the heart of the city with one of the best views of Parliament Hill and the Rideau Canal.",
+    "why_visit_today": "A quick way to catch a beautiful view and city atmosphere in about 20 minutes.",
+    "recommended_activities": [
+      "walking",
+      "photography",
+      "picnic"
+    ],
+    "what_to_bring": [
+      "camera"
+    ],
+    "recommended_duration": "2-3 hours",
+    "seasonal_notes": "Good year-round, especially at sunset",
+    "accessibility_notes": "Mostly flat lawn, wheelchair accessible",
+    "parking": "paid",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "family",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-rideau-canal",
+    "name": "Rideau Canal Pathway",
+    "city_base": "Ottawa",
+    "region": "Ottawa, Ontario",
+    "address": "Rideau Canal, Ottawa, ON",
+    "distance_km": 1,
+    "travel_time_min": 5,
+    "category": "water",
+    "tags": [
+      "walk",
+      "bike",
+      "unesco",
+      "seasonal",
+      "skating-in-winter"
+    ],
+    "description": "A historic UNESCO canal with pathways for walking and cycling in summer, and the world's largest skating rink in winter.",
+    "why_visit_today": "A versatile option any time of year — from a summer bike ride to winter skating.",
+    "recommended_activities": [
+      "walking",
+      "cycling",
+      "ice skating (winter)"
+    ],
+    "what_to_bring": [
+      "bike or skates depending on season",
+      "water"
+    ],
+    "recommended_duration": "2-3 hours",
+    "seasonal_notes": "The skating rink is usually open January through late February, weather dependent",
+    "accessibility_notes": "Pathways are mostly flat and wheelchair accessible",
+    "parking": "paid",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "family",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-britannia-beach",
+    "name": "Britannia Beach",
+    "city_base": "Ottawa",
+    "region": "Ottawa, Ontario",
+    "address": "2805 Cassels St, Ottawa, ON K2B",
+    "distance_km": 12,
+    "travel_time_min": 20,
+    "category": "water",
+    "tags": [
+      "beach",
+      "swimming",
+      "sunset",
+      "casual"
+    ],
+    "description": "An urban beach on the Ottawa River with sand, swimming areas, and grassy spots to relax.",
+    "why_visit_today": "A simple summer option if you want water and sun without a long drive.",
+    "recommended_activities": [
+      "swimming",
+      "sunbathing",
+      "picnic"
+    ],
+    "what_to_bring": [
+      "swimsuit",
+      "towel",
+      "sunscreen"
+    ],
+    "recommended_duration": "half day",
+    "seasonal_notes": "Swimming usually June through August, depending on water quality",
+    "accessibility_notes": "Beach and surrounding area are accessible, but sand makes wheelchair movement difficult",
+    "parking": "free",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "family",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-fitzroy-provincial-park",
+    "name": "Fitzroy Provincial Park",
+    "city_base": "Ottawa",
+    "region": "Ontario, near Fitzroy Harbour",
+    "address": "Dixon Point Rd, Fitzroy Harbour, ON K0A 1X0",
+    "distance_km": 45,
+    "travel_time_min": 45,
+    "category": "nature",
+    "tags": [
+      "provincial-park",
+      "river-confluence",
+      "camping",
+      "hiking"
+    ],
+    "description": "A provincial park at the confluence of the Ottawa and Madawaska rivers, with trails, a beach, and camping areas.",
+    "why_visit_today": "A good option for a calmer, less touristy nature day.",
+    "recommended_activities": [
+      "hiking",
+      "swimming",
+      "picnic",
+      "camping"
+    ],
+    "what_to_bring": [
+      "hiking shoes",
+      "swimsuit",
+      "cash for entry"
+    ],
+    "recommended_duration": "full day",
+    "seasonal_notes": "Open in warm season, usually May through October",
+    "accessibility_notes": "Main areas accessible, some trails are uneven",
+    "parking": "paid",
+    "companions_fit": [
+      "couple",
+      "friends",
+      "family",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-arboretum",
+    "name": "Central Experimental Farm Arboretum",
+    "city_base": "Ottawa",
+    "region": "Ottawa, Ontario",
+    "address": "Prince of Wales Dr, Ottawa, ON K1A 0C6",
+    "distance_km": 6,
+    "travel_time_min": 12,
+    "category": "nature",
+    "tags": [
+      "botanical",
+      "quiet",
+      "flat-trail",
+      "free"
+    ],
+    "description": "A quiet arboretum with hundreds of tree and shrub species on the grounds of the Central Experimental Farm.",
+    "why_visit_today": "A relaxed walk nearly downtown, great for resetting after a busy week.",
+    "recommended_activities": [
+      "walking",
+      "picnic",
+      "photography"
+    ],
+    "what_to_bring": [
+      "picnic blanket"
+    ],
+    "recommended_duration": "2-3 hours",
+    "seasonal_notes": "Especially beautiful in spring (blossoms) and fall (foliage)",
+    "accessibility_notes": "Flat paths, wheelchair accessible",
+    "parking": "free",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "family",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-pink-lake",
+    "name": "Pink Lake Trail",
+    "city_base": "Ottawa",
+    "region": "Quebec, Gatineau Park",
+    "address": "Gatineau Park, near Old Chelsea, QC",
+    "distance_km": 18,
+    "travel_time_min": 28,
+    "category": "hiking",
+    "tags": [
+      "lake",
+      "unique-ecosystem",
+      "loop-trail",
+      "viewpoint"
+    ],
+    "description": "A loop trail around a rare meromictic lake with an unusual green-turquoise water color.",
+    "why_visit_today": "A short, moderate hike with a guaranteed beautiful water view.",
+    "recommended_activities": [
+      "hiking",
+      "photography"
+    ],
+    "what_to_bring": [
+      "hiking shoes",
+      "water",
+      "camera"
+    ],
+    "recommended_duration": "2-3 hours",
+    "seasonal_notes": "Swimming is prohibited (fragile ecosystem), best in spring-fall",
+    "accessibility_notes": "Trail has elevation changes, not wheelchair accessible",
+    "parking": "paid",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-byward-market",
+    "name": "ByWard Market",
+    "city_base": "Ottawa",
+    "region": "Ottawa, Ontario",
+    "address": "55 ByWard Market Square, Ottawa, ON K1N 9C3",
+    "distance_km": 2,
+    "travel_time_min": 6,
+    "category": "food",
+    "tags": [
+      "market",
+      "coffee",
+      "local-food",
+      "downtown"
+    ],
+    "description": "A historic market with street vendors, local cafes, bakeries, and the famous BeaverTails pastries.",
+    "why_visit_today": "A quick way to soak up city atmosphere and grab something local to eat.",
+    "recommended_activities": [
+      "food tasting",
+      "shopping",
+      "walking"
+    ],
+    "what_to_bring": [
+      "cash",
+      "appetite"
+    ],
+    "recommended_duration": "2-3 hours",
+    "seasonal_notes": "Open year-round, more street vendors in summer",
+    "accessibility_notes": "Generally wheelchair accessible, cobblestones can be uneven in places",
+    "parking": "paid",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-champlain-lookout",
+    "name": "Champlain Lookout",
+    "city_base": "Ottawa",
+    "region": "Quebec, Gatineau Park",
+    "address": "Champlain Parkway, Gatineau Park, QC",
+    "distance_km": 25,
+    "travel_time_min": 30,
+    "category": "scenic_drive",
+    "tags": [
+      "viewpoint",
+      "sunset",
+      "fall-colors",
+      "easy-access"
+    ],
+    "description": "One of the region's best lookout points, with a view of the Ottawa Valley from the Eardley Escarpment.",
+    "why_visit_today": "Views just steps from the parking lot — minimal effort, maximum payoff.",
+    "recommended_activities": [
+      "photography",
+      "short walk",
+      "sunset watching"
+    ],
+    "what_to_bring": [
+      "camera",
+      "light jacket (windy)"
+    ],
+    "recommended_duration": "2-3 hours",
+    "seasonal_notes": "Peak popularity late September/early October for fall foliage",
+    "accessibility_notes": "Lookout is wheelchair accessible right from the parking lot",
+    "parking": "free",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "family",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-almonte",
+    "name": "Almonte",
+    "city_base": "Ottawa",
+    "region": "Ontario, Mississippi Mills",
+    "address": "Almonte, ON K0A 1A0",
+    "distance_km": 45,
+    "travel_time_min": 45,
+    "category": "small_town",
+    "tags": [
+      "charming",
+      "coffee",
+      "waterfall",
+      "shopping"
+    ],
+    "description": "A cozy town with historic stone buildings, a small waterfall right in the town center, and local shops.",
+    "why_visit_today": "A nice mix of architecture, water, and an unhurried day away from the city bustle.",
+    "recommended_activities": [
+      "walking",
+      "coffee",
+      "shopping",
+      "photography"
+    ],
+    "what_to_bring": [
+      "cash",
+      "camera"
+    ],
+    "recommended_duration": "half day",
+    "seasonal_notes": "Pleasant year-round",
+    "accessibility_notes": "Town center is walkable and mostly flat",
+    "parking": "free",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "family",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-canada-agriculture-museum",
+    "name": "Canada Agriculture and Food Museum",
+    "city_base": "Ottawa",
+    "region": "Ottawa, Ontario",
+    "address": "901 Prince of Wales Dr, Ottawa, ON K1A 0C7",
+    "distance_km": 6,
+    "travel_time_min": 12,
+    "category": "animals",
+    "tags": [
+      "family-friendly",
+      "farm-animals",
+      "indoor-outdoor"
+    ],
+    "description": "A working farm-museum within city limits, where you can see cows, sheep, and horses and learn about Canadian agriculture.",
+    "why_visit_today": "A great option for families with kids — a mix of animals and educational content.",
+    "recommended_activities": [
+      "animal viewing",
+      "museum visit",
+      "walking"
+    ],
+    "what_to_bring": [
+      "comfortable shoes"
+    ],
+    "recommended_duration": "2-3 hours",
+    "seasonal_notes": "Open year-round",
+    "accessibility_notes": "Wheelchair accessible",
+    "parking": "paid",
+    "companions_fit": [
+      "couple",
+      "friends",
+      "family"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-shirleys-bay",
+    "name": "Shirleys Bay",
+    "city_base": "Ottawa",
+    "region": "Ottawa, Ontario",
+    "address": "Rifle Rd, Ottawa, ON K2K",
+    "distance_km": 20,
+    "travel_time_min": 25,
+    "category": "hidden_gem",
+    "tags": [
+      "quiet",
+      "birdwatching",
+      "waterfront",
+      "off-the-radar"
+    ],
+    "description": "A little-known waterfront area on the Ottawa River, popular with birdwatchers and anyone looking for quiet.",
+    "why_visit_today": "A genuine hidden gem without crowds — great for anyone tired of touristy trails.",
+    "recommended_activities": [
+      "birdwatching",
+      "walking",
+      "relaxing"
+    ],
+    "what_to_bring": [
+      "binoculars",
+      "insect repellent"
+    ],
+    "recommended_duration": "2-3 hours",
+    "seasonal_notes": "Best birdwatching in spring and fall",
+    "accessibility_notes": "Dirt trails, uneven, not wheelchair accessible",
+    "parking": "free",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-king-mountain-trail",
+    "name": "King Mountain Trail",
+    "city_base": "Ottawa",
+    "region": "Quebec, Gatineau Park",
+    "address": "King Mountain Trailhead, Gatineau Park, QC",
+    "distance_km": 20,
+    "travel_time_min": 28,
+    "category": "hiking",
+    "tags": [
+      "moderate-hike",
+      "loop-trail",
+      "viewpoint",
+      "escarpment"
+    ],
+    "description": "One of Gatineau Park's most popular moderate loop hikes, ending at a lookout over the Ottawa Valley.",
+    "why_visit_today": "A well-loved trail that balances a real workout with a rewarding payoff view.",
+    "recommended_activities": [
+      "hiking",
+      "photography"
+    ],
+    "what_to_bring": [
+      "hiking shoes",
+      "water",
+      "snacks"
+    ],
+    "recommended_duration": "half day",
+    "seasonal_notes": "Best spring through fall; can be muddy after rain",
+    "accessibility_notes": "Moderate elevation gain, not wheelchair accessible",
+    "parking": "free",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-wolf-trail",
+    "name": "Wolf Trail (Sentier du Loup)",
+    "city_base": "Ottawa",
+    "region": "Quebec, Gatineau Park",
+    "address": "Gatineau Park, Old Chelsea sector, QC",
+    "distance_km": 18,
+    "travel_time_min": 27,
+    "category": "hiking",
+    "tags": [
+      "forest",
+      "loop-trail",
+      "moderate",
+      "seasonal-colors"
+    ],
+    "description": "A forested loop trail through mixed woods, one of the classic short-to-medium Gatineau Park hikes.",
+    "why_visit_today": "A quieter alternative to the busier Gatineau Park trails, especially on weekends.",
+    "recommended_activities": [
+      "hiking",
+      "photography"
+    ],
+    "what_to_bring": [
+      "hiking shoes",
+      "water"
+    ],
+    "recommended_duration": "2-3 hours",
+    "seasonal_notes": "Beautiful in fall for foliage",
+    "accessibility_notes": "Uneven forest trail, not wheelchair accessible",
+    "parking": "free",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-hogs-back-falls",
+    "name": "Hog's Back Falls",
+    "city_base": "Ottawa",
+    "region": "Ottawa, Ontario",
+    "address": "Hog's Back Rd, Ottawa, ON K1V",
+    "distance_km": 10,
+    "travel_time_min": 18,
+    "category": "relaxing",
+    "tags": [
+      "waterfall",
+      "easy-access",
+      "urban-nature",
+      "free"
+    ],
+    "description": "A small but powerful waterfall on the Rideau River, easily accessible right within the city.",
+    "why_visit_today": "Real waterfall energy without leaving Ottawa — great for a quick nature fix.",
+    "recommended_activities": [
+      "walking",
+      "photography"
+    ],
+    "what_to_bring": [
+      "camera"
+    ],
+    "recommended_duration": "2-3 hours",
+    "seasonal_notes": "Most dramatic during spring snowmelt",
+    "accessibility_notes": "Paved paths near the falls, some viewpoints require stairs",
+    "parking": "free",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "family",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-mackenzie-king-estate",
+    "name": "Mackenzie King Estate Trails",
+    "city_base": "Ottawa",
+    "region": "Quebec, Gatineau Park",
+    "address": "Gatineau Park, Kingsmere sector, QC",
+    "distance_km": 22,
+    "travel_time_min": 30,
+    "category": "hiking",
+    "tags": [
+      "historic",
+      "gardens",
+      "easy-trail",
+      "ruins"
+    ],
+    "description": "Former estate of Canada's longest-serving Prime Minister, now a park with gardens, ornamental ruins, and easy walking trails.",
+    "why_visit_today": "A gentle walk that mixes history and nature — good for a slower-paced day.",
+    "recommended_activities": [
+      "walking",
+      "photography",
+      "picnic"
+    ],
+    "what_to_bring": [
+      "camera",
+      "picnic blanket"
+    ],
+    "recommended_duration": "half day",
+    "seasonal_notes": "Tearoom typically open in summer months",
+    "accessibility_notes": "Main paths are relatively flat and accessible",
+    "parking": "paid",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "family",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-carbide-willson-ruins",
+    "name": "Carbide Willson Ruins",
+    "city_base": "Ottawa",
+    "region": "Quebec, Gatineau Park",
+    "address": "Gatineau Park, near Meech Lake, QC",
+    "distance_km": 22,
+    "travel_time_min": 30,
+    "category": "hidden_gem",
+    "tags": [
+      "ruins",
+      "waterfall",
+      "photography",
+      "moderate-hike"
+    ],
+    "description": "Overgrown stone ruins of an old fertilizer plant beside a small waterfall, hidden inside Gatineau Park.",
+    "why_visit_today": "One of the most photogenic hidden spots in the area — a mix of nature reclaiming history.",
+    "recommended_activities": [
+      "hiking",
+      "photography"
+    ],
+    "what_to_bring": [
+      "hiking shoes",
+      "camera",
+      "water"
+    ],
+    "recommended_duration": "2-3 hours",
+    "seasonal_notes": "Best in spring/summer/fall, trail can be wet",
+    "accessibility_notes": "Uneven trail with some rocky sections, not wheelchair accessible",
+    "parking": "free",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-lac-philippe",
+    "name": "Lac Philippe",
+    "city_base": "Ottawa",
+    "region": "Quebec, Gatineau Park",
+    "address": "Lac Philippe, Gatineau Park, QC",
+    "distance_km": 45,
+    "travel_time_min": 50,
+    "category": "water",
+    "tags": [
+      "lake",
+      "beach",
+      "canoeing",
+      "camping"
+    ],
+    "description": "One of Gatineau Park's larger lakes, with sandy beaches, canoe rentals, and surrounding hiking trails.",
+    "why_visit_today": "A full-day nature escape combining swimming, paddling, and trails in one spot.",
+    "recommended_activities": [
+      "swimming",
+      "canoeing",
+      "hiking",
+      "picnic"
+    ],
+    "what_to_bring": [
+      "swimsuit",
+      "towel",
+      "cash for rentals"
+    ],
+    "recommended_duration": "full day",
+    "seasonal_notes": "Best June through September",
+    "accessibility_notes": "Beach areas partially accessible, trails are uneven",
+    "parking": "paid",
+    "companions_fit": [
+      "couple",
+      "friends",
+      "family",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-andrew-haydon-park",
+    "name": "Andrew Haydon Park",
+    "city_base": "Ottawa",
+    "region": "Ottawa, Ontario",
+    "address": "3810 Carling Ave, Ottawa, ON K2H",
+    "distance_km": 15,
+    "travel_time_min": 20,
+    "category": "relaxing",
+    "tags": [
+      "waterfront",
+      "sunset",
+      "flat-trail",
+      "dog-friendly"
+    ],
+    "description": "A riverside park with sweeping lawns, a pond, and one of the best sunset views over the Ottawa River.",
+    "why_visit_today": "A low-effort, high-reward spot for a relaxed evening walk and a great sunset.",
+    "recommended_activities": [
+      "walking",
+      "picnic",
+      "photography"
+    ],
+    "what_to_bring": [
+      "picnic blanket",
+      "camera"
+    ],
+    "recommended_duration": "2-3 hours",
+    "seasonal_notes": "Best spring through fall",
+    "accessibility_notes": "Flat paved paths, wheelchair accessible",
+    "parking": "free",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "family",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-cathedral-bush",
+    "name": "Cathedral Bush",
+    "city_base": "Ottawa",
+    "region": "Ontario, near Kars",
+    "address": "Cathedral Rd, Kars, ON K0A 2E0",
+    "distance_km": 40,
+    "travel_time_min": 40,
+    "category": "hidden_gem",
+    "tags": [
+      "forest",
+      "old-growth",
+      "quiet",
+      "off-the-radar"
+    ],
+    "description": "A quiet patch of old-growth forest south of the city, known among locals but rarely mentioned in guides.",
+    "why_visit_today": "A genuinely calm, uncrowded forest walk for anyone craving real quiet.",
+    "recommended_activities": [
+      "walking",
+      "photography"
+    ],
+    "what_to_bring": [
+      "hiking shoes",
+      "insect repellent"
+    ],
+    "recommended_duration": "2-3 hours",
+    "seasonal_notes": "Pleasant spring through fall",
+    "accessibility_notes": "Uneven forest floor, not wheelchair accessible",
+    "parking": "free",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-merrickville",
+    "name": "Merrickville",
+    "city_base": "Ottawa",
+    "region": "Ontario, near the Rideau Canal",
+    "address": "Merrickville, ON K0G 1N0",
+    "distance_km": 65,
+    "travel_time_min": 55,
+    "category": "small_town",
+    "tags": [
+      "historic",
+      "canal",
+      "shopping",
+      "charming"
+    ],
+    "description": "A well-preserved 19th-century town on the Rideau Canal, known as one of Canada's prettiest small towns.",
+    "why_visit_today": "A longer drive that pays off with historic charm, boutiques, and canal-side walks.",
+    "recommended_activities": [
+      "walking",
+      "shopping",
+      "photography"
+    ],
+    "what_to_bring": [
+      "cash",
+      "camera"
+    ],
+    "recommended_duration": "full day",
+    "seasonal_notes": "Pleasant year-round, especially lively in summer",
+    "accessibility_notes": "Town center is mostly flat and walkable",
+    "parking": "free",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "family",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-dows-lake",
+    "name": "Dow's Lake",
+    "city_base": "Ottawa",
+    "region": "Ottawa, Ontario",
+    "address": "Dow's Lake, Ottawa, ON K1S",
+    "distance_km": 4,
+    "travel_time_min": 10,
+    "category": "water",
+    "tags": [
+      "lake",
+      "cafe",
+      "paddleboats",
+      "flat-trail"
+    ],
+    "description": "A small urban lake connected to the Rideau Canal, with pedal boat rentals and cafes right on the water.",
+    "why_visit_today": "An easy, relaxed spot for coffee and a lakeside walk without leaving the city.",
+    "recommended_activities": [
+      "walking",
+      "coffee",
+      "pedal boating"
+    ],
+    "what_to_bring": [
+      "cash for boat rental"
+    ],
+    "recommended_duration": "2-3 hours",
+    "seasonal_notes": "Pedal boats typically available May through September",
+    "accessibility_notes": "Paved paths, wheelchair accessible",
+    "parking": "paid",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "family",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-mont-cascades",
+    "name": "Mont Cascades area trails",
+    "city_base": "Ottawa",
+    "region": "Quebec, Cantley",
+    "address": "Mont Cascades, Cantley, QC J8V 3B4",
+    "distance_km": 30,
+    "travel_time_min": 35,
+    "category": "adventure",
+    "tags": [
+      "hiking",
+      "waterpark-nearby",
+      "moderate-hike"
+    ],
+    "description": "Trails around a small mountain area near Cantley, with moderate hiking and a waterpark nearby in summer.",
+    "why_visit_today": "Good combo destination if you want a hike with an option to cool off nearby afterward.",
+    "recommended_activities": [
+      "hiking",
+      "photography"
+    ],
+    "what_to_bring": [
+      "hiking shoes",
+      "water",
+      "swimsuit (optional)"
+    ],
+    "recommended_duration": "half day",
+    "seasonal_notes": "Best spring through fall",
+    "accessibility_notes": "Moderate trail difficulty, not wheelchair accessible",
+    "parking": "free",
+    "companions_fit": [
+      "couple",
+      "friends",
+      "family",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-jack-pine-trail",
+    "name": "Jack Pine Trail",
+    "city_base": "Ottawa",
+    "region": "Ottawa, Ontario",
+    "address": "Corkstown Rd, Ottawa, ON K2K",
+    "distance_km": 18,
+    "travel_time_min": 22,
+    "category": "hiking",
+    "tags": [
+      "forest",
+      "wetland",
+      "easy-trail",
+      "birdwatching"
+    ],
+    "description": "An easy loop trail through forest and wetland in Ottawa's Greenbelt, popular with birdwatchers.",
+    "why_visit_today": "A calm, easy hike that's still within city limits — perfect for a short escape.",
+    "recommended_activities": [
+      "hiking",
+      "birdwatching",
+      "photography"
+    ],
+    "what_to_bring": [
+      "hiking shoes",
+      "insect repellent"
+    ],
+    "recommended_duration": "2-3 hours",
+    "seasonal_notes": "Pleasant year-round, can be buggy in summer",
+    "accessibility_notes": "Mostly flat gravel trail, largely accessible",
+    "parking": "free",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "family",
+      "dog"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ottawa-rockcliffe-lookout",
+    "name": "Rockcliffe Lookout",
+    "city_base": "Ottawa",
+    "region": "Ottawa, Ontario",
+    "address": "Lisgar Rd, Ottawa, ON K1M",
+    "distance_km": 6,
+    "travel_time_min": 12,
+    "category": "scenic_drive",
+    "tags": [
+      "viewpoint",
+      "sunset",
+      "free",
+      "easy-access"
+    ],
+    "description": "A lookout over the Ottawa River and Gatineau Hills, tucked inside the leafy Rockcliffe Park neighborhood.",
+    "why_visit_today": "A quiet, uncrowded view spot for a quick evening stop.",
+    "recommended_activities": [
+      "photography",
+      "short walk",
+      "sunset watching"
+    ],
+    "what_to_bring": [
+      "camera"
+    ],
+    "recommended_duration": "2-3 hours",
+    "seasonal_notes": "Pleasant year-round",
+    "accessibility_notes": "Paved area near the lookout, wheelchair accessible",
+    "parking": "free",
+    "companions_fit": [
+      "solo",
+      "couple",
+      "friends",
+      "family",
+      "dog"
+    ],
+    "verified": false
+  }
+]
