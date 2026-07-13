@@ -1,1 +1,53 @@
 @import "tailwindcss";
+
+@theme {
+    /* backgrounds */
+    --color-surface: #F3F6F8;
+    --color-surface-card: #FFFFFF;
+    --color-surface-muted: #BDCDD6;
+
+    /* text */
+    --color-ink: #16303D;
+    --color-ink-soft: #4A6A7A;
+    --color-ink-faint: #93BFCF;
+
+    /* accents */
+    --color-accent: #3D8C6C;
+    --color-accent-hover: #296d52;
+    --color-accent-soft: #DFF0E7;
+
+    --color-accent2: #6096B4;
+    --color-accent2-hover: #4E80A0;
+    --color-accent2-soft: #E4EEF3;
+
+    /* radius */
+    --radius-card: 12px;
+    --radius-pill: 999px;
+
+    /* fonts */
+    --font-sans: "Inter",
+        system-ui,
+        sans-serif;
+}
+
+@layer components {
+    .btn-primary {
+        @apply bg-accent hover:bg-accent-hover text-surface-card font-medium px-4 py-2 rounded-card transition-colors;
+    }
+
+    .btn-secondary {
+        @apply bg-accent2 hover:bg-accent2-hover text-surface-card font-medium px-4 py-2 rounded-card transition-colors;
+    }
+
+    .btn-outline {
+        @apply border border-surface-muted hover:border-ink-soft text-ink font-medium px-4 py-2 rounded-card transition-colors;
+    }
+
+    .btn-ghost {
+        @apply text-ink-soft hover:text-ink hover:bg-surface-muted font-medium px-4 py-2 rounded-card transition-colors;
+    }
+
+    .btn-pill {
+        @apply bg-surface-muted hover:bg-accent-soft text-ink text-sm font-medium px-3 py-1.5 rounded-pill transition-colors;
+    }
+}
