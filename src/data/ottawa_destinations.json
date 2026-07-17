@@ -5,6 +5,7 @@
     "city_base": "Ottawa",
     "region": "Quebec, near Chelsea/Gatineau",
     "address": "33 Scott Rd, Chelsea, QC J9B 1S5",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Pink-Lake-in-Fall.jpg",
     "distance_km": 15,
     "travel_time_min": 25,
     "category": "hiking",
