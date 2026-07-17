@@ -3,9 +3,9 @@ import Footer from "./Footer.jsx";
 
 export default function Layout({ children }) {
     return (
-        <div>
+        <div className="min-h-screen bg-surface text-ink flex flex-col font-sans selection:bg-accent-soft selection:text-accent">
             <Header />
-            <main>{children}</main>
+            <main className="flex-1">{children}</main>
             <Footer />
         </div>
     );
