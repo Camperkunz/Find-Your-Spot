@@ -13,6 +13,7 @@ export default function Header() {
             </button>
             {hasSaved && (
                 <button
+                    onClick={() => setStep('saved')}
                     className="btn-pill border border-surface-muted/50 "
                 >
                     Saved ({savedPlaces.length})
