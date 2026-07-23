@@ -93,7 +93,7 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                     <div className="flex flex-col items-center gap-1.5 shrink-0">
                         <button
                             onClick={() => handleDecision('save')}
-                            className="w-12 h-12 rounded-full bg-surface-card border border-ink-faint/20 text-ink-soft flex items-center justify-center transition-all duration-200 hover:text-rose-500 hover:border-rose-300 hover:bg-rose-50 hover:-translate-y-0.5 active:scale-90"
+                            className="w-12 h-12 rounded-full bg-surface-card border border-ink-faint/50 text-ink-soft flex items-center justify-center transition-all duration-200 hover:text-rose-500 hover:border-rose-300 hover:bg-rose-50 hover:-translate-y-0.5 active:scale-90"
                             title="Save Adventure"
                             aria-label="Save"
                         >
