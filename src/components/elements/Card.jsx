@@ -1,67 +1,106 @@
 import { useAppContext } from '../../context/AppContext';
 
-export default function Card({ deck, currentIndex, handleSwipe }) {
-    const { savedPlaces, setSavedPlaces } = useAppContext();
-    const currentCard = deck[currentIndex];
+export default function Card({ deck, currentIndex, handleDecision }) {
+    const { savedPlaces, setSavedPlaces, currentIndex: currentCardIndex } = useAppContext();
+
+    if (!deck || !deck[currentIndex]) return null;
+
+    const currentPlace = deck[currentIndex];
 
     return (
-        <div className="p-4 border border-gray-300 rounded max-w-md mx-auto">
-
-            {/* Main info */}
-            <div className="relative mb-4">
+        <div className="flex flex-col lg:flex-row h-full w-full bg-surface-card rounded-4xl border border-ink-faint/15 shadow-xl overflow-hidden">
+            {/* Image */}
+            <div className="h-64 lg:h-auto w-full lg:w-1/2 relative bg-black overflow-hidden select-none shrink-0">
                 <img
-                    src={currentCard.image_url}
-                    alt={currentCard.name}
-                    className="w-full h-48 object-cover gray-200"
+                    src={currentPlace.image_url}
+                    alt={currentPlace.name}
+                    className="absolute inset-0 w-full h-full object-cover"
                 />
-                <div>
-                    Distance: {currentCard.distance_km} km ({currentCard.travel_time_min} min)
+                {/* Distance */}
+                <div className="absolute bottom-4 left-4 backdrop-blur-md bg-black/40 text-white border border-white/10 text-xs px-3 py-1.5 rounded-full font-medium">
+                    ~ {currentPlace.distance_km} km ({currentPlace.travel_time_min} min)
                 </div>
             </div>
-            {/*  */}
-            <div className="mb-4">
-                <span className="text-xs text-gray-500 uppercase">{currentCard.region}</span>
-                <h4 className="text-xl font-bold">{currentCard.name}</h4>
-                <p className="text-sm text-gray-700 my-2">{currentCard.description}</p>
-            </div>
-            {/*  */}
-            <div className="bg-gray-100 p-3 my-2 text-sm">
-                <strong>Why today:</strong>
-                <p className="italic">"{currentCard.why_visit_today}"</p>
-            </div>
-            {/*  */}
-            <div className="my-2 text-sm">
-                <strong>What to pack:</strong>
-                <div className="flex flex-wrap gap-1 mt-1">
-                    {currentCard.what_to_bring?.map((item, idx) => (
-                        <span key={idx} className="bg-gray-200 px-2 py-0.5 rounded text-xs">
-                            {item}
+
+            {/* main text Content */}
+            <div className="flex-1 p-6 md:p-8 flex flex-col justify-between bg-surface-card overflow-hidden">
+                <div className="flex-1 overflow-y-auto space-y-4 md:space-y-5 pr-1 scrollbar-thin mb-4">
+                    {/* body of text */}
+                    <div className="text-[11px] font-mono font-bold tracking-widest text-ink-soft uppercase">
+                        {currentPlace.region}
+                    </div>
+                    <h4 className
+                        ="text-2xl md:text-3xl font-extrabold tracking-tight text-ink leading-tight">
+                        {currentPlace.name}
+                    </h4>
+
+                    <p className="text-sm text-ink-soft leading-relaxed">
+                        {currentPlace.description}
+                    </p>
+                    {/* Why today */}
+                    <div className="border-l-2 border-accent pl-3 py-0.5 my-2">
+                        <span className="text-[10px] font-bold uppercase tracking-wider text-accent block">
+                            Why today
                         </span>
-                    ))}
+                        <p className="text-sm text-ink italic font-medium mt-0.5 leading-snug">
+                            “{currentPlace.why_visit_today}”
+                        </p>
+                    </div>
+
+                    {/* What to pack */}
+                    <div className="space-y-1.5 pt-1">
+                        <span className="text-[10px] font-bold text-ink-soft uppercase tracking-wider block">
+                            What to pack:
+                        </span>
+                        <div className="flex flex-wrap gap-1.5">
+                            {currentPlace.what_to_bring.map((item, idx) => (
+                                <span
+                                    key={idx}
+                                    className="bg-surface-muted/50 text-ink border border-ink-faint/10 text-[11px] px-2.5 py-1 rounded-full capitalize font-medium"
+                                >
+                                    {item}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
                 </div>
-            </div>
-            {/* Buttons */}
-            <div className="flex justify-between items-center gap-4 mt-6">
-                <button
-                    onClick={() => handleSwipe('left')}
-                    className="px-4 py-2 bg-red-100 text-red-700 rounded hover:bg-red-200"
-                >
-                    Skip
-                </button>
+                {/* buttons */}
+                <div className="flex items-end justify-between gap-3 pt-4 border-t border-ink-faint/10 bg-surface-card shrink-0">
+                    {/* Skip */}
+                    <div className="flex flex-col items-center gap-1.5 shrink-0">
+                        <button
+                            onClick={() => handleDecision('Skip')}
+                            className="w-12 h-12 rounded-full bg-ink-faint/40 text-ink-soft border border-ink-faint/10 flex items-center justify-center transition-all duration-200 hover:bg-rose-50 hover:text-rose-500 hover:border-rose-200 hover:-translate-y-0.5 active:scale-90"
+                            title="Skip"
+                            aria-label="Skip"
+                        >
+                            <span className="text-base font-bold">✕</span>
+                        </button>
+                    </div>
 
-                <button
-                    onClick={() => alert(`Opening map routing to: ${currentCard.address}`)}
-                    className="flex-1 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-                >
-                    Let's Go
-                </button>
+                    {/* Let's Go */}
+                    <div className="flex-1 flex flex-col items-center gap-1.5">
+                        <button
+                            onClick={() => alert(`Opening map routing to: ${currentPlace.address}`)}
+                            className="w-full h-12 bg-accent hover:bg-accent-hover text-white font-bold px-4 rounded-full text-center text-sm tracking-wide shadow-md hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5 active:scale-[0.98] flex items-center justify-center gap-2"
+                        >
+                            <span>Let's Go</span>
+                            <span className="text-base">🗺️</span>
+                        </button>
+                    </div>
 
-                <button
-                    onClick={() => handleSwipe('right')}
-                    className="px-4 py-2 bg-green-100 text-green-700 rounded hover:bg-green-200"
-                >
-                    Save
-                </button>
+                    {/* Save */}
+                    <div className="flex flex-col items-center gap-1.5 shrink-0">
+                        <button
+                            onClick={() => handleDecision('save')}
+                            className="w-12 h-12 rounded-full bg-surface-card border border-ink-faint/20 text-ink-soft flex items-center justify-center transition-all duration-200 hover:text-rose-500 hover:border-rose-300 hover:bg-rose-50 hover:-translate-y-0.5 active:scale-90"
+                            title="Save Adventure"
+                            aria-label="Save"
+                        >
+                            <span className="text-base transition-transform duration-200 hover:scale-110">❤️</span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     );
