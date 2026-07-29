@@ -49,6 +49,7 @@
     "city_base": "Ottawa",
     "region": "Quebec, Gatineau Park",
     "address": "Luskville, QC (Gatineau Park, off Hwy 148)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Luskville_Falls%2C_Gatineau_Park_%2810493741843%29.jpg",
     "distance_km": 35,
     "travel_time_min": 35,
     "category": "hiking",
@@ -86,6 +87,7 @@
     "city_base": "Ottawa",
     "region": "Ottawa, Ontario",
     "address": "200 Ridge Rd, Ottawa, ON K1B",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Mer_Bleue_Peat_Bog%2C_Ottawa%2C_Ontario_%288169736985%29.jpg",
     "distance_km": 20,
     "travel_time_min": 25,
     "category": "nature",
@@ -125,10 +127,12 @@
     "city_base": "Ottawa",
     "region": "Gatineau, Quebec",
     "address": "100 Laurier St, Gatineau, QC J8X 4H2",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Gatineau_-_QC_-_Museum_of_Civilisation.jpg",
     "distance_km": 5,
     "travel_time_min": 10,
-    "category": "museum",
+    "category": "art",
     "tags": [
+      "museum",
       "indoor",
       "history",
       "family-friendly",
@@ -138,7 +142,8 @@
     "why_visit_today": "A great option on a rainy or cold day, without giving up a view of the city.",
     "recommended_activities": [
       "museum visit",
-      "photography"
+      "photography",
+      "art"
     ],
     "what_to_bring": [
       "comfortable shoes"
@@ -161,6 +166,7 @@
     "city_base": "Ottawa",
     "region": "Ottawa, Ontario",
     "address": "380 Sussex Dr, Ottawa, ON K1N 9N4",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/National_Gallery_of_Canada%2C_Ottawa.JPG",
     "distance_km": 3,
     "travel_time_min": 8,
     "category": "art",
@@ -168,13 +174,15 @@
       "indoor",
       "contemporary-art",
       "architecture",
-      "downtown"
+      "downtown",
+      "museum"
     ],
     "description": "The national art gallery, known for its striking glass architecture and the giant spider sculpture Maman at the entrance.",
     "why_visit_today": "A compact, inspiring trip in the heart of the city if you want culture without leaving town.",
     "recommended_activities": [
       "art viewing",
-      "photography"
+      "photography",
+      "art"
     ],
     "what_to_bring": [
       "comfortable shoes"
@@ -196,10 +204,12 @@
     "city_base": "Ottawa",
     "region": "Quebec, near Gatineau Park",
     "address": "Wakefield, QC J0X 3G0",
+    "image_url": "https://b1367470.smushcdn.com/1367470/wp-content/uploads/2018/09/7516523552_IMG_0208-1024x683.jpg?lossy=1&strip=1&webp=1",
     "distance_km": 35,
     "travel_time_min": 40,
-    "category": "small_town",
+    "category": "hidden_gem",
     "tags": [
+      "small_town",
       "charming",
       "coffee",
       "covered-bridge",
@@ -236,14 +246,16 @@
     "city_base": "Ottawa",
     "region": "Ottawa, Ontario",
     "address": "Riverside Dr, Ottawa, ON K1H",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Vincent_Massey_Park.JPG",
     "distance_km": 8,
     "travel_time_min": 15,
-    "category": "relaxing",
+    "category": "nature",
     "tags": [
       "riverside",
       "picnic",
       "flat-trail",
-      "dog-friendly"
+      "dog-friendly",
+      "relaxing"
     ],
     "description": "A calm park along the Rideau River with shaded picnic areas and easy trails.",
     "why_visit_today": "Good when you want relaxed time in nature without a long drive.",
@@ -275,10 +287,12 @@
     "city_base": "Ottawa",
     "region": "Carp, Ontario",
     "address": "3929 Carp Rd, Carp, ON K0A 1L0",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Diefenbunker.JPG",
     "distance_km": 30,
     "travel_time_min": 35,
-    "category": "museum",
+    "category": "art",
     "tags": [
+      "museum",
       "underground",
       "history",
       "cold-war",
@@ -311,11 +325,13 @@
     "city_base": "Ottawa",
     "region": "Montebello, Quebec",
     "address": "399 Route 323, Montebello, QC J0V 1L0",
+    "image_url": "https://www.parcomega.ca/wp-content/uploads/2020/05/%C3%89t%C3%A9-voiture-10.jpg",
     "distance_km": 65,
     "travel_time_min": 60,
-    "category": "animals",
+    "category": "nature",
     "tags": [
       "wildlife",
+      "animals",
       "drive-through",
       "family-friendly",
       "nature"
@@ -349,14 +365,16 @@
     "city_base": "Ottawa",
     "region": "Ottawa, Ontario",
     "address": "2 Mackenzie Ave, Ottawa, ON K1N",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Major%27s_Hill_Park.jpg",
     "distance_km": 2,
     "travel_time_min": 6,
-    "category": "relaxing",
+    "category": "nature",
     "tags": [
       "viewpoint",
       "downtown",
       "parliament-view",
-      "free"
+      "free",
+      "relaxing"
     ],
     "description": "A green hill in the heart of the city with one of the best views of Parliament Hill and the Rideau Canal.",
     "why_visit_today": "A quick way to catch a beautiful view and city atmosphere in about 20 minutes.",
@@ -387,14 +405,15 @@
     "city_base": "Ottawa",
     "region": "Ottawa, Ontario",
     "address": "Rideau Canal, Ottawa, ON",
+    "image_url": "https://medias.ncc-ccn.ca/ncc/images/MG_0355.jpg",
     "distance_km": 1,
     "travel_time_min": 5,
-    "category": "water",
+    "category": "nature",
     "tags": [
       "walk",
       "bike",
       "unesco",
-      "seasonal",
+      "water",
       "skating-in-winter"
     ],
     "description": "A historic UNESCO canal with pathways for walking and cycling in summer, and the world's largest skating rink in winter.",
@@ -427,12 +446,14 @@
     "city_base": "Ottawa",
     "region": "Ottawa, Ontario",
     "address": "2805 Cassels St, Ottawa, ON K2B",
+    "image_url": "https://www.adamsairportinn.com/assets/tourism-photos/britannia-park-and-beach-1.jpg",
     "distance_km": 12,
     "travel_time_min": 20,
-    "category": "water",
+    "category": "nature",
     "tags": [
       "beach",
       "swimming",
+      "water",
       "sunset",
       "casual"
     ],
@@ -467,14 +488,16 @@
     "city_base": "Ottawa",
     "region": "Ontario, near Fitzroy Harbour",
     "address": "Dixon Point Rd, Fitzroy Harbour, ON K0A 1X0",
+    "image_url": "https://i0.wp.com/audeladupaysage.com/wp-content/uploads/2022/05/Fitzroy1.jpg?fit=1440%2C1080&ssl=1",
     "distance_km": 45,
     "travel_time_min": 45,
-    "category": "nature",
+    "category": "hiking",
     "tags": [
       "provincial-park",
       "river-confluence",
       "camping",
-      "hiking"
+      "hiking",
+      "nature"
     ],
     "description": "A provincial park at the confluence of the Ottawa and Madawaska rivers, with trails, a beach, and camping areas.",
     "why_visit_today": "A good option for a calmer, less touristy nature day.",
@@ -507,6 +530,7 @@
     "city_base": "Ottawa",
     "region": "Ottawa, Ontario",
     "address": "Prince of Wales Dr, Ottawa, ON K1A 0C6",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Giant_Salix.jpg",
     "distance_km": 6,
     "travel_time_min": 12,
     "category": "nature",
@@ -545,6 +569,7 @@
     "city_base": "Ottawa",
     "region": "Quebec, Gatineau Park",
     "address": "Gatineau Park, near Old Chelsea, QC",
+    "image_url": "https://medias.ncc-ccn.ca/ncc/images/MG_2079_lac-Pink-LR.jpg",
     "distance_km": 18,
     "travel_time_min": 28,
     "category": "hiking",
@@ -583,6 +608,7 @@
     "city_base": "Ottawa",
     "region": "Ottawa, Ontario",
     "address": "55 ByWard Market Square, Ottawa, ON K1N 9C3",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Byward_Market_Ottawa_View_East.jpg",
     "distance_km": 2,
     "travel_time_min": 6,
     "category": "food",
@@ -590,14 +616,16 @@
       "market",
       "coffee",
       "local-food",
-      "downtown"
+      "downtown",
+      "food"
     ],
     "description": "A historic market with street vendors, local cafes, bakeries, and the famous BeaverTails pastries.",
     "why_visit_today": "A quick way to soak up city atmosphere and grab something local to eat.",
     "recommended_activities": [
       "food tasting",
       "shopping",
-      "walking"
+      "walking",
+      "food"
     ],
     "what_to_bring": [
       "cash",
@@ -621,11 +649,13 @@
     "city_base": "Ottawa",
     "region": "Quebec, Gatineau Park",
     "address": "Champlain Parkway, Gatineau Park, QC",
+    "image_url": "https://mrussellphotography.com/blog/photos/2019/champlain-lookout-gatineau/champlain-lookout-gatineau-park-45099.jpg",
     "distance_km": 25,
     "travel_time_min": 30,
-    "category": "scenic_drive",
+    "category": "nature",
     "tags": [
       "viewpoint",
+      "scenic_drive",
       "sunset",
       "fall-colors",
       "easy-access"
@@ -660,10 +690,12 @@
     "city_base": "Ottawa",
     "region": "Ontario, Mississippi Mills",
     "address": "Almonte, ON K0A 1A0",
+    "image_url": "https://allthingshome.ca/wp-content/uploads/almonte-1.jpg",
     "distance_km": 45,
     "travel_time_min": 45,
-    "category": "small_town",
+    "category": "hidden_gem",
     "tags": [
+      "small_town",
       "charming",
       "coffee",
       "waterfall",
@@ -700,10 +732,12 @@
     "city_base": "Ottawa",
     "region": "Ottawa, Ontario",
     "address": "901 Prince of Wales Dr, Ottawa, ON K1A 0C7",
+    "image_url": "https://ingenium.ca/agriculture/wp-content/uploads/sites/3/2024/11/cafm-dairy-barn-image-gallery-6-1024x768.jpg",
     "distance_km": 6,
     "travel_time_min": 12,
-    "category": "animals",
+    "category": "art",
     "tags": [
+      "museum",
       "family-friendly",
       "farm-animals",
       "indoor-outdoor"
@@ -735,6 +769,7 @@
     "city_base": "Ottawa",
     "region": "Ottawa, Ontario",
     "address": "Rifle Rd, Ottawa, ON K2K",
+    "image_url": "https://medias.ncc-ccn.ca/ncc/images/054A0696-Pano.jpg",
     "distance_km": 20,
     "travel_time_min": 25,
     "category": "hidden_gem",
@@ -772,6 +807,7 @@
     "city_base": "Ottawa",
     "region": "Quebec, Gatineau Park",
     "address": "King Mountain Trailhead, Gatineau Park, QC",
+    "image_url": "https://i0.wp.com/audeladupaysage.com/wp-content/uploads/2018/06/King3.jpg?fit=1440%2C1080&ssl=1",
     "distance_km": 20,
     "travel_time_min": 28,
     "category": "hiking",
@@ -810,6 +846,7 @@
     "city_base": "Ottawa",
     "region": "Quebec, Gatineau Park",
     "address": "Gatineau Park, Old Chelsea sector, QC",
+    "image_url": "https://i0.wp.com/audeladupaysage.com/wp-content/uploads/2020/09/Sentierdesloups3.jpg?resize=800%2C600&ssl=1",
     "distance_km": 18,
     "travel_time_min": 27,
     "category": "hiking",
@@ -847,14 +884,16 @@
     "city_base": "Ottawa",
     "region": "Ottawa, Ontario",
     "address": "Hog's Back Rd, Ottawa, ON K1V",
+    "image_url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/ab/e2/d1/photo0jpg.jpg?w=1200&h=1200&s=1",
     "distance_km": 10,
     "travel_time_min": 18,
-    "category": "relaxing",
+    "category": "nature",
     "tags": [
       "waterfall",
       "easy-access",
       "urban-nature",
-      "free"
+      "free",
+      "relaxing"
     ],
     "description": "A small but powerful waterfall on the Rideau River, easily accessible right within the city.",
     "why_visit_today": "Real waterfall energy without leaving Ottawa — great for a quick nature fix.",
@@ -884,6 +923,7 @@
     "city_base": "Ottawa",
     "region": "Quebec, Gatineau Park",
     "address": "Gatineau Park, Kingsmere sector, QC",
+    "image_url": "https://admin.tourismeoutaouais.com/api/photos/file/domaine-mackenzie-king-7-620x620.webp",
     "distance_km": 22,
     "travel_time_min": 30,
     "category": "hiking",
@@ -923,6 +963,7 @@
     "city_base": "Ottawa",
     "region": "Quebec, Gatineau Park",
     "address": "Gatineau Park, near Meech Lake, QC",
+    "image_url": "https://medias.ncc-ccn.ca/ncc/images/w1.Wilson-Carbide-Mill-_-Gatineau-Park_2021-11-03-184005_tnuw.jpg",
     "distance_km": 22,
     "travel_time_min": 30,
     "category": "hidden_gem",
@@ -961,14 +1002,16 @@
     "city_base": "Ottawa",
     "region": "Quebec, Gatineau Park",
     "address": "Lac Philippe, Gatineau Park, QC",
+    "image_url": "https://s3.amazonaws.com/cdn.swimdrinkfishguide.com/photos/cf3cf43cebe4712b8d91d4c755741ec866e0fd88.jpg?assetVersion=1785296670227",
     "distance_km": 45,
     "travel_time_min": 50,
-    "category": "water",
+    "category": "nature",
     "tags": [
       "lake",
       "beach",
       "canoeing",
-      "camping"
+      "camping",
+      "water"
     ],
     "description": "One of Gatineau Park's larger lakes, with sandy beaches, canoe rentals, and surrounding hiking trails.",
     "why_visit_today": "A full-day nature escape combining swimming, paddling, and trails in one spot.",
@@ -1001,14 +1044,16 @@
     "city_base": "Ottawa",
     "region": "Ottawa, Ontario",
     "address": "3810 Carling Ave, Ottawa, ON K2H",
+    "image_url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/54/f7/eb/andrew-haydon-park.jpg?w=1200&h=-1&s=1",
     "distance_km": 15,
     "travel_time_min": 20,
-    "category": "relaxing",
+    "category": "nature",
     "tags": [
       "waterfront",
       "sunset",
       "flat-trail",
-      "dog-friendly"
+      "dog-friendly",
+      "relaxing"
     ],
     "description": "A riverside park with sweeping lawns, a pond, and one of the best sunset views over the Ottawa River.",
     "why_visit_today": "A low-effort, high-reward spot for a relaxed evening walk and a great sunset.",
@@ -1035,51 +1080,17 @@
     "verified": false
   },
   {
-    "id": "ottawa-cathedral-bush",
-    "name": "Cathedral Bush",
-    "city_base": "Ottawa",
-    "region": "Ontario, near Kars",
-    "address": "Cathedral Rd, Kars, ON K0A 2E0",
-    "distance_km": 40,
-    "travel_time_min": 40,
-    "category": "hidden_gem",
-    "tags": [
-      "forest",
-      "old-growth",
-      "quiet",
-      "off-the-radar"
-    ],
-    "description": "A quiet patch of old-growth forest south of the city, known among locals but rarely mentioned in guides.",
-    "why_visit_today": "A genuinely calm, uncrowded forest walk for anyone craving real quiet.",
-    "recommended_activities": [
-      "walking",
-      "photography"
-    ],
-    "what_to_bring": [
-      "hiking shoes",
-      "insect repellent"
-    ],
-    "recommended_duration": "2-3 hours",
-    "seasonal_notes": "Pleasant spring through fall",
-    "accessibility_notes": "Uneven forest floor, not wheelchair accessible",
-    "parking": "free",
-    "companions_fit": [
-      "solo",
-      "couple",
-      "dog"
-    ],
-    "verified": false
-  },
-  {
     "id": "ottawa-merrickville",
     "name": "Merrickville",
     "city_base": "Ottawa",
     "region": "Ontario, near the Rideau Canal",
     "address": "Merrickville, ON K0G 1N0",
+    "image_url": "https://trailertrawlerlife.com/wp-content/uploads/2019/03/Merrickville-30.jpg",
     "distance_km": 65,
     "travel_time_min": 55,
-    "category": "small_town",
+    "category": "hidden_gem",
     "tags": [
+      "small_town",
       "historic",
       "canal",
       "shopping",
@@ -1115,11 +1126,13 @@
     "city_base": "Ottawa",
     "region": "Ottawa, Ontario",
     "address": "Dow's Lake, Ottawa, ON K1S",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Dow%27s_Lake_aerial_view_2025.jpg/1280px-Dow%27s_Lake_aerial_view_2025.jpg",
     "distance_km": 4,
     "travel_time_min": 10,
-    "category": "water",
+    "category": "nature",
     "tags": [
       "lake",
+      "water",
       "cafe",
       "paddleboats",
       "flat-trail"
@@ -1153,11 +1166,13 @@
     "city_base": "Ottawa",
     "region": "Quebec, Cantley",
     "address": "Mont Cascades, Cantley, QC J8V 3B4",
+    "image_url": "https://i0.wp.com/audeladupaysage.com/wp-content/uploads/2020/09/Cascades2.jpg?fit=1440%2C1080&ssl=1",
     "distance_km": 30,
     "travel_time_min": 35,
-    "category": "adventure",
+    "category": "hiking",
     "tags": [
       "hiking",
+      "adventure",
       "waterpark-nearby",
       "moderate-hike"
     ],
@@ -1189,6 +1204,7 @@
     "name": "Jack Pine Trail",
     "city_base": "Ottawa",
     "region": "Ottawa, Ontario",
+    "image_url": "https://static.where-e.com/Canada/Jack-Pine-Trail_17420f7f5813d600191580bb394fdade.jpg",
     "address": "Corkstown Rd, Ottawa, ON K2K",
     "distance_km": 18,
     "travel_time_min": 22,
@@ -1229,11 +1245,13 @@
     "city_base": "Ottawa",
     "region": "Ottawa, Ontario",
     "address": "Lisgar Rd, Ottawa, ON K1M",
+    "image_url": "https://static.where-e.com/Canada/Rockcliffe-Lookout_e7d850aedc17e08411a815a5ad952ab3.jpg",
     "distance_km": 6,
     "travel_time_min": 12,
-    "category": "scenic_drive",
+    "category": "nature",
     "tags": [
       "viewpoint",
+      "scenic_drive",
       "sunset",
       "free",
       "easy-access"
