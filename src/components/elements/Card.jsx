@@ -1,7 +1,21 @@
+import { useEffect } from 'react';
 import { useAppContext } from '../../context/AppContext';
 
 export default function Card({ deck, currentIndex, handleDecision }) {
     const { savedPlaces, setSavedPlaces, currentIndex: currentCardIndex } = useAppContext();
+
+    // Fetch and preload images for the next two cards 
+    useEffect(() => {
+        if (!deck) return;
+        const upcoming = deck.slice(currentIndex + 1, currentIndex + 3);
+
+        upcoming.forEach((place) => {
+            if (place?.image_url) {
+                const img = new Image();
+                img.src = place.image_url;
+            }
+        });
+    }, [currentIndex, deck]);
 
     if (!deck || !deck[currentIndex]) return null;
 
