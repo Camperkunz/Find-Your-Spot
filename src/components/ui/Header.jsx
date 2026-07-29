@@ -5,7 +5,7 @@ export default function Header() {
     const hasSaved = savedPlaces.length > 0;
     // 
     return (
-        <header className="flex h-20 items-center justify-between px-6 md:px-16 border-b border-surface-muted bg-surface">
+        <header className="flex h-20 items-center justify-between px-6 md:px-16 border-b border-surface-muted bg-surface shrink-0">
             <button onClick={() => setStep('welcome')} className="flex items-center hover:cursor-pointer">
                 <h1 className="text-xl md:text-xl font-bold text-accent">
                     Where should I go?

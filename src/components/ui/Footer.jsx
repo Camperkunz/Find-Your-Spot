@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer>
+        <footer className="shrink-0">
             <div className="text-center text-sm px-8 py-4 border-t border-ink/10 text-ink-soft">
                 Made with ❤️ by{' '}
                 <a

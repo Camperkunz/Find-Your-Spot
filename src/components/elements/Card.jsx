@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { useAppContext } from '../../context/AppContext';
 
 export default function Card({ deck, currentIndex, handleDecision }) {
-    const { savedPlaces, setSavedPlaces, currentIndex: currentCardIndex } = useAppContext();
 
     // Fetch and preload images for the next two cards 
     useEffect(() => {
