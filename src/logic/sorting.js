@@ -79,8 +79,8 @@ export function filterDestinations({ destinations, city, vibe, duration, compani
         };
     });
 
-    // return Top-10
+    // return the top 15 scored places
     return scoredPlaces
         .sort((a, b) => b.score - a.score)
-        .slice(0, 10);
+        .slice(0, 15);
 }
