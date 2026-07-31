@@ -23,28 +23,62 @@ export default function AdventureApp() {
     vibe,
     companion,
     deck, setDeck,
-    currentIndex, setCurrentIndex
-  } = useAppContext();
+    currentIndex, setCurrentIndex } = useAppContext();
+
+  // Call of filtering function (logic/sorting)
+  const handleStartDiscovery = () => {
+    const finalDeck = filterDestinations({
+      destinations: destinationsData,
+      city,
+      duration,
+      vibe,
+      companion
+    });
+
+    setDeck(finalDeck);
+    setCurrentIndex(0);
+    setStep('cards');
+  };
+
+  // Saving and Skipping
+  const handleDecision = (action) => {
+    if (action === 'save') {
+      setSavedPlaces((prev) => {
+        const place = deck[currentIndex];
+        return prev.some((p) => p.id === place.id) ? prev : [...prev, place];
+      });
+    }
+    setCurrentIndex((prev) => prev + 1);
+  };
+
+  // DECK step needs a wider container (for the Card component on lg screens)
+  const isWideStep = step === 'cards';
 
   return (
-    <Layout>
-      {/* MAIN CONTAINER */}
-      <main className="flex-1 flex flex-col justify-center max-w-md w-full mx-auto px-4 py-6">
-        <div className="h-full flex flex-col justify-between py-2 animate-fadeIn">
+    <Layout wide={isWideStep}>
+      {/* WELCOME */}
+      {step === 'welcome' && <WelcomeStep />}
+
+      {/* ONBOARDING */}
+      {step === 'onboarding' && <OnboardingStep onStart={handleStartDiscovery} />}
+
+      {/* DECK */}
+      {step === 'cards' && (
+        <div className="w-full flex justify-center">
           {currentIndex < deck.length ? (
             <Card
               deck={deck}
               currentIndex={currentIndex}
-              handleSwipe={handleSwipe}
+              handleDecision={handleDecision}
             />
           ) : (
-            /* OUT OF CARDS */
-            <div className="text-center space-y-6 py-12 animate-fadeIn">
-              <h2 className="text-2xl font-bold">No more places to show!</h2>
+            /* out of cards */
+            <div className="text-center space-y-6 py-12 max-w-md w-full mx-auto">
+
             </div>
           )}
         </div>
-      </main>
-    </Layout >
+      )}
+    </Layout>
   );
 }
