@@ -39,8 +39,8 @@
         @apply bg-accent hover:bg-accent-hover text-surface-card font-medium px-4 py-2 rounded-card transition-colors;
     }
 
-    .btn-primary-lg {
-        @apply btn-primary py-3 text-sm font-bold shadow-md shadow-accent/10;
+    .btn-primary-hero {
+        @apply bg-accent hover:bg-accent-hover text-surface-card font-medium rounded-card transition-colors text-lg py-4 shadow-lg shadow-accent/10;
     }
 
     .btn-secondary {
@@ -52,7 +52,11 @@
     }
 
     .btn-outline-lg {
-        @apply btn-outline py-3 text-sm font-semibold;
+        @apply border border-surface-muted hover:border-ink-soft text-ink font-medium rounded-card transition-colors py-3 text-sm;
+    }
+
+    .btn-outline-danger {
+        @apply border font-medium rounded-card transition-colors text-center flex items-center justify-center gap-2 bg-danger-soft text-danger hover:bg-danger-soft/80 border-danger/30;
     }
 
     .btn-ghost {

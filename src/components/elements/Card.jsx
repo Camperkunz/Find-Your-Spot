@@ -21,9 +21,9 @@ export default function Card({ deck, currentIndex, handleDecision }) {
     const currentPlace = deck[currentIndex];
 
     return (
-        <div className="flex flex-col lg:flex-row h-full w-full bg-surface-card rounded-4xl border border-ink-faint/15 shadow-xl overflow-hidden">
+        <div className="w-full h-[clamp(400px,65vh,550px)] flex flex-col lg:flex-row bg-surface-card rounded-4xl border border-ink-faint/15 shadow-xl overflow-hidden">
             {/* Image */}
-            <div className="h-64 lg:h-auto w-full lg:w-1/2 relative bg-black overflow-hidden select-none shrink-0">
+            <div className="h-48 lg:h-auto w-full lg:w-1/2 relative bg-black overflow-hidden select-none shrink-0">
                 <img
                     src={currentPlace.image_url}
                     alt={currentPlace.name}
@@ -36,8 +36,8 @@ export default function Card({ deck, currentIndex, handleDecision }) {
             </div>
 
             {/* main text Content */}
-            <div className="flex-1 p-6 md:p-8 flex flex-col justify-between overflow-hidden">
-                <div className="flex-1 overflow-y-auto space-y-4 md:space-y-5 pr-1 scrollbar-thin mb-4">
+            <div className="flex-1 min-h-0 p-6 md:p-8 flex flex-col justify-between overflow-hidden">
+                <div className="flex-1 min-h-0 overflow-y-auto space-y-4 md:space-y-5 pr-1 scrollbar-thin mb-4">
                     {/* body of text */}
                     <div className="text-xs font-mono font-bold tracking-widest text-ink-soft uppercase">
                         {currentPlace.region}

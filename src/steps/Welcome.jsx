@@ -6,7 +6,7 @@ export default function WelcomeStep() {
         step, setStep } = useAppContext();
 
     return (
-        <div className="text-center space-y-8 py-8 max-w-sm mx-auto">
+        <div className="text-center space-y-8">
             <div className="space-y-3">
                 <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-ink">
                     You don't <br />need to plan.
@@ -45,7 +45,7 @@ export default function WelcomeStep() {
             {/* Button */}
             <button
                 onClick={() => setStep('onboarding')}
-                className="btn-primary w-full text-lg py-4 rounded-card shadow-lg shadow-accent/10"
+                className="btn-primary-hero w-full"
             >
                 Find My Adventure
             </button>

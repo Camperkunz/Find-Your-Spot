@@ -6,7 +6,7 @@ export default function Layout({ children, wide = false }) {
         <div className="min-h-dvh bg-surface text-ink flex flex-col font-sans">
             <Header />
             <main
-                className={`flex-1 px-4 sm:px-6 lg:px-8 w-full mx-auto ${wide ? "max-w-md lg:max-w-4xl" : "max-w-md"
+                className={`flex-1 flex flex-col sm:px-4 lg:px-8 my-8 w-full mx-auto ${wide ? "max-w-md lg:max-w-5xl" : "max-w-md"
                     }`}
             >
                 {children}
