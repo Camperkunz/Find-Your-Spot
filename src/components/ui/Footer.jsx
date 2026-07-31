@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <footer className="shrink-0">
-            <div className="text-center text-sm px-8 py-4 border-t border-ink/10 text-ink-soft">
+            <div className="text-center text-sm px-4 sm:px-6 lg:px-8 py-4 border-t border-surface-muted text-ink-soft">
                 Made with ❤️ by{' '}
                 <a
                     href="https://annanikiforova.vercel.app/"
@@ -12,6 +12,6 @@ export default function Footer() {
                     Anna Nikiforova
                 </a>
             </div>
-        </footer>
+        </footer >
     );
 }

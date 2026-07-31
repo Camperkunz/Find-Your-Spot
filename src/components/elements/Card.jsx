@@ -30,20 +30,19 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                     className="absolute inset-0 w-full h-full object-cover"
                 />
                 {/* Distance */}
-                <div className="absolute bottom-4 left-4 backdrop-blur-md bg-black/40 text-white border border-white/10 text-xs px-3 py-1.5 rounded-full font-medium">
+                <div className="absolute bottom-4 left-4 backdrop-blur-md bg-ink/40 text-white border border-white/10 text-xs px-3 py-1.5 rounded-pill font-medium">
                     ~ {currentPlace.distance_km} km ({currentPlace.travel_time_min} min)
                 </div>
             </div>
 
             {/* main text Content */}
-            <div className="flex-1 p-6 md:p-8 flex flex-col justify-between bg-surface-card overflow-hidden">
+            <div className="flex-1 p-6 md:p-8 flex flex-col justify-between overflow-hidden">
                 <div className="flex-1 overflow-y-auto space-y-4 md:space-y-5 pr-1 scrollbar-thin mb-4">
                     {/* body of text */}
-                    <div className="text-[11px] font-mono font-bold tracking-widest text-ink-soft uppercase">
+                    <div className="text-xs font-mono font-bold tracking-widest text-ink-soft uppercase">
                         {currentPlace.region}
                     </div>
-                    <h4 className
-                        ="text-2xl md:text-3xl font-extrabold tracking-tight text-ink leading-tight">
+                    <h4 className="text-2xl md:text-3xl font-extrabold tracking-tight text-ink leading-tight">
                         {currentPlace.name}
                     </h4>
 
@@ -52,7 +51,7 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                     </p>
                     {/* Why today */}
                     <div className="border-l-2 border-accent pl-3 py-0.5 my-2">
-                        <span className="text-[10px] font-bold uppercase tracking-wider text-accent block">
+                        <span className="text-xs font-bold uppercase tracking-wider text-accent block">
                             Why today
                         </span>
                         <p className="text-sm text-ink italic font-medium mt-0.5 leading-snug">
@@ -62,14 +61,14 @@ export default function Card({ deck, currentIndex, handleDecision }) {
 
                     {/* What to pack */}
                     <div className="space-y-1.5 pt-1">
-                        <span className="text-[10px] font-bold text-ink-soft uppercase tracking-wider block">
+                        <span className="text-xs font-bold text-ink-soft uppercase tracking-wider block">
                             What to pack:
                         </span>
                         <div className="flex flex-wrap gap-1.5">
                             {currentPlace.what_to_bring.map((item, idx) => (
                                 <span
                                     key={idx}
-                                    className="bg-surface-muted/50 text-ink border border-ink-faint/10 text-[11px] px-2.5 py-1 rounded-full capitalize font-medium"
+                                    className="bg-surface-muted/50 text-ink border border-ink-faint/10 text-xs px-2.5 py-1 rounded-pill capitalize font-medium"
                                 >
                                     {item}
                                 </span>
@@ -78,12 +77,12 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                     </div>
                 </div>
                 {/* buttons */}
-                <div className="flex items-end justify-between gap-3 pt-4 border-t border-ink-faint/10 bg-surface-card shrink-0">
+                <div className="flex items-end justify-between gap-3 pt-4 border-t border-ink-faint/10 shrink-0">
                     {/* Skip */}
                     <div className="flex flex-col items-center gap-1.5 shrink-0">
                         <button
                             onClick={() => handleDecision('Skip')}
-                            className="w-12 h-12 rounded-full bg-ink-faint/40 text-ink-soft border border-ink-faint/10 flex items-center justify-center transition-all duration-200 hover:bg-rose-50 hover:text-rose-500 hover:border-rose-200 hover:-translate-y-0.5 active:scale-90"
+                            className="w-12 h-12 rounded-full bg-ink-faint/40 text-ink-soft border border-ink-faint/10 flex items-center justify-center transition-all duration-200 hover:bg-danger-soft hover:text-danger hover:border-danger/30 hover:-translate-y-0.5 active:scale-90"
                             title="Skip"
                             aria-label="Skip"
                         >
@@ -95,7 +94,7 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                     <div className="flex-1 flex flex-col items-center gap-1.5">
                         <button
                             onClick={() => alert(`Opening map routing to: ${currentPlace.address}`)}
-                            className="w-full h-12 bg-accent hover:bg-accent-hover text-white font-bold px-4 rounded-full text-center text-sm tracking-wide shadow-md hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5 active:scale-[0.98] flex items-center justify-center gap-2"
+                            className="btn-primary w-full h-12 rounded-pill text-sm tracking-wide shadow-md hover:shadow-lg hover:-translate-y-0.5 active:scale-[0.98] flex items-center justify-center gap-2"
                         >
                             <span>Let's Go</span>
                             <span className="text-base">🗺️</span>
@@ -106,7 +105,7 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                     <div className="flex flex-col items-center gap-1.5 shrink-0">
                         <button
                             onClick={() => handleDecision('save')}
-                            className="w-12 h-12 rounded-full bg-surface-card border border-ink-faint/50 text-ink-soft flex items-center justify-center transition-all duration-200 hover:text-rose-500 hover:border-rose-300 hover:bg-rose-50 hover:-translate-y-0.5 active:scale-90"
+                            className="w-12 h-12 rounded-full bg-surface-card border border-ink-faint/50 text-ink-soft flex items-center justify-center transition-all duration-200 hover:text-danger hover:border-danger/40 hover:bg-danger-soft hover:-translate-y-0.5 active:scale-90"
                             title="Save Adventure"
                             aria-label="Save"
                         >
