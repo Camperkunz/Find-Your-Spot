@@ -74,7 +74,29 @@ export default function AdventureApp() {
           ) : (
             /* out of cards */
             <div className="text-center space-y-6 py-12 max-w-md w-full mx-auto">
-
+              <span className="text-5xl">🗺️</span>
+              <div className="space-y-2">
+                <h4 className="text-2xl font-bold text-ink">That's all for today!</h4>
+                <p className="text-ink-soft text-sm max-w-xs mx-auto">
+                  You've seen all filtered adventures. Change your vibe check or check your saved bucket list!
+                </p>
+              </div>
+              <div className="pt-4 space-y-2 max-w-xs mx-auto w-full">
+                <button
+                  onClick={() => setStep('onboarding')}
+                  className="btn-outline-lg w-full"
+                >
+                  Change Filters 🔄
+                </button>
+                {savedPlaces.length > 0 && (
+                  <button
+                    onClick={() => setStep('saved')}
+                    className="btn-primary-lg w-full"
+                  >
+                    View Saved Places ({savedPlaces.length})
+                  </button>
+                )}
+              </div>
             </div>
           )}
         </div>
