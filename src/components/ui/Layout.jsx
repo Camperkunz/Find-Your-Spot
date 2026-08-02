@@ -3,10 +3,10 @@ import Footer from "./Footer.jsx";
 
 export default function Layout({ children, wide = false }) {
     return (
-        <div className="min-h-dvh bg-surface text-ink flex flex-col font-sans">
+        <div className="h-dvh bg-surface text-ink flex flex-col font-sans overflow-hidden">
             <Header />
             <main
-                className={`flex-1 flex flex-col px-6 lg:px-8 my-8 w-full mx-auto ${wide ? "max-w-md lg:max-w-5xl" : "max-w-md"
+                className={`flex-1 min-h-0 h-full flex flex-col px-6 sm:px-4 lg:px-8 py-4 w-full mx-auto ${wide ? "max-w-md lg:max-w-5xl" : "max-w-md"
                     }`}
             >
                 {children}
