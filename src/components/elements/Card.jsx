@@ -76,42 +76,28 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                         </div>
                     </div>
                 </div>
-                {/* buttons */}
-                <div className="flex items-end justify-between gap-3 pt-4 border-t border-ink-faint/10 shrink-0">
-                    {/* Skip */}
-                    <div className="flex flex-col items-center gap-1.5 shrink-0">
-                        <button
-                            onClick={() => handleDecision('Skip')}
-                            className="w-12 h-12 rounded-full bg-ink-faint/40 text-ink-soft border border-ink-faint/10 flex items-center justify-center transition-all duration-200 hover:bg-danger-soft hover:text-danger hover:border-danger/30 hover:-translate-y-0.5 active:scale-90"
-                            title="Skip"
-                            aria-label="Skip"
-                        >
-                            <span className="text-base font-bold">✕</span>
-                        </button>
-                    </div>
 
-                    {/* Let's Go */}
-                    <div className="flex-1 flex flex-col items-center gap-1.5">
-                        <button
-                            onClick={() => alert(`Opening map routing to: ${currentPlace.address}`)}
-                            className="btn-primary w-full h-12 rounded-pill text-sm tracking-wide shadow-md hover:shadow-lg hover:-translate-y-0.5 active:scale-[0.98] flex items-center justify-center gap-2"
-                        >
-                            <span>Let's Go</span>
-                            <span className="text-base">🗺️</span>
-                        </button>
-                    </div>
+                {/* buttons */}
+                <div className="flex items-center justify-between sm:justify-center sm:gap-16 pt-4 border-t border-ink-faint/10 shrink-0">
+                    {/* Skip */}
+                    <button
+                        onClick={() => handleDecision('Skip')}
+                        className="w-16 h-16 rounded-full bg-ink-faint/40 text-ink-soft border border-ink-faint/10 flex items-center justify-center transition-all duration-200 hover:bg-danger-soft hover:text-danger hover:border-danger/30 hover:-translate-y-0.5 active:scale-90"
+                        title="Skip"
+                        aria-label="Skip"
+                    >
+                        <span className="text-xl font-bold">✕</span>
+                    </button>
 
                     {/* Save */}
-                    <div className="flex flex-col items-center gap-1.5 shrink-0">
-                        <button
-                            onClick={() => handleDecision('save')}
-                            className="w-12 h-12 rounded-full bg-surface-card border border-ink-faint/50 text-ink-soft flex items-center justify-center transition-all duration-200 hover:text-danger hover:border-danger/40 hover:bg-danger-soft hover:-translate-y-0.5 active:scale-90"
-                            title="Save Adventure"
-                            aria-label="Save"
-                        >
-                            <span className="text-base transition-transform duration-200 hover:scale-110">❤️</span>
-                        </button>
-                    </div>
+                    <button
+                        onClick={() => handleDecision('save')}
+                        className="w-16 h-16 rounded-full bg-surface-card border border-ink-faint/50 text-ink-soft flex items-center justify-center transition-all duration-200 hover:bg-accent-soft hover:text-accent hover:border-accent/40 hover:-translate-y-0.5 active:scale-90"
+                        title="Save Adventure"
+                        aria-label="Save"
+                    >
+                        <span className="text-xl transition-transform duration-200 hover:scale-110">❤️</span>
+                    </button>
                 </div>
             </div>
         </div>
