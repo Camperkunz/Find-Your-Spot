@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useAppContext } from '../../context/AppContext';
+import { openDirections } from '../../logic/maps';
 
 export default function Card({ deck, currentIndex, handleDecision }) {
 
@@ -78,7 +79,7 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                 </div>
 
                 {/* buttons */}
-                <div className="flex items-center justify-between sm:justify-center sm:gap-16 pt-4 border-t border-ink-faint/10 shrink-0">
+                <div className="flex items-center gap-4 sm:gap-6 pt-4 border-t border-ink-faint/10 shrink-0">
                     {/* Skip */}
                     <button
                         onClick={() => handleDecision('Skip')}
@@ -88,6 +89,19 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                     >
                         <span className="text-xl font-bold">✕</span>
                     </button>
+
+                    {/* Let's Go */}
+                    <div className="flex-1 flex flex-col items-center gap-1.5">
+                        <button
+                            onClick={(e) => {
+                                openDirections(currentPlace);
+                            }}
+                            className="btn-primary-hero w-full h-14 text-base tracking-wide shadow-md transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 active:scale-[0.98] flex items-center justify-center gap-2"
+                        >
+                            <span>Check on Map</span>
+                            <span className="text-base">🗺️</span>
+                        </button>
+                    </div>
 
                     {/* Save */}
                     <button
