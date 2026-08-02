@@ -1,21 +1,83 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useState, useEffect } from 'react';
 
 const AppContext = createContext();
+
+// Keys used in localStorage
+const STORAGE_KEYS = {
+    savedPlaces: 'savedPlaces',
+    filters: 'filters',
+};
 
 export function AppProvider({ children }) {
     // Steps
     const [step, setStep] = useState('welcome');
 
-    // Filters
-    const [city, setCity] = useState('Ottawa');
-    const [duration, setDuration] = useState('2-3 hours');
-    const [vibe, setVibe] = useState('nature');
-    const [companion, setCompanion] = useState('solo');
+    // Filters (restored from localStorage if present)
+    const [city, setCity] = useState(() => {
+        try {
+            const stored = localStorage.getItem(STORAGE_KEYS.filters);
+            return stored ? JSON.parse(stored).city ?? 'Ottawa' : 'Ottawa';
+        } catch {
+            return 'Ottawa';
+        }
+    });
+    const [duration, setDuration] = useState(() => {
+        try {
+            const stored = localStorage.getItem(STORAGE_KEYS.filters);
+            return stored ? JSON.parse(stored).duration ?? '2-3 hours' : '2-3 hours';
+        } catch {
+            return '2-3 hours';
+        }
+    });
+    const [vibe, setVibe] = useState(() => {
+        try {
+            const stored = localStorage.getItem(STORAGE_KEYS.filters);
+            return stored ? JSON.parse(stored).vibe ?? 'nature' : 'nature';
+        } catch {
+            return 'nature';
+        }
+    });
+    const [companion, setCompanion] = useState(() => {
+        try {
+            const stored = localStorage.getItem(STORAGE_KEYS.filters);
+            return stored ? JSON.parse(stored).companion ?? 'solo' : 'solo';
+        } catch {
+            return 'solo';
+        }
+    });
 
     // Cards
     const [deck, setDeck] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [savedPlaces, setSavedPlaces] = useState([]);
+
+    // Saved places from LocalStorage
+    const [savedPlaces, setSavedPlaces] = useState(() => {
+        try {
+            const stored = localStorage.getItem(STORAGE_KEYS.savedPlaces);
+            return stored ? JSON.parse(stored) : [];
+        } catch {
+            return [];
+        }
+    });
+
+    // Persist savedPlaces whenever it changes
+    useEffect(() => {
+        try {
+            localStorage.setItem(STORAGE_KEYS.savedPlaces, JSON.stringify(savedPlaces));
+        } catch (e) {
+            console.error('Failed to save places to localStorage', e);
+        }
+    }, [savedPlaces]);
+
+    // Persist filters whenever any of them changes
+    useEffect(() => {
+        try {
+            const filters = { city, duration, vibe, companion };
+            localStorage.setItem(STORAGE_KEYS.filters, JSON.stringify(filters));
+        } catch (e) {
+            console.error('Failed to save filters to localStorage', e);
+        }
+    }, [city, duration, vibe, companion]);
 
     const value = {
         step,
