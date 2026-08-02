@@ -11,6 +11,7 @@ import Card from './components/elements/Card.jsx';
 //
 import WelcomeStep from './steps/Welcome.jsx';
 import OnboardingStep from './steps/Onboarding.jsx';
+import SavedStep from './steps/Saved.jsx';
 
 
 // Start of the main Part of App
@@ -64,7 +65,7 @@ export default function AdventureApp() {
 
       {/* DECK */}
       {step === 'cards' && (
-        <div className="w-full flex justify-center">
+        <div className="w-full h-full flex-1 min-h-0 flex justify-center items-stretch">
           {currentIndex < deck.length ? (
             <Card
               deck={deck}
@@ -120,6 +121,10 @@ export default function AdventureApp() {
             </div>
           )}
         </div>
+      )}
+      {/* SAVED PLACES */}
+      {step === 'saved' && (
+        <SavedStep />
       )}
     </Layout>
   );
