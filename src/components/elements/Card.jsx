@@ -1,20 +1,19 @@
 import { useEffect } from 'react';
 import { openDirections } from '../../logic/maps';
-import CardBadges from '../../utilis/CardBadges';
+import CardBadges from '../../utils/CardBadges.jsx';
+import { preloadImages } from '../../utils/imagePreloader.js';
 
 export default function Card({ deck, currentIndex, handleDecision }) {
 
     // Fetch and preload images for the next two cards 
     useEffect(() => {
         if (!deck) return;
-        const upcoming = deck.slice(currentIndex + 1, currentIndex + 3);
 
-        upcoming.forEach((place) => {
-            if (place?.image_url) {
-                const img = new Image();
-                img.src = place.image_url;
-            }
-        });
+        const upcomingUrls = deck
+            .slice(currentIndex + 1, currentIndex + 3)
+            .map((place) => place?.image_url);
+
+        preloadImages(upcomingUrls);
     }, [currentIndex, deck]);
 
     if (!deck || !deck[currentIndex]) return null;
