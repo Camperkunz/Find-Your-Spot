@@ -1,6 +1,61 @@
 import { useEffect } from 'react';
 import { useAppContext } from '../../context/AppContext';
 import { openDirections } from '../../logic/maps';
+// 
+import { TbParkingCircleFilled } from "react-icons/tb";
+import { TbAccessibleFilled } from "react-icons/tb";
+import { TbAccessibleOff } from "react-icons/tb";
+import { TbCurrencyDollar } from "react-icons/tb";
+// 
+function getParkingBadge(parking) {
+    if (parking === 'paid') {
+        return { label: 'Paid parking', Icon: TbParkingCircleFilled, tone: 'paid', showFee: true };
+    }
+    if (parking === 'free') {
+        return { label: 'Free parking', Icon: TbParkingCircleFilled, tone: 'free', showFee: false };
+    }
+    return null;
+}
+
+function getAccessibilityBadge(accessibility_notes) {
+    if (accessibility_notes === true) {
+        return { label: 'Accessible', Icon: TbAccessibleFilled, tone: 'positive', showFee: false };
+    }
+    if (accessibility_notes === false) {
+        return { label: 'Not accessible', Icon: TbAccessibleOff, tone: 'negative', showFee: false };
+    }
+    return null;
+}
+// 
+const TONE_CLASSES = {
+    positive: 'text-accent',
+    negative: 'text-danger',
+    free: 'text-accent',
+    paid: 'text-amber-500',
+};
+
+// Logic of badge
+function CornerBadge({ label, Icon, tone, showFee }) {
+    return (
+        <span
+            title={label}
+            aria-label={label}
+            className={`relative flex items-center justify-center size-8 md:size-9 rounded-full ${TONE_CLASSES[tone] || 'text-accent'
+                }`}
+        >
+            {Icon && <Icon className="size-7 md:size-8" />}
+            {/* Small coin/dollar overlay in the corner, only for paid parking */}
+            {showFee && (
+                <span
+                    className="absolute -bottom-0.5 -right-1 flex items-center justify-center size-4 md:size-4 rounded-full bg-amber-500 text-white ring-2 ring-surface-card"
+                    aria-hidden="true"
+                >
+                    <TbCurrencyDollar className="w-2.5 h-2.5 md:w-3 md:h-3" strokeWidth={3} />
+                </span>
+            )}
+        </span>
+    );
+}
 
 export default function Card({ deck, currentIndex, handleDecision }) {
 
@@ -20,12 +75,17 @@ export default function Card({ deck, currentIndex, handleDecision }) {
     if (!deck || !deck[currentIndex]) return null;
 
     const currentPlace = deck[currentIndex];
+    // 
+    const parkingBadge = getParkingBadge(currentPlace.parking);
+    const accessibilityBadge = getAccessibilityBadge(currentPlace.accessibility_notes);
+    // 
 
     return (
         <div className="w-full h-full md:h-[clamp(400px,65vh,550px)] flex flex-col lg:flex-row bg-surface-card rounded-4xl border border-ink-faint/15 shadow-xl overflow-hidden">
             {/* Image */}
-            <div className="h-52 lg:h-auto w-full lg:w-1/2 relative bg-black overflow-hidden select-none shrink-0">
+            <div className="h-48 lg:h-auto w-full lg:w-2/5 relative bg-black overflow-hidden select-none shrink-0">
                 <img
+                    loading="lazy"
                     src={currentPlace.image_url}
                     alt={currentPlace.name}
                     className="absolute inset-0 w-full h-full object-cover"
@@ -37,7 +97,30 @@ export default function Card({ deck, currentIndex, handleDecision }) {
             </div>
 
             {/* main text Content */}
-            <div className="flex-1 min-h-0 p-6 md:p-8 flex flex-col justify-between overflow-hidden">
+            <div className="flex-1 min-h-0 p-6 md:p-8 flex flex-col justify-between overflow-hidden relative">
+
+                {/* Corner badges: parking / accessibility */}
+                {(parkingBadge || accessibilityBadge) && (
+                    <div className="absolute top-3 right-3 md:top-4 md:right-5 z-10 flex items-center gap-1.5">
+                        {parkingBadge && (
+                            <CornerBadge
+                                label={parkingBadge.label}
+                                Icon={parkingBadge.Icon}
+                                tone={parkingBadge.tone}
+                                showFee={parkingBadge.showFee}
+                            />
+                        )}
+                        {accessibilityBadge && (
+                            <CornerBadge
+                                label={accessibilityBadge.label}
+                                Icon={accessibilityBadge.Icon}
+                                tone={accessibilityBadge.tone}
+                                showFee={accessibilityBadge.showFee}
+                            />
+                        )}
+                    </div>
+                )}
+
                 <div className="flex-1 min-h-0 overflow-y-auto space-y-4 md:space-y-4 pr-1 scrollbar-thin mb-4">
                     {/* body of text */}
                     <div className="text-xs font-mono font-bold tracking-widest text-ink-soft uppercase">
@@ -83,7 +166,7 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                     {/* Skip */}
                     <button
                         onClick={() => handleDecision('Skip')}
-                        className="w-16 h-16 rounded-full bg-ink-faint/40 text-ink-soft border border-ink-faint/10 flex items-center justify-center transition-all duration-200 hover:bg-danger-soft hover:text-danger hover:border-danger/30 hover:-translate-y-0.5 active:scale-90"
+                        className="size-14 md:size-16 rounded-full bg-ink-faint/40 text-ink-soft border border-ink-faint/10 flex items-center justify-center transition-all duration-200 hover:bg-danger-soft hover:text-danger hover:border-danger/30 hover:-translate-y-0.5 active:scale-90"
                         title="Skip"
                         aria-label="Skip"
                     >
@@ -96,7 +179,7 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                             onClick={(e) => {
                                 openDirections(currentPlace);
                             }}
-                            className="btn-primary-hero w-full h-14 text-base tracking-wide shadow-md transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 active:scale-[0.98] flex items-center justify-center gap-2"
+                            className="btn-primary-hero w-full h-12 md:h-14 text-sm md:text-base tracking-wide shadow-md transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 active:scale-[0.98] flex items-center justify-center gap-2"
                         >
                             <span>Check on Map</span>
                             <span className="text-base">🗺️</span>
@@ -106,7 +189,7 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                     {/* Save */}
                     <button
                         onClick={() => handleDecision('save')}
-                        className="w-16 h-16 rounded-full bg-surface-card border border-ink-faint/50 text-ink-soft flex items-center justify-center transition-all duration-200 hover:bg-accent-soft hover:text-accent hover:border-accent/40 hover:-translate-y-0.5 active:scale-90"
+                        className="size-14 md:size-16 rounded-full bg-surface-card border border-ink-faint/50 text-ink-soft flex items-center justify-center transition-all duration-200 hover:bg-accent-soft hover:text-accent hover:border-accent/40 hover:-translate-y-0.5 active:scale-90"
                         title="Save Adventure"
                         aria-label="Save"
                     >
