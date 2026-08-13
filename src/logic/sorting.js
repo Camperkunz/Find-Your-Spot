@@ -1,5 +1,4 @@
-// src/logic/sorting.js
-import { VIBE_MAPPING, DURATIONS, COMPANIONS } from './categories.js';
+import { VIBE_MAPPING } from './categories.js';
 
 export function filterDestinations({ destinations, city, vibe, duration, companion }) {
     if (!destinations || !destinations.length) return [];
@@ -10,8 +9,6 @@ export function filterDestinations({ destinations, city, vibe, duration, compani
     );
 
     const matchedCategories = VIBE_MAPPING[vibe] || [vibe];
-    const durationConfig = DURATIONS.find(d => d.id === duration);
-    const companionConfig = COMPANIONS.find(c => c.id === companion);
 
     const scoredPlaces = cityPlaces.map(place => {
         let score = 1; // Not empty anyway
@@ -21,7 +18,7 @@ export function filterDestinations({ destinations, city, vibe, duration, compani
             score += 5;
         }
 
-        // Tags 
+        // Tags
         const placeTags = place.tags || [];
         const placeActivities = place.recommended_activities || [];
 
@@ -34,18 +31,12 @@ export function filterDestinations({ destinations, city, vibe, duration, compani
         }
 
         // Duration
-        const allowedDurations = durationConfig?.matchValues || [duration];
-        if (allowedDurations.includes(place.recommended_duration)) {
+        if (place.duration === duration) {
             score += 5;
         }
 
         // Companion
-        const allowedCompanions = companionConfig?.matchValues || [companion];
-        const hasCompanionMatch = place.companions_fit?.some(fit =>
-            allowedCompanions.includes(fit)
-        );
-
-        if (hasCompanionMatch) {
+        if (place.companions?.includes(companion)) {
             score += 4;
         }
 

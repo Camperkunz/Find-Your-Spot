@@ -12,8 +12,8 @@
     "tags": [
       "nature",
       "lookout",
-      "dog-friendly",
-      "seasonal-colors",
+      "dog_friendly",
+      "seasonal_colors",
       "lakes"
     ],
     "description": "A massive forested park right on the city's edge, with lakes, the Eardley Escarpment cliffs, and dozens of trails for every fitness level.",
@@ -30,18 +30,18 @@
       "camera",
       "cash for parking"
     ],
-    "recommended_duration": "half day",
     "seasonal_notes": "Open year-round; Champlain Lookout is especially popular in September-October",
     "accessibility_notes": true,
     "parking": "paid",
-    "companions_fit": [
+    "verified": false,
+    "duration": "half_day",
+    "companions": [
       "solo",
       "couple",
       "friends",
       "family",
       "dog"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-luskville-falls",
@@ -55,7 +55,7 @@
     "category": "hiking",
     "tags": [
       "waterfall",
-      "steep-trail",
+      "steep_trail",
       "viewpoint"
     ],
     "description": "A steep but short trail alongside a small waterfall, leading to a panoramic view of the Ottawa Valley.",
@@ -69,17 +69,17 @@
       "water",
       "camera"
     ],
-    "recommended_duration": "2-3 hours",
     "seasonal_notes": "Best in spring (more water) and fall (foliage); can be slippery after rain",
     "accessibility_notes": false,
     "parking": "free",
-    "companions_fit": [
+    "verified": false,
+    "duration": "short",
+    "companions": [
       "solo",
       "couple",
       "friends",
       "dog"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-mer-bleue-bog",
@@ -93,8 +93,8 @@
     "category": "nature",
     "tags": [
       "boardwalk",
-      "unique-ecosystem",
-      "flat-trail",
+      "unique_ecosystem",
+      "flat_trail",
       "birdwatching"
     ],
     "description": "A unique ice-age bog with a wooden boardwalk trail crossing mossy hummocks, feeling like another planet.",
@@ -108,18 +108,18 @@
       "camera",
       "insect repellent (summer)"
     ],
-    "recommended_duration": "2-3 hours",
     "seasonal_notes": "Beautiful year-round, snowshoeing in winter",
     "accessibility_notes": true,
     "parking": "free",
-    "companions_fit": [
+    "verified": false,
+    "duration": "short",
+    "companions": [
       "solo",
       "couple",
       "friends",
       "family",
       "dog"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-canadian-museum-history",
@@ -135,8 +135,8 @@
       "museum",
       "indoor",
       "history",
-      "family-friendly",
-      "riverside-view"
+      "family_friendly",
+      "riverside_view"
     ],
     "description": "One of Canada's largest museums, with exhibits on Indigenous history and colonization, plus a view of Parliament Hill across the river.",
     "why_visit_today": "A great option on a rainy or cold day, without giving up a view of the city.",
@@ -148,17 +148,17 @@
     "what_to_bring": [
       "comfortable shoes"
     ],
-    "recommended_duration": "half day",
     "seasonal_notes": "Open year-round, hours may vary by season",
     "accessibility_notes": true,
     "parking": "paid",
-    "companions_fit": [
+    "verified": false,
+    "duration": "half_day",
+    "companions": [
       "solo",
       "couple",
       "friends",
       "family"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-national-gallery",
@@ -172,7 +172,7 @@
     "category": "art",
     "tags": [
       "indoor",
-      "contemporary-art",
+      "contemporary_art",
       "architecture",
       "downtown",
       "museum"
@@ -187,16 +187,16 @@
     "what_to_bring": [
       "comfortable shoes"
     ],
-    "recommended_duration": "2-3 hours",
     "seasonal_notes": "Open year-round",
     "accessibility_notes": true,
     "parking": "paid",
-    "companions_fit": [
+    "verified": false,
+    "duration": "short",
+    "companions": [
       "solo",
       "couple",
       "friends"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-wakefield-village",
@@ -212,7 +212,7 @@
       "small_town",
       "charming",
       "coffee",
-      "covered-bridge",
+      "covered_bridge",
       "riverside"
     ],
     "description": "A small picturesque village with a covered bridge, local cafes and shops, along the Gatineau River.",
@@ -227,18 +227,18 @@
       "cash",
       "camera"
     ],
-    "recommended_duration": "half day",
     "seasonal_notes": "Pleasant year-round, especially scenic in fall",
     "accessibility_notes": true,
     "parking": "free",
-    "companions_fit": [
+    "verified": false,
+    "duration": "half_day",
+    "companions": [
       "solo",
       "couple",
       "friends",
       "family",
       "dog"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-vincent-massey-park",
@@ -253,8 +253,8 @@
     "tags": [
       "riverside",
       "picnic",
-      "flat-trail",
-      "dog-friendly",
+      "flat_trail",
+      "dog_friendly",
       "relaxing"
     ],
     "description": "A calm park along the Rideau River with shaded picnic areas and easy trails.",
@@ -268,18 +268,18 @@
       "picnic blanket",
       "snacks"
     ],
-    "recommended_duration": "2-3 hours",
     "seasonal_notes": "Best in spring, summer, and fall",
     "accessibility_notes": false,
     "parking": "free",
-    "companions_fit": [
+    "verified": false,
+    "duration": "short",
+    "companions": [
       "solo",
       "couple",
       "friends",
       "family",
       "dog"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-diefenbunker",
@@ -295,7 +295,7 @@
       "museum",
       "underground",
       "history",
-      "cold-war",
+      "cold_war",
       "unusual"
     ],
     "description": "An underground Cold War-era bunker turned museum — four floors below ground with original interiors.",
@@ -307,17 +307,17 @@
     "what_to_bring": [
       "light jacket (cool underground)"
     ],
-    "recommended_duration": "half day",
     "seasonal_notes": "Open year-round, booking a tour in advance is recommended",
     "accessibility_notes": false,
     "parking": "free",
-    "companions_fit": [
+    "verified": false,
+    "duration": "half_day",
+    "companions": [
       "solo",
       "couple",
       "friends",
       "family"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-omega-park",
@@ -332,8 +332,8 @@
     "tags": [
       "wildlife",
       "animals",
-      "drive-through",
-      "family-friendly",
+      "drive_through",
+      "family_friendly",
       "nature"
     ],
     "description": "A wildlife park where you can drive among free-roaming deer, bison, wolves, and bears.",
@@ -348,16 +348,16 @@
       "carrots (for feeding deer, sold on site)",
       "snacks"
     ],
-    "recommended_duration": "full day",
     "seasonal_notes": "Open year-round, animals are more active in the morning",
     "accessibility_notes": true,
     "parking": "free",
-    "companions_fit": [
+    "verified": false,
+    "duration": "full_day",
+    "companions": [
       "couple",
       "friends",
       "family"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-major-hill-park",
@@ -372,7 +372,7 @@
     "tags": [
       "viewpoint",
       "downtown",
-      "parliament-view",
+      "parliament_view",
       "free",
       "relaxing"
     ],
@@ -386,18 +386,18 @@
     "what_to_bring": [
       "camera"
     ],
-    "recommended_duration": "2-3 hours",
     "seasonal_notes": "Good year-round, especially at sunset",
     "accessibility_notes": true,
     "parking": "paid",
-    "companions_fit": [
+    "verified": false,
+    "duration": "short",
+    "companions": [
       "solo",
       "couple",
       "friends",
       "family",
       "dog"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-rideau-canal",
@@ -414,7 +414,7 @@
       "bike",
       "unesco",
       "water",
-      "skating-in-winter"
+      "skating_in_winter"
     ],
     "description": "A historic UNESCO canal with pathways for walking and cycling in summer, and the world's largest skating rink in winter.",
     "why_visit_today": "A versatile option any time of year — from a summer bike ride to winter skating.",
@@ -427,18 +427,18 @@
       "bike or skates depending on season",
       "water"
     ],
-    "recommended_duration": "2-3 hours",
     "seasonal_notes": "The skating rink is usually open January through late February, weather dependent",
     "accessibility_notes": true,
     "parking": "paid",
-    "companions_fit": [
+    "verified": false,
+    "duration": "short",
+    "companions": [
       "solo",
       "couple",
       "friends",
       "family",
       "dog"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-britannia-beach",
@@ -469,18 +469,18 @@
       "towel",
       "sunscreen"
     ],
-    "recommended_duration": "half day",
     "seasonal_notes": "Swimming usually June through August, depending on water quality",
     "accessibility_notes": false,
     "parking": "free",
-    "companions_fit": [
+    "verified": false,
+    "duration": "half_day",
+    "companions": [
       "solo",
       "couple",
       "friends",
       "family",
       "dog"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-fitzroy-provincial-park",
@@ -493,8 +493,8 @@
     "travel_time_min": 45,
     "category": "hiking",
     "tags": [
-      "provincial-park",
-      "river-confluence",
+      "provincial_park",
+      "river_confluence",
       "camping",
       "hiking",
       "nature"
@@ -512,17 +512,17 @@
       "swimsuit",
       "cash for entry"
     ],
-    "recommended_duration": "full day",
     "seasonal_notes": "Open in warm season, usually May through October",
     "accessibility_notes": true,
     "parking": "paid",
-    "companions_fit": [
+    "verified": false,
+    "duration": "full_day",
+    "companions": [
       "couple",
       "friends",
       "family",
       "dog"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-arboretum",
@@ -537,7 +537,7 @@
     "tags": [
       "botanical",
       "quiet",
-      "flat-trail",
+      "flat_trail",
       "free"
     ],
     "description": "A quiet arboretum with hundreds of tree and shrub species on the grounds of the Central Experimental Farm.",
@@ -550,18 +550,18 @@
     "what_to_bring": [
       "picnic blanket"
     ],
-    "recommended_duration": "2-3 hours",
     "seasonal_notes": "Especially beautiful in spring (blossoms) and fall (foliage)",
     "accessibility_notes": true,
     "parking": "free",
-    "companions_fit": [
+    "verified": false,
+    "duration": "short",
+    "companions": [
       "solo",
       "couple",
       "friends",
       "family",
       "dog"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-pink-lake",
@@ -575,8 +575,8 @@
     "category": "hiking",
     "tags": [
       "lake",
-      "unique-ecosystem",
-      "loop-trail",
+      "unique_ecosystem",
+      "loop_trail",
       "viewpoint"
     ],
     "description": "A loop trail around a rare meromictic lake with an unusual green-turquoise water color.",
@@ -590,17 +590,17 @@
       "water",
       "camera"
     ],
-    "recommended_duration": "2-3 hours",
     "seasonal_notes": "Swimming is prohibited (fragile ecosystem), best in spring-fall",
     "accessibility_notes": false,
     "parking": "paid",
-    "companions_fit": [
+    "verified": false,
+    "duration": "short",
+    "companions": [
       "solo",
       "couple",
       "friends",
       "dog"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-byward-market",
@@ -615,7 +615,7 @@
     "tags": [
       "market",
       "coffee",
-      "local-food",
+      "local_food",
       "downtown",
       "food"
     ],
@@ -631,17 +631,17 @@
       "cash",
       "appetite"
     ],
-    "recommended_duration": "2-3 hours",
     "seasonal_notes": "Open year-round, more street vendors in summer",
     "accessibility_notes": true,
     "parking": "paid",
-    "companions_fit": [
+    "verified": false,
+    "duration": "short",
+    "companions": [
       "solo",
       "couple",
       "friends",
       "family"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-champlain-lookout",
@@ -657,8 +657,8 @@
       "viewpoint",
       "scenic_drive",
       "sunset",
-      "fall-colors",
-      "easy-access"
+      "fall_colors",
+      "easy_access"
     ],
     "description": "One of the region's best lookout points, with a view of the Ottawa Valley from the Eardley Escarpment.",
     "why_visit_today": "Views just steps from the parking lot — minimal effort, maximum payoff.",
@@ -671,18 +671,18 @@
       "camera",
       "light jacket (windy)"
     ],
-    "recommended_duration": "2-3 hours",
     "seasonal_notes": "Peak popularity late September/early October for fall foliage",
     "accessibility_notes": true,
     "parking": "free",
-    "companions_fit": [
+    "verified": false,
+    "duration": "short",
+    "companions": [
       "solo",
       "couple",
       "friends",
       "family",
       "dog"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-almonte",
@@ -713,18 +713,18 @@
       "cash",
       "camera"
     ],
-    "recommended_duration": "half day",
     "seasonal_notes": "Pleasant year-round",
     "accessibility_notes": true,
     "parking": "free",
-    "companions_fit": [
+    "verified": false,
+    "duration": "half_day",
+    "companions": [
       "solo",
       "couple",
       "friends",
       "family",
       "dog"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-canada-agriculture-museum",
@@ -738,9 +738,9 @@
     "category": "art",
     "tags": [
       "museum",
-      "family-friendly",
-      "farm-animals",
-      "indoor-outdoor"
+      "family_friendly",
+      "farm_animals",
+      "indoor_outdoor"
     ],
     "description": "A working farm-museum within city limits, where you can see cows, sheep, and horses and learn about Canadian agriculture.",
     "why_visit_today": "A great option for families with kids — a mix of animals and educational content.",
@@ -752,16 +752,16 @@
     "what_to_bring": [
       "comfortable shoes"
     ],
-    "recommended_duration": "2-3 hours",
     "seasonal_notes": "Open year-round",
     "accessibility_notes": true,
     "parking": "paid",
-    "companions_fit": [
+    "verified": false,
+    "duration": "short",
+    "companions": [
       "couple",
       "friends",
       "family"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-shirleys-bay",
@@ -777,7 +777,7 @@
       "quiet",
       "birdwatching",
       "waterfront",
-      "off-the-radar"
+      "off_the_radar"
     ],
     "description": "A little-known waterfront area on the Ottawa River, popular with birdwatchers and anyone looking for quiet.",
     "why_visit_today": "A genuine hidden gem without crowds — great for anyone tired of touristy trails.",
@@ -790,16 +790,16 @@
       "binoculars",
       "insect repellent"
     ],
-    "recommended_duration": "2-3 hours",
     "seasonal_notes": "Best birdwatching in spring and fall",
     "accessibility_notes": false,
     "parking": "free",
-    "companions_fit": [
+    "verified": false,
+    "duration": "short",
+    "companions": [
       "solo",
       "couple",
       "dog"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-king-mountain-trail",
@@ -812,8 +812,8 @@
     "travel_time_min": 28,
     "category": "hiking",
     "tags": [
-      "moderate-hike",
-      "loop-trail",
+      "moderate_hike",
+      "loop_trail",
       "viewpoint",
       "escarpment"
     ],
@@ -828,17 +828,17 @@
       "water",
       "snacks"
     ],
-    "recommended_duration": "half day",
     "seasonal_notes": "Best spring through fall; can be muddy after rain",
     "accessibility_notes": false,
     "parking": "free",
-    "companions_fit": [
+    "verified": false,
+    "duration": "half_day",
+    "companions": [
       "solo",
       "couple",
       "friends",
       "dog"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-wolf-trail",
@@ -852,9 +852,9 @@
     "category": "hiking",
     "tags": [
       "forest",
-      "loop-trail",
+      "loop_trail",
       "moderate",
-      "seasonal-colors"
+      "seasonal_colors"
     ],
     "description": "A forested loop trail through mixed woods, one of the classic short-to-medium Gatineau Park hikes.",
     "why_visit_today": "A quieter alternative to the busier Gatineau Park trails, especially on weekends.",
@@ -866,17 +866,17 @@
       "hiking shoes",
       "water"
     ],
-    "recommended_duration": "2-3 hours",
     "seasonal_notes": "Beautiful in fall for foliage",
     "accessibility_notes": false,
     "parking": "free",
-    "companions_fit": [
+    "verified": false,
+    "duration": "short",
+    "companions": [
       "solo",
       "couple",
       "friends",
       "dog"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-hogs-back-falls",
@@ -890,8 +890,8 @@
     "category": "nature",
     "tags": [
       "waterfall",
-      "easy-access",
-      "urban-nature",
+      "easy_access",
+      "urban_nature",
       "free",
       "relaxing"
     ],
@@ -904,18 +904,18 @@
     "what_to_bring": [
       "camera"
     ],
-    "recommended_duration": "2-3 hours",
     "seasonal_notes": "Most dramatic during spring snowmelt",
     "accessibility_notes": true,
     "parking": "free",
-    "companions_fit": [
+    "verified": false,
+    "duration": "short",
+    "companions": [
       "solo",
       "couple",
       "friends",
       "family",
       "dog"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-mackenzie-king-estate",
@@ -930,7 +930,7 @@
     "tags": [
       "historic",
       "gardens",
-      "easy-trail",
+      "easy_trail",
       "ruins"
     ],
     "description": "Former estate of Canada's longest-serving Prime Minister, now a park with gardens, ornamental ruins, and easy walking trails.",
@@ -944,18 +944,18 @@
       "camera",
       "picnic blanket"
     ],
-    "recommended_duration": "half day",
     "seasonal_notes": "Tearoom typically open in summer months",
     "accessibility_notes": true,
     "parking": "paid",
-    "companions_fit": [
+    "verified": false,
+    "duration": "half_day",
+    "companions": [
       "solo",
       "couple",
       "friends",
       "family",
       "dog"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-carbide-willson-ruins",
@@ -971,7 +971,7 @@
       "ruins",
       "waterfall",
       "photography",
-      "moderate-hike"
+      "moderate_hike"
     ],
     "description": "Overgrown stone ruins of an old fertilizer plant beside a small waterfall, hidden inside Gatineau Park.",
     "why_visit_today": "One of the most photogenic hidden spots in the area — a mix of nature reclaiming history.",
@@ -984,17 +984,17 @@
       "camera",
       "water"
     ],
-    "recommended_duration": "2-3 hours",
     "seasonal_notes": "Best in spring/summer/fall, trail can be wet",
     "accessibility_notes": false,
     "parking": "free",
-    "companions_fit": [
+    "verified": false,
+    "duration": "short",
+    "companions": [
       "solo",
       "couple",
       "friends",
       "dog"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-lac-philippe",
@@ -1026,17 +1026,17 @@
       "towel",
       "cash for rentals"
     ],
-    "recommended_duration": "full day",
     "seasonal_notes": "Best June through September",
     "accessibility_notes": false,
     "parking": "paid",
-    "companions_fit": [
+    "verified": false,
+    "duration": "full_day",
+    "companions": [
       "couple",
       "friends",
       "family",
       "dog"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-andrew-haydon-park",
@@ -1051,8 +1051,8 @@
     "tags": [
       "waterfront",
       "sunset",
-      "flat-trail",
-      "dog-friendly",
+      "flat_trail",
+      "dog_friendly",
       "relaxing"
     ],
     "description": "A riverside park with sweeping lawns, a pond, and one of the best sunset views over the Ottawa River.",
@@ -1066,18 +1066,18 @@
       "picnic blanket",
       "camera"
     ],
-    "recommended_duration": "2-3 hours",
     "seasonal_notes": "Best spring through fall",
     "accessibility_notes": true,
     "parking": "free",
-    "companions_fit": [
+    "verified": false,
+    "duration": "short",
+    "companions": [
       "solo",
       "couple",
       "friends",
       "family",
       "dog"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-merrickville",
@@ -1107,18 +1107,18 @@
       "cash",
       "camera"
     ],
-    "recommended_duration": "full day",
     "seasonal_notes": "Pleasant year-round, especially lively in summer",
     "accessibility_notes": true,
     "parking": "free",
-    "companions_fit": [
+    "verified": false,
+    "duration": "full_day",
+    "companions": [
       "solo",
       "couple",
       "friends",
       "family",
       "dog"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-dows-lake",
@@ -1135,7 +1135,7 @@
       "water",
       "cafe",
       "paddleboats",
-      "flat-trail"
+      "flat_trail"
     ],
     "description": "A small urban lake connected to the Rideau Canal, with pedal boat rentals and cafes right on the water.",
     "why_visit_today": "An easy, relaxed spot for coffee and a lakeside walk without leaving the city.",
@@ -1147,18 +1147,18 @@
     "what_to_bring": [
       "cash for boat rental"
     ],
-    "recommended_duration": "2-3 hours",
     "seasonal_notes": "Pedal boats typically available May through September",
     "accessibility_notes": true,
     "parking": "paid",
-    "companions_fit": [
+    "verified": false,
+    "duration": "short",
+    "companions": [
       "solo",
       "couple",
       "friends",
       "family",
       "dog"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-mont-cascades",
@@ -1173,8 +1173,8 @@
     "tags": [
       "hiking",
       "adventure",
-      "waterpark-nearby",
-      "moderate-hike"
+      "waterpark_nearby",
+      "moderate_hike"
     ],
     "description": "Trails around a small mountain area near Cantley, with moderate hiking and a waterpark nearby in summer.",
     "why_visit_today": "Good combo destination if you want a hike with an option to cool off nearby afterward.",
@@ -1187,17 +1187,17 @@
       "water",
       "swimsuit (optional)"
     ],
-    "recommended_duration": "half day",
     "seasonal_notes": "Best spring through fall",
     "accessibility_notes": false,
     "parking": "free",
-    "companions_fit": [
+    "verified": false,
+    "duration": "half_day",
+    "companions": [
       "couple",
       "friends",
       "family",
       "dog"
-    ],
-    "verified": false
+    ]
   },
   {
     "id": "ottawa-rockcliffe-lookout",
@@ -1214,7 +1214,7 @@
       "scenic_drive",
       "sunset",
       "free",
-      "easy-access"
+      "easy_access"
     ],
     "description": "A lookout over the Ottawa River and Gatineau Hills, tucked inside the leafy Rockcliffe Park neighborhood.",
     "why_visit_today": "A quiet, uncrowded view spot for a quick evening stop.",
@@ -1226,17 +1226,17 @@
     "what_to_bring": [
       "camera"
     ],
-    "recommended_duration": "2-3 hours",
     "seasonal_notes": "Pleasant year-round",
     "accessibility_notes": true,
     "parking": "free",
-    "companions_fit": [
+    "verified": false,
+    "duration": "short",
+    "companions": [
       "solo",
       "couple",
       "friends",
       "family",
       "dog"
-    ],
-    "verified": false
+    ]
   }
 ]
