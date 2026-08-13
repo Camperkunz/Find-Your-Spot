@@ -58,19 +58,13 @@ export function filterDestinations({ destinations, city, vibe, duration, compani
             }
         }
 
-        // 
+        // Distance
         if (place.distance_km <= 10) score += 2;
         else if (place.distance_km <= 30) score += 1;
 
         // Family friendly
-        const accessNotes = (place.accessibility_notes || '').toLowerCase();
-        if (companion === "family") {
-            if (accessNotes.includes("accessible") || accessNotes.includes("wheelchair")) {
-                score += 3;
-            }
-            if (accessNotes.includes("steep") || accessNotes.includes("difficult")) {
-                score -= 4;
-            }
+        if (companion === "family" && typeof place.accessibility_notes === "boolean") {
+            score += place.accessibility_notes ? 3 : -4;
         }
 
         return {
