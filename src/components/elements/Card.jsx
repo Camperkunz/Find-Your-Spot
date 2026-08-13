@@ -1,61 +1,6 @@
 import { useEffect } from 'react';
-import { useAppContext } from '../../context/AppContext';
 import { openDirections } from '../../logic/maps';
-// 
-import { TbParkingCircleFilled } from "react-icons/tb";
-import { TbAccessibleFilled } from "react-icons/tb";
-import { TbAccessibleOff } from "react-icons/tb";
-import { TbCurrencyDollar } from "react-icons/tb";
-// 
-function getParkingBadge(parking) {
-    if (parking === 'paid') {
-        return { label: 'Paid parking', Icon: TbParkingCircleFilled, tone: 'paid', showFee: true };
-    }
-    if (parking === 'free') {
-        return { label: 'Free parking', Icon: TbParkingCircleFilled, tone: 'free', showFee: false };
-    }
-    return null;
-}
-
-function getAccessibilityBadge(accessibility_notes) {
-    if (accessibility_notes === true) {
-        return { label: 'Accessible', Icon: TbAccessibleFilled, tone: 'positive', showFee: false };
-    }
-    if (accessibility_notes === false) {
-        return { label: 'Not accessible', Icon: TbAccessibleOff, tone: 'negative', showFee: false };
-    }
-    return null;
-}
-// 
-const TONE_CLASSES = {
-    positive: 'text-accent',
-    negative: 'text-danger',
-    free: 'text-accent',
-    paid: 'text-amber-500',
-};
-
-// Logic of badge
-function CornerBadge({ label, Icon, tone, showFee }) {
-    return (
-        <span
-            title={label}
-            aria-label={label}
-            className={`relative flex items-center justify-center size-8 md:size-9 rounded-full ${TONE_CLASSES[tone] || 'text-accent'
-                }`}
-        >
-            {Icon && <Icon className="size-7 md:size-8" />}
-            {/* Small coin/dollar overlay in the corner, only for paid parking */}
-            {showFee && (
-                <span
-                    className="absolute -bottom-0.5 -right-1 flex items-center justify-center size-4 md:size-4 rounded-full bg-amber-500 text-white ring-2 ring-surface-card"
-                    aria-hidden="true"
-                >
-                    <TbCurrencyDollar className="w-2.5 h-2.5 md:w-3 md:h-3" strokeWidth={3} />
-                </span>
-            )}
-        </span>
-    );
-}
+import CardBadges from '../../utilis/CardBadges';
 
 export default function Card({ deck, currentIndex, handleDecision }) {
 
@@ -75,10 +20,6 @@ export default function Card({ deck, currentIndex, handleDecision }) {
     if (!deck || !deck[currentIndex]) return null;
 
     const currentPlace = deck[currentIndex];
-    // 
-    const parkingBadge = getParkingBadge(currentPlace.parking);
-    const accessibilityBadge = getAccessibilityBadge(currentPlace.accessibility_notes);
-    // 
 
     return (
         <div className="w-full h-full md:h-[clamp(400px,65vh,550px)] flex flex-col lg:flex-row bg-surface-card rounded-4xl border border-ink-faint/15 shadow-xl overflow-hidden">
@@ -96,30 +37,14 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                 </div>
             </div>
 
-            {/* main text Content */}
+            {/* Content */}
             <div className="flex-1 min-h-0 p-6 md:p-8 flex flex-col justify-between overflow-hidden relative">
 
-                {/* Corner badges: parking / accessibility */}
-                {(parkingBadge || accessibilityBadge) && (
-                    <div className="absolute top-3 right-3 md:top-4 md:right-5 z-10 flex items-center gap-1.5">
-                        {parkingBadge && (
-                            <CornerBadge
-                                label={parkingBadge.label}
-                                Icon={parkingBadge.Icon}
-                                tone={parkingBadge.tone}
-                                showFee={parkingBadge.showFee}
-                            />
-                        )}
-                        {accessibilityBadge && (
-                            <CornerBadge
-                                label={accessibilityBadge.label}
-                                Icon={accessibilityBadge.Icon}
-                                tone={accessibilityBadge.tone}
-                                showFee={accessibilityBadge.showFee}
-                            />
-                        )}
-                    </div>
-                )}
+                {/* Бейджи рендерятся одной лаконичной строчкой */}
+                <CardBadges
+                    parking={currentPlace.parking}
+                    accessibility={currentPlace.accessibility_notes}
+                />
 
                 <div className="flex-1 min-h-0 overflow-y-auto space-y-4 md:space-y-4 pr-1 scrollbar-thin mb-4">
                     {/* body of text */}
@@ -149,7 +74,7 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                             What to pack:
                         </span>
                         <div className="flex flex-wrap gap-1.5">
-                            {currentPlace.what_to_bring.map((item, idx) => (
+                            {currentPlace.what_to_bring?.map((item, idx) => (
                                 <span
                                     key={idx}
                                     className="bg-surface-muted/50 text-ink border border-ink-faint/10 text-xs px-2.5 py-1 rounded-pill capitalize font-medium"
@@ -161,7 +86,7 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                     </div>
                 </div>
 
-                {/* buttons */}
+                {/* Action Buttons */}
                 <div className="flex items-center gap-4 sm:gap-6 pt-4 border-t border-ink-faint/10 shrink-0">
                     {/* Skip */}
                     <button
@@ -176,9 +101,7 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                     {/* Let's Go */}
                     <div className="flex-1 flex flex-col items-center gap-1.5">
                         <button
-                            onClick={(e) => {
-                                openDirections(currentPlace);
-                            }}
+                            onClick={() => openDirections(currentPlace)}
                             className="btn-primary-hero w-full h-12 md:h-14 text-sm md:text-base tracking-wide shadow-md transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 active:scale-[0.98] flex items-center justify-center gap-2"
                         >
                             <span>Check on Map</span>
