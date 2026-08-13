@@ -4,7 +4,7 @@ import { DURATIONS, VIBES, COMPANIONS } from '../logic/categories.js';
 
 // Shared active/inactive styling for selectable option buttons (Duration, Vibe, Companion)
 const selectableBtn = (isActive) =>
-    `font-medium transition flex items-center gap-1.5 border ${isActive
+    `font-medium transition flex items-center justify-center gap-1.5 border select-none ${isActive
         ? 'bg-accent text-surface-card border-accent font-semibold shadow-md'
         : 'bg-surface-card text-ink border-surface-muted hover:border-ink-soft'
     }`;
@@ -33,7 +33,7 @@ export default function OnboardingStep({ onStart }) {
 
             {/* Duration */}
             <div className="space-y-3">
-                <label className="text-xs font-semibold text-ink-soft uppercase tracking-wider">
+                <label className="text-xs font-semibold text-ink-soft uppercase tracking-wider block">
                     How much time do you have?
                 </label>
                 <div className="grid grid-cols-2 gap-2">
@@ -43,7 +43,6 @@ export default function OnboardingStep({ onStart }) {
                             onClick={() => setDuration(item.id)}
                             className={`py-3 px-4 rounded-card text-sm text-left ${selectableBtn(duration === item.id)}`}
                         >
-                            <span>{item.icon}</span>
                             <span>{item.label}</span>
                         </button>
                     ))}
@@ -52,7 +51,7 @@ export default function OnboardingStep({ onStart }) {
 
             {/* Experience / Vibe */}
             <div className="space-y-3">
-                <label className="text-xs font-semibold text-ink-soft uppercase tracking-wider">
+                <label className="text-xs font-semibold text-ink-soft uppercase tracking-wider block">
                     What sounds good?
                 </label>
                 <div className="flex flex-wrap gap-2">
@@ -62,7 +61,7 @@ export default function OnboardingStep({ onStart }) {
                             onClick={() => setVibe(item.id)}
                             className={`py-2 px-4 rounded-pill text-sm ${selectableBtn(vibe === item.id)}`}
                         >
-                            <span>{item.icon}</span>
+                            {item.icon && <span>{item.icon}</span>}
                             <span>{item.label}</span>
                         </button>
                     ))}
@@ -71,7 +70,7 @@ export default function OnboardingStep({ onStart }) {
 
             {/* Companion */}
             <div className="space-y-3">
-                <label className="text-xs font-semibold text-ink-soft uppercase tracking-wider">
+                <label className="text-xs font-semibold text-ink-soft uppercase tracking-wider block">
                     Who is joining?
                 </label>
                 <div className="grid grid-cols-3 gap-2">
@@ -81,7 +80,7 @@ export default function OnboardingStep({ onStart }) {
                             onClick={() => setCompanion(item.id)}
                             className={`py-2.5 px-3 rounded-card text-sm ${selectableBtn(companion === item.id)}`}
                         >
-                            <span>{item.icon}</span>
+                            {item.icon && <span>{item.icon}</span>}
                             <span>{item.label}</span>
                         </button>
                     ))}
