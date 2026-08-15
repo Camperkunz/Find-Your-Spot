@@ -33,7 +33,9 @@
       "photography",
       "picnic",
       "swimming (summer)"
-    ]
+    ],
+    "latitude": 45.5019,
+    "longitude": -75.8344
   },
   {
     "id": "ottawa-luskville-falls",
@@ -64,7 +66,9 @@
     "activities": [
       "hiking",
       "photography"
-    ]
+    ],
+    "latitude": 45.5358,
+    "longitude": -75.9818
   },
   {
     "id": "ottawa-mer-bleue-bog",
@@ -98,7 +102,9 @@
       "walking",
       "photography",
       "birdwatching"
-    ]
+    ],
+    "latitude": 45.3941,
+    "longitude": -75.5097
   },
   {
     "id": "ottawa-canadian-museum-history",
@@ -132,7 +138,9 @@
       "museum visit",
       "photography",
       "art"
-    ]
+    ],
+    "latitude": 45.4295,
+    "longitude": -75.7092
   },
   {
     "id": "ottawa-national-gallery",
@@ -165,7 +173,9 @@
       "art viewing",
       "photography",
       "art"
-    ]
+    ],
+    "latitude": 45.4295,
+    "longitude": -75.6983
   },
   {
     "id": "ottawa-wakefield-village",
@@ -201,7 +211,9 @@
       "coffee",
       "shopping",
       "photography"
-    ]
+    ],
+    "latitude": 45.6375,
+    "longitude": -75.9238
   },
   {
     "id": "ottawa-vincent-massey-park",
@@ -236,7 +248,9 @@
       "picnic",
       "walking",
       "relaxing"
-    ]
+    ],
+    "latitude": 45.3858,
+    "longitude": -75.6881
   },
   {
     "id": "ottawa-diefenbunker",
@@ -269,7 +283,9 @@
     "activities": [
       "guided tour",
       "museum visit"
-    ]
+    ],
+    "latitude": 45.3524,
+    "longitude": -76.0475
   },
   {
     "id": "ottawa-omega-park",
@@ -302,7 +318,9 @@
       "wildlife watching",
       "driving tour",
       "hiking trails"
-    ]
+    ],
+    "latitude": 45.6708,
+    "longitude": -74.9536
   },
   {
     "id": "ottawa-major-hill-park",
@@ -337,7 +355,9 @@
       "walking",
       "photography",
       "picnic"
-    ]
+    ],
+    "latitude": 45.427,
+    "longitude": -75.698
   },
   {
     "id": "ottawa-rideau-canal",
@@ -372,7 +392,9 @@
       "walking",
       "cycling",
       "ice skating (winter)"
-    ]
+    ],
+    "latitude": 45.4222,
+    "longitude": -75.6936
   },
   {
     "id": "ottawa-britannia-beach",
@@ -407,7 +429,9 @@
       "swimming",
       "sunbathing",
       "picnic"
-    ]
+    ],
+    "latitude": 45.3622,
+    "longitude": -75.8017
   },
   {
     "id": "ottawa-fitzroy-provincial-park",
@@ -442,7 +466,9 @@
       "swimming",
       "picnic",
       "camping"
-    ]
+    ],
+    "latitude": 45.4746,
+    "longitude": -76.2163
   },
   {
     "id": "ottawa-arboretum",
@@ -476,7 +502,9 @@
       "walking",
       "picnic",
       "photography"
-    ]
+    ],
+    "latitude": 45.3892,
+    "longitude": -75.7061
   },
   {
     "id": "ottawa-pink-lake",
@@ -508,7 +536,9 @@
     "activities": [
       "hiking",
       "photography"
-    ]
+    ],
+    "latitude": 45.4673,
+    "longitude": -75.8037
   },
   {
     "id": "ottawa-byward-market",
@@ -543,7 +573,9 @@
       "shopping",
       "walking",
       "food"
-    ]
+    ],
+    "latitude": 45.4277,
+    "longitude": -75.6924
   },
   {
     "id": "ottawa-champlain-lookout",
@@ -578,7 +610,9 @@
       "photography",
       "short walk",
       "sunset watching"
-    ]
+    ],
+    "latitude": 45.51,
+    "longitude": -75.9123
   },
   {
     "id": "ottawa-almonte",
@@ -614,7 +648,9 @@
       "coffee",
       "shopping",
       "photography"
-    ]
+    ],
+    "latitude": 45.2255,
+    "longitude": -76.1953
   },
   {
     "id": "ottawa-canada-agriculture-museum",
@@ -646,7 +682,9 @@
       "animal viewing",
       "museum visit",
       "walking"
-    ]
+    ],
+    "latitude": 45.3853,
+    "longitude": -75.7067
   },
   {
     "id": "ottawa-shirleys-bay",
@@ -678,7 +716,9 @@
       "birdwatching",
       "walking",
       "relaxing"
-    ]
+    ],
+    "latitude": 45.3789,
+    "longitude": -75.8978
   },
   {
     "id": "ottawa-king-mountain-trail",
@@ -710,7 +750,9 @@
     "activities": [
       "hiking",
       "photography"
-    ]
+    ],
+    "latitude": 45.4912,
+    "longitude": -75.8625
   },
   {
     "id": "ottawa-wolf-trail",
@@ -742,7 +784,9 @@
     "activities": [
       "hiking",
       "photography"
-    ]
+    ],
+    "latitude": 45.519,
+    "longitude": -75.877
   },
   {
     "id": "ottawa-hogs-back-falls",
@@ -776,7 +820,9 @@
     "activities": [
       "walking",
       "photography"
-    ]
+    ],
+    "latitude": 45.3708,
+    "longitude": -75.6988
   },
   {
     "id": "ottawa-mackenzie-king-estate",
@@ -810,7 +856,9 @@
       "walking",
       "photography",
       "picnic"
-    ]
+    ],
+    "latitude": 45.4784,
+    "longitude": -75.8504
   },
   {
     "id": "ottawa-carbide-willson-ruins",
@@ -842,7 +890,9 @@
     "activities": [
       "hiking",
       "photography"
-    ]
+    ],
+    "latitude": 45.5133,
+    "longitude": -75.853
   },
   {
     "id": "ottawa-lac-philippe",
@@ -877,7 +927,9 @@
       "canoeing",
       "hiking",
       "picnic"
-    ]
+    ],
+    "latitude": 45.6033,
+    "longitude": -75.9922
   },
   {
     "id": "ottawa-andrew-haydon-park",
@@ -912,7 +964,9 @@
       "walking",
       "picnic",
       "photography"
-    ]
+    ],
+    "latitude": 45.3508,
+    "longitude": -75.8278
   },
   {
     "id": "ottawa-merrickville",
@@ -947,7 +1001,9 @@
       "walking",
       "shopping",
       "photography"
-    ]
+    ],
+    "latitude": 44.9168,
+    "longitude": -75.8384
   },
   {
     "id": "ottawa-dows-lake",
@@ -982,7 +1038,9 @@
       "walking",
       "coffee",
       "pedal boating"
-    ]
+    ],
+    "latitude": 45.397,
+    "longitude": -75.7008
   },
   {
     "id": "ottawa-mont-cascades",
@@ -1014,7 +1072,9 @@
     "activities": [
       "hiking",
       "photography"
-    ]
+    ],
+    "latitude": 45.5882,
+    "longitude": -75.8625
   },
   {
     "id": "ottawa-rockcliffe-lookout",
@@ -1049,7 +1109,9 @@
       "photography",
       "short walk",
       "sunset watching"
-    ]
+    ],
+    "latitude": 45.4523,
+    "longitude": -75.6888
   },
   {
     "id": "ottawa-dao-cafe",
@@ -1082,7 +1144,9 @@
       "coffee",
       "dessert tasting",
       "photography"
-    ]
+    ],
+    "latitude": 45.3571,
+    "longitude": -75.7358
   },
   {
     "id": "ottawa-les-moulins-la-fayette",
@@ -1115,6 +1179,8 @@
       "coffee",
       "pastries",
       "breakfast"
-    ]
+    ],
+    "latitude": 45.4045,
+    "longitude": -75.7225
   }
 ]
