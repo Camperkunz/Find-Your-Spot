@@ -1050,5 +1050,71 @@
       "short walk",
       "sunset watching"
     ]
+  },
+  {
+    "id": "ottawa-dao-cafe",
+    "name": "DAO Bake & Sip Cafe",
+    "city_base": "Ottawa",
+    "region": "Ottawa, Ontario",
+    "address": "1558 Merivale Rd Unit 102, Ottawa, ON K2G 3J9",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnvfESSNWsTsI3em73ptGDWnNDkDwVj4aShQXNmeuM9Q&s=10",
+    "distance_km": 12,
+    "travel_time_min": 18,
+    "category": "food",
+    "tags": [
+      "bakery",
+      "dessert",
+      "coffee",
+      "euro_asian"
+    ],
+    "description": "A trendy Euro-Asian bakery and cafe known for colourful pastries, Japanese-style cheese tarts, and specialty macarons, alongside coffees and fruit teas.",
+    "accessibility_notes": true,
+    "parking": "free",
+    "duration": "short",
+    "companions": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "why": "A popular spot in Ottawa for Instagram-worthy desserts and specialty drinks, great for a sweet stop.",
+    "activities": [
+      "coffee",
+      "dessert tasting",
+      "photography"
+    ]
+  },
+  {
+    "id": "ottawa-les-moulins-la-fayette",
+    "name": "Les Moulins La Fayette",
+    "city_base": "Ottawa",
+    "region": "Ottawa, Ontario",
+    "address": "1000 Wellington St W Unit 103, Ottawa, ON K1Y 2X9",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz-lr8GneXKj-pWCcnnfRYGVueS0xYCNuCNstqPo3fBg&s=10",
+    "distance_km": 4,
+    "travel_time_min": 10,
+    "category": "food",
+    "tags": [
+      "bakery",
+      "french",
+      "pastries",
+      "coffee"
+    ],
+    "description": "A French artisan bakery and cafe in Hintonburg known for its croissants, sandwiches, and baked goods made in the French tradition since 1999.",
+    "accessibility_notes": true,
+    "parking": "paid",
+    "duration": "short",
+    "companions": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "why": "Considered by many the go-to French bakery in Ottawa, great for a coffee and pastry stop while exploring Hintonburg.",
+    "activities": [
+      "coffee",
+      "pastries",
+      "breakfast"
+    ]
   }
 ]
