@@ -63,17 +63,17 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                             Why today
                         </span>
                         <p className="text-sm text-ink italic font-medium mt-0.5 leading-snug">
-                            “{currentPlace.why_visit_today}”
+                            “{currentPlace.why}”
                         </p>
                     </div>
 
-                    {/* What to pack */}
+                    {/* Activities */}
                     <div className="space-y-1.5 pt-1">
                         <span className="text-xs font-bold text-ink-soft uppercase tracking-wider block">
-                            What to pack:
+                            Things to do:
                         </span>
                         <div className="flex flex-wrap gap-1.5">
-                            {currentPlace.what_to_bring?.map((item, idx) => (
+                            {currentPlace.activities?.map((item, idx) => (
                                 <span
                                     key={idx}
                                     className="bg-surface-muted/50 text-ink border border-ink-faint/10 text-xs px-2.5 py-1 rounded-pill capitalize font-medium"

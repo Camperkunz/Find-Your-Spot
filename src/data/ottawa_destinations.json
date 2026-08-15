@@ -17,23 +17,8 @@
       "lakes"
     ],
     "description": "A massive forested park right on the city's edge, with lakes, the Eardley Escarpment cliffs, and dozens of trails for every fitness level.",
-    "why_visit_today": "In fall this is one of the best spots for colorful foliage in the entire National Capital Region.",
-    "recommended_activities": [
-      "hiking",
-      "photography",
-      "picnic",
-      "swimming (summer)"
-    ],
-    "what_to_bring": [
-      "hiking shoes",
-      "water",
-      "camera",
-      "cash for parking"
-    ],
-    "seasonal_notes": "Open year-round; Champlain Lookout is especially popular in September-October",
     "accessibility_notes": true,
     "parking": "paid",
-    "verified": false,
     "duration": "half_day",
     "companions": [
       "solo",
@@ -41,6 +26,13 @@
       "friends",
       "family",
       "dog"
+    ],
+    "why": "In fall this is one of the best spots for colorful foliage in the entire National Capital Region.",
+    "activities": [
+      "hiking",
+      "photography",
+      "picnic",
+      "swimming (summer)"
     ]
   },
   {
@@ -59,26 +51,19 @@
       "viewpoint"
     ],
     "description": "A steep but short trail alongside a small waterfall, leading to a panoramic view of the Ottawa Valley.",
-    "why_visit_today": "A great option if you want a physical challenge rewarded with a view from the top in just a couple hours.",
-    "recommended_activities": [
-      "hiking",
-      "photography"
-    ],
-    "what_to_bring": [
-      "hiking shoes",
-      "water",
-      "camera"
-    ],
-    "seasonal_notes": "Best in spring (more water) and fall (foliage); can be slippery after rain",
     "accessibility_notes": false,
     "parking": "free",
-    "verified": false,
     "duration": "short",
     "companions": [
       "solo",
       "couple",
       "friends",
       "dog"
+    ],
+    "why": "A great option if you want a physical challenge rewarded with a view from the top in just a couple hours.",
+    "activities": [
+      "hiking",
+      "photography"
     ]
   },
   {
@@ -98,20 +83,8 @@
       "birdwatching"
     ],
     "description": "A unique ice-age bog with a wooden boardwalk trail crossing mossy hummocks, feeling like another planet.",
-    "why_visit_today": "An easy flat walk for anyone who wants an unusual landscape without much physical effort.",
-    "recommended_activities": [
-      "walking",
-      "photography",
-      "birdwatching"
-    ],
-    "what_to_bring": [
-      "camera",
-      "insect repellent (summer)"
-    ],
-    "seasonal_notes": "Beautiful year-round, snowshoeing in winter",
     "accessibility_notes": true,
     "parking": "free",
-    "verified": false,
     "duration": "short",
     "companions": [
       "solo",
@@ -119,6 +92,12 @@
       "friends",
       "family",
       "dog"
+    ],
+    "why": "An easy flat walk for anyone who wants an unusual landscape without much physical effort.",
+    "activities": [
+      "walking",
+      "photography",
+      "birdwatching"
     ]
   },
   {
@@ -139,25 +118,20 @@
       "riverside_view"
     ],
     "description": "One of Canada's largest museums, with exhibits on Indigenous history and colonization, plus a view of Parliament Hill across the river.",
-    "why_visit_today": "A great option on a rainy or cold day, without giving up a view of the city.",
-    "recommended_activities": [
-      "museum visit",
-      "photography",
-      "art"
-    ],
-    "what_to_bring": [
-      "comfortable shoes"
-    ],
-    "seasonal_notes": "Open year-round, hours may vary by season",
     "accessibility_notes": true,
     "parking": "paid",
-    "verified": false,
     "duration": "half_day",
     "companions": [
       "solo",
       "couple",
       "friends",
       "family"
+    ],
+    "why": "A great option on a rainy or cold day, without giving up a view of the city.",
+    "activities": [
+      "museum visit",
+      "photography",
+      "art"
     ]
   },
   {
@@ -178,24 +152,19 @@
       "museum"
     ],
     "description": "The national art gallery, known for its striking glass architecture and the giant spider sculpture Maman at the entrance.",
-    "why_visit_today": "A compact, inspiring trip in the heart of the city if you want culture without leaving town.",
-    "recommended_activities": [
-      "art viewing",
-      "photography",
-      "art"
-    ],
-    "what_to_bring": [
-      "comfortable shoes"
-    ],
-    "seasonal_notes": "Open year-round",
     "accessibility_notes": true,
     "parking": "paid",
-    "verified": false,
     "duration": "short",
     "companions": [
       "solo",
       "couple",
       "friends"
+    ],
+    "why": "A compact, inspiring trip in the heart of the city if you want culture without leaving town.",
+    "activities": [
+      "art viewing",
+      "photography",
+      "art"
     ]
   },
   {
@@ -216,21 +185,8 @@
       "riverside"
     ],
     "description": "A small picturesque village with a covered bridge, local cafes and shops, along the Gatineau River.",
-    "why_visit_today": "Perfect for an unhurried day of coffee, walking, and a Gatineau Park stop along the way.",
-    "recommended_activities": [
-      "walking",
-      "coffee",
-      "shopping",
-      "photography"
-    ],
-    "what_to_bring": [
-      "cash",
-      "camera"
-    ],
-    "seasonal_notes": "Pleasant year-round, especially scenic in fall",
     "accessibility_notes": true,
     "parking": "free",
-    "verified": false,
     "duration": "half_day",
     "companions": [
       "solo",
@@ -238,6 +194,13 @@
       "friends",
       "family",
       "dog"
+    ],
+    "why": "Perfect for an unhurried day of coffee, walking, and a Gatineau Park stop along the way.",
+    "activities": [
+      "walking",
+      "coffee",
+      "shopping",
+      "photography"
     ]
   },
   {
@@ -258,20 +221,8 @@
       "relaxing"
     ],
     "description": "A calm park along the Rideau River with shaded picnic areas and easy trails.",
-    "why_visit_today": "Good when you want relaxed time in nature without a long drive.",
-    "recommended_activities": [
-      "picnic",
-      "walking",
-      "relaxing"
-    ],
-    "what_to_bring": [
-      "picnic blanket",
-      "snacks"
-    ],
-    "seasonal_notes": "Best in spring, summer, and fall",
     "accessibility_notes": false,
     "parking": "free",
-    "verified": false,
     "duration": "short",
     "companions": [
       "solo",
@@ -279,6 +230,12 @@
       "friends",
       "family",
       "dog"
+    ],
+    "why": "Good when you want relaxed time in nature without a long drive.",
+    "activities": [
+      "picnic",
+      "walking",
+      "relaxing"
     ]
   },
   {
@@ -299,24 +256,19 @@
       "unusual"
     ],
     "description": "An underground Cold War-era bunker turned museum — four floors below ground with original interiors.",
-    "why_visit_today": "An unusual alternative to a regular museum, great for a rainy day and history buffs.",
-    "recommended_activities": [
-      "guided tour",
-      "museum visit"
-    ],
-    "what_to_bring": [
-      "light jacket (cool underground)"
-    ],
-    "seasonal_notes": "Open year-round, booking a tour in advance is recommended",
     "accessibility_notes": false,
     "parking": "free",
-    "verified": false,
     "duration": "half_day",
     "companions": [
       "solo",
       "couple",
       "friends",
       "family"
+    ],
+    "why": "An unusual alternative to a regular museum, great for a rainy day and history buffs.",
+    "activities": [
+      "guided tour",
+      "museum visit"
     ]
   },
   {
@@ -337,26 +289,19 @@
       "nature"
     ],
     "description": "A wildlife park where you can drive among free-roaming deer, bison, wolves, and bears.",
-    "why_visit_today": "One of the few ways to see Canadian wildlife up close without heading far north.",
-    "recommended_activities": [
-      "wildlife watching",
-      "driving tour",
-      "hiking trails"
-    ],
-    "what_to_bring": [
-      "camera",
-      "carrots (for feeding deer, sold on site)",
-      "snacks"
-    ],
-    "seasonal_notes": "Open year-round, animals are more active in the morning",
     "accessibility_notes": true,
     "parking": "free",
-    "verified": false,
     "duration": "full_day",
     "companions": [
       "couple",
       "friends",
       "family"
+    ],
+    "why": "One of the few ways to see Canadian wildlife up close without heading far north.",
+    "activities": [
+      "wildlife watching",
+      "driving tour",
+      "hiking trails"
     ]
   },
   {
@@ -377,19 +322,8 @@
       "relaxing"
     ],
     "description": "A green hill in the heart of the city with one of the best views of Parliament Hill and the Rideau Canal.",
-    "why_visit_today": "A quick way to catch a beautiful view and city atmosphere in about 20 minutes.",
-    "recommended_activities": [
-      "walking",
-      "photography",
-      "picnic"
-    ],
-    "what_to_bring": [
-      "camera"
-    ],
-    "seasonal_notes": "Good year-round, especially at sunset",
     "accessibility_notes": true,
     "parking": "paid",
-    "verified": false,
     "duration": "short",
     "companions": [
       "solo",
@@ -397,6 +331,12 @@
       "friends",
       "family",
       "dog"
+    ],
+    "why": "A quick way to catch a beautiful view and city atmosphere in about 20 minutes.",
+    "activities": [
+      "walking",
+      "photography",
+      "picnic"
     ]
   },
   {
@@ -417,20 +357,8 @@
       "skating_in_winter"
     ],
     "description": "A historic UNESCO canal with pathways for walking and cycling in summer, and the world's largest skating rink in winter.",
-    "why_visit_today": "A versatile option any time of year — from a summer bike ride to winter skating.",
-    "recommended_activities": [
-      "walking",
-      "cycling",
-      "ice skating (winter)"
-    ],
-    "what_to_bring": [
-      "bike or skates depending on season",
-      "water"
-    ],
-    "seasonal_notes": "The skating rink is usually open January through late February, weather dependent",
     "accessibility_notes": true,
     "parking": "paid",
-    "verified": false,
     "duration": "short",
     "companions": [
       "solo",
@@ -438,6 +366,12 @@
       "friends",
       "family",
       "dog"
+    ],
+    "why": "A versatile option any time of year — from a summer bike ride to winter skating.",
+    "activities": [
+      "walking",
+      "cycling",
+      "ice skating (winter)"
     ]
   },
   {
@@ -458,21 +392,8 @@
       "casual"
     ],
     "description": "An urban beach on the Ottawa River with sand, swimming areas, and grassy spots to relax.",
-    "why_visit_today": "A simple summer option if you want water and sun without a long drive.",
-    "recommended_activities": [
-      "swimming",
-      "sunbathing",
-      "picnic"
-    ],
-    "what_to_bring": [
-      "swimsuit",
-      "towel",
-      "sunscreen"
-    ],
-    "seasonal_notes": "Swimming usually June through August, depending on water quality",
     "accessibility_notes": false,
     "parking": "free",
-    "verified": false,
     "duration": "half_day",
     "companions": [
       "solo",
@@ -480,6 +401,12 @@
       "friends",
       "family",
       "dog"
+    ],
+    "why": "A simple summer option if you want water and sun without a long drive.",
+    "activities": [
+      "swimming",
+      "sunbathing",
+      "picnic"
     ]
   },
   {
@@ -500,28 +427,21 @@
       "nature"
     ],
     "description": "A provincial park at the confluence of the Ottawa and Madawaska rivers, with trails, a beach, and camping areas.",
-    "why_visit_today": "A good option for a calmer, less touristy nature day.",
-    "recommended_activities": [
-      "hiking",
-      "swimming",
-      "picnic",
-      "camping"
-    ],
-    "what_to_bring": [
-      "hiking shoes",
-      "swimsuit",
-      "cash for entry"
-    ],
-    "seasonal_notes": "Open in warm season, usually May through October",
     "accessibility_notes": true,
     "parking": "paid",
-    "verified": false,
     "duration": "full_day",
     "companions": [
       "couple",
       "friends",
       "family",
       "dog"
+    ],
+    "why": "A good option for a calmer, less touristy nature day.",
+    "activities": [
+      "hiking",
+      "swimming",
+      "picnic",
+      "camping"
     ]
   },
   {
@@ -541,19 +461,8 @@
       "free"
     ],
     "description": "A quiet arboretum with hundreds of tree and shrub species on the grounds of the Central Experimental Farm.",
-    "why_visit_today": "A relaxed walk nearly downtown, great for resetting after a busy week.",
-    "recommended_activities": [
-      "walking",
-      "picnic",
-      "photography"
-    ],
-    "what_to_bring": [
-      "picnic blanket"
-    ],
-    "seasonal_notes": "Especially beautiful in spring (blossoms) and fall (foliage)",
     "accessibility_notes": true,
     "parking": "free",
-    "verified": false,
     "duration": "short",
     "companions": [
       "solo",
@@ -561,6 +470,12 @@
       "friends",
       "family",
       "dog"
+    ],
+    "why": "A relaxed walk nearly downtown, great for resetting after a busy week.",
+    "activities": [
+      "walking",
+      "picnic",
+      "photography"
     ]
   },
   {
@@ -580,26 +495,19 @@
       "viewpoint"
     ],
     "description": "A loop trail around a rare meromictic lake with an unusual green-turquoise water color.",
-    "why_visit_today": "A short, moderate hike with a guaranteed beautiful water view.",
-    "recommended_activities": [
-      "hiking",
-      "photography"
-    ],
-    "what_to_bring": [
-      "hiking shoes",
-      "water",
-      "camera"
-    ],
-    "seasonal_notes": "Swimming is prohibited (fragile ecosystem), best in spring-fall",
     "accessibility_notes": false,
     "parking": "paid",
-    "verified": false,
     "duration": "short",
     "companions": [
       "solo",
       "couple",
       "friends",
       "dog"
+    ],
+    "why": "A short, moderate hike with a guaranteed beautiful water view.",
+    "activities": [
+      "hiking",
+      "photography"
     ]
   },
   {
@@ -620,27 +528,21 @@
       "food"
     ],
     "description": "A historic market with street vendors, local cafes, bakeries, and the famous BeaverTails pastries.",
-    "why_visit_today": "A quick way to soak up city atmosphere and grab something local to eat.",
-    "recommended_activities": [
-      "food tasting",
-      "shopping",
-      "walking",
-      "food"
-    ],
-    "what_to_bring": [
-      "cash",
-      "appetite"
-    ],
-    "seasonal_notes": "Open year-round, more street vendors in summer",
     "accessibility_notes": true,
     "parking": "paid",
-    "verified": false,
     "duration": "short",
     "companions": [
       "solo",
       "couple",
       "friends",
       "family"
+    ],
+    "why": "A quick way to soak up city atmosphere and grab something local to eat.",
+    "activities": [
+      "food tasting",
+      "shopping",
+      "walking",
+      "food"
     ]
   },
   {
@@ -661,20 +563,8 @@
       "easy_access"
     ],
     "description": "One of the region's best lookout points, with a view of the Ottawa Valley from the Eardley Escarpment.",
-    "why_visit_today": "Views just steps from the parking lot — minimal effort, maximum payoff.",
-    "recommended_activities": [
-      "photography",
-      "short walk",
-      "sunset watching"
-    ],
-    "what_to_bring": [
-      "camera",
-      "light jacket (windy)"
-    ],
-    "seasonal_notes": "Peak popularity late September/early October for fall foliage",
     "accessibility_notes": true,
     "parking": "free",
-    "verified": false,
     "duration": "short",
     "companions": [
       "solo",
@@ -682,6 +572,12 @@
       "friends",
       "family",
       "dog"
+    ],
+    "why": "Views just steps from the parking lot — minimal effort, maximum payoff.",
+    "activities": [
+      "photography",
+      "short walk",
+      "sunset watching"
     ]
   },
   {
@@ -702,21 +598,8 @@
       "shopping"
     ],
     "description": "A cozy town with historic stone buildings, a small waterfall right in the town center, and local shops.",
-    "why_visit_today": "A nice mix of architecture, water, and an unhurried day away from the city bustle.",
-    "recommended_activities": [
-      "walking",
-      "coffee",
-      "shopping",
-      "photography"
-    ],
-    "what_to_bring": [
-      "cash",
-      "camera"
-    ],
-    "seasonal_notes": "Pleasant year-round",
     "accessibility_notes": true,
     "parking": "free",
-    "verified": false,
     "duration": "half_day",
     "companions": [
       "solo",
@@ -724,6 +607,13 @@
       "friends",
       "family",
       "dog"
+    ],
+    "why": "A nice mix of architecture, water, and an unhurried day away from the city bustle.",
+    "activities": [
+      "walking",
+      "coffee",
+      "shopping",
+      "photography"
     ]
   },
   {
@@ -743,24 +633,19 @@
       "indoor_outdoor"
     ],
     "description": "A working farm-museum within city limits, where you can see cows, sheep, and horses and learn about Canadian agriculture.",
-    "why_visit_today": "A great option for families with kids — a mix of animals and educational content.",
-    "recommended_activities": [
-      "animal viewing",
-      "museum visit",
-      "walking"
-    ],
-    "what_to_bring": [
-      "comfortable shoes"
-    ],
-    "seasonal_notes": "Open year-round",
     "accessibility_notes": true,
     "parking": "paid",
-    "verified": false,
     "duration": "short",
     "companions": [
       "couple",
       "friends",
       "family"
+    ],
+    "why": "A great option for families with kids — a mix of animals and educational content.",
+    "activities": [
+      "animal viewing",
+      "museum visit",
+      "walking"
     ]
   },
   {
@@ -780,25 +665,19 @@
       "off_the_radar"
     ],
     "description": "A little-known waterfront area on the Ottawa River, popular with birdwatchers and anyone looking for quiet.",
-    "why_visit_today": "A genuine hidden gem without crowds — great for anyone tired of touristy trails.",
-    "recommended_activities": [
-      "birdwatching",
-      "walking",
-      "relaxing"
-    ],
-    "what_to_bring": [
-      "binoculars",
-      "insect repellent"
-    ],
-    "seasonal_notes": "Best birdwatching in spring and fall",
     "accessibility_notes": false,
     "parking": "free",
-    "verified": false,
     "duration": "short",
     "companions": [
       "solo",
       "couple",
       "dog"
+    ],
+    "why": "A genuine hidden gem without crowds — great for anyone tired of touristy trails.",
+    "activities": [
+      "birdwatching",
+      "walking",
+      "relaxing"
     ]
   },
   {
@@ -818,26 +697,19 @@
       "escarpment"
     ],
     "description": "One of Gatineau Park's most popular moderate loop hikes, ending at a lookout over the Ottawa Valley.",
-    "why_visit_today": "A well-loved trail that balances a real workout with a rewarding payoff view.",
-    "recommended_activities": [
-      "hiking",
-      "photography"
-    ],
-    "what_to_bring": [
-      "hiking shoes",
-      "water",
-      "snacks"
-    ],
-    "seasonal_notes": "Best spring through fall; can be muddy after rain",
     "accessibility_notes": false,
     "parking": "free",
-    "verified": false,
     "duration": "half_day",
     "companions": [
       "solo",
       "couple",
       "friends",
       "dog"
+    ],
+    "why": "A well-loved trail that balances a real workout with a rewarding payoff view.",
+    "activities": [
+      "hiking",
+      "photography"
     ]
   },
   {
@@ -857,25 +729,19 @@
       "seasonal_colors"
     ],
     "description": "A forested loop trail through mixed woods, one of the classic short-to-medium Gatineau Park hikes.",
-    "why_visit_today": "A quieter alternative to the busier Gatineau Park trails, especially on weekends.",
-    "recommended_activities": [
-      "hiking",
-      "photography"
-    ],
-    "what_to_bring": [
-      "hiking shoes",
-      "water"
-    ],
-    "seasonal_notes": "Beautiful in fall for foliage",
     "accessibility_notes": false,
     "parking": "free",
-    "verified": false,
     "duration": "short",
     "companions": [
       "solo",
       "couple",
       "friends",
       "dog"
+    ],
+    "why": "A quieter alternative to the busier Gatineau Park trails, especially on weekends.",
+    "activities": [
+      "hiking",
+      "photography"
     ]
   },
   {
@@ -896,18 +762,8 @@
       "relaxing"
     ],
     "description": "A small but powerful waterfall on the Rideau River, easily accessible right within the city.",
-    "why_visit_today": "Real waterfall energy without leaving Ottawa — great for a quick nature fix.",
-    "recommended_activities": [
-      "walking",
-      "photography"
-    ],
-    "what_to_bring": [
-      "camera"
-    ],
-    "seasonal_notes": "Most dramatic during spring snowmelt",
     "accessibility_notes": true,
     "parking": "free",
-    "verified": false,
     "duration": "short",
     "companions": [
       "solo",
@@ -915,6 +771,11 @@
       "friends",
       "family",
       "dog"
+    ],
+    "why": "Real waterfall energy without leaving Ottawa — great for a quick nature fix.",
+    "activities": [
+      "walking",
+      "photography"
     ]
   },
   {
@@ -934,20 +795,8 @@
       "ruins"
     ],
     "description": "Former estate of Canada's longest-serving Prime Minister, now a park with gardens, ornamental ruins, and easy walking trails.",
-    "why_visit_today": "A gentle walk that mixes history and nature — good for a slower-paced day.",
-    "recommended_activities": [
-      "walking",
-      "photography",
-      "picnic"
-    ],
-    "what_to_bring": [
-      "camera",
-      "picnic blanket"
-    ],
-    "seasonal_notes": "Tearoom typically open in summer months",
     "accessibility_notes": true,
     "parking": "paid",
-    "verified": false,
     "duration": "half_day",
     "companions": [
       "solo",
@@ -955,6 +804,12 @@
       "friends",
       "family",
       "dog"
+    ],
+    "why": "A gentle walk that mixes history and nature — good for a slower-paced day.",
+    "activities": [
+      "walking",
+      "photography",
+      "picnic"
     ]
   },
   {
@@ -974,26 +829,19 @@
       "moderate_hike"
     ],
     "description": "Overgrown stone ruins of an old fertilizer plant beside a small waterfall, hidden inside Gatineau Park.",
-    "why_visit_today": "One of the most photogenic hidden spots in the area — a mix of nature reclaiming history.",
-    "recommended_activities": [
-      "hiking",
-      "photography"
-    ],
-    "what_to_bring": [
-      "hiking shoes",
-      "camera",
-      "water"
-    ],
-    "seasonal_notes": "Best in spring/summer/fall, trail can be wet",
     "accessibility_notes": false,
     "parking": "free",
-    "verified": false,
     "duration": "short",
     "companions": [
       "solo",
       "couple",
       "friends",
       "dog"
+    ],
+    "why": "One of the most photogenic hidden spots in the area — a mix of nature reclaiming history.",
+    "activities": [
+      "hiking",
+      "photography"
     ]
   },
   {
@@ -1014,28 +862,21 @@
       "water"
     ],
     "description": "One of Gatineau Park's larger lakes, with sandy beaches, canoe rentals, and surrounding hiking trails.",
-    "why_visit_today": "A full-day nature escape combining swimming, paddling, and trails in one spot.",
-    "recommended_activities": [
-      "swimming",
-      "canoeing",
-      "hiking",
-      "picnic"
-    ],
-    "what_to_bring": [
-      "swimsuit",
-      "towel",
-      "cash for rentals"
-    ],
-    "seasonal_notes": "Best June through September",
     "accessibility_notes": false,
     "parking": "paid",
-    "verified": false,
     "duration": "full_day",
     "companions": [
       "couple",
       "friends",
       "family",
       "dog"
+    ],
+    "why": "A full-day nature escape combining swimming, paddling, and trails in one spot.",
+    "activities": [
+      "swimming",
+      "canoeing",
+      "hiking",
+      "picnic"
     ]
   },
   {
@@ -1056,20 +897,8 @@
       "relaxing"
     ],
     "description": "A riverside park with sweeping lawns, a pond, and one of the best sunset views over the Ottawa River.",
-    "why_visit_today": "A low-effort, high-reward spot for a relaxed evening walk and a great sunset.",
-    "recommended_activities": [
-      "walking",
-      "picnic",
-      "photography"
-    ],
-    "what_to_bring": [
-      "picnic blanket",
-      "camera"
-    ],
-    "seasonal_notes": "Best spring through fall",
     "accessibility_notes": true,
     "parking": "free",
-    "verified": false,
     "duration": "short",
     "companions": [
       "solo",
@@ -1077,6 +906,12 @@
       "friends",
       "family",
       "dog"
+    ],
+    "why": "A low-effort, high-reward spot for a relaxed evening walk and a great sunset.",
+    "activities": [
+      "walking",
+      "picnic",
+      "photography"
     ]
   },
   {
@@ -1097,20 +932,8 @@
       "charming"
     ],
     "description": "A well-preserved 19th-century town on the Rideau Canal, known as one of Canada's prettiest small towns.",
-    "why_visit_today": "A longer drive that pays off with historic charm, boutiques, and canal-side walks.",
-    "recommended_activities": [
-      "walking",
-      "shopping",
-      "photography"
-    ],
-    "what_to_bring": [
-      "cash",
-      "camera"
-    ],
-    "seasonal_notes": "Pleasant year-round, especially lively in summer",
     "accessibility_notes": true,
     "parking": "free",
-    "verified": false,
     "duration": "full_day",
     "companions": [
       "solo",
@@ -1118,6 +941,12 @@
       "friends",
       "family",
       "dog"
+    ],
+    "why": "A longer drive that pays off with historic charm, boutiques, and canal-side walks.",
+    "activities": [
+      "walking",
+      "shopping",
+      "photography"
     ]
   },
   {
@@ -1138,19 +967,8 @@
       "flat_trail"
     ],
     "description": "A small urban lake connected to the Rideau Canal, with pedal boat rentals and cafes right on the water.",
-    "why_visit_today": "An easy, relaxed spot for coffee and a lakeside walk without leaving the city.",
-    "recommended_activities": [
-      "walking",
-      "coffee",
-      "pedal boating"
-    ],
-    "what_to_bring": [
-      "cash for boat rental"
-    ],
-    "seasonal_notes": "Pedal boats typically available May through September",
     "accessibility_notes": true,
     "parking": "paid",
-    "verified": false,
     "duration": "short",
     "companions": [
       "solo",
@@ -1158,6 +976,12 @@
       "friends",
       "family",
       "dog"
+    ],
+    "why": "An easy, relaxed spot for coffee and a lakeside walk without leaving the city.",
+    "activities": [
+      "walking",
+      "coffee",
+      "pedal boating"
     ]
   },
   {
@@ -1177,26 +1001,19 @@
       "moderate_hike"
     ],
     "description": "Trails around a small mountain area near Cantley, with moderate hiking and a waterpark nearby in summer.",
-    "why_visit_today": "Good combo destination if you want a hike with an option to cool off nearby afterward.",
-    "recommended_activities": [
-      "hiking",
-      "photography"
-    ],
-    "what_to_bring": [
-      "hiking shoes",
-      "water",
-      "swimsuit (optional)"
-    ],
-    "seasonal_notes": "Best spring through fall",
     "accessibility_notes": false,
     "parking": "free",
-    "verified": false,
     "duration": "half_day",
     "companions": [
       "couple",
       "friends",
       "family",
       "dog"
+    ],
+    "why": "Good combo destination if you want a hike with an option to cool off nearby afterward.",
+    "activities": [
+      "hiking",
+      "photography"
     ]
   },
   {
@@ -1217,19 +1034,8 @@
       "easy_access"
     ],
     "description": "A lookout over the Ottawa River and Gatineau Hills, tucked inside the leafy Rockcliffe Park neighborhood.",
-    "why_visit_today": "A quiet, uncrowded view spot for a quick evening stop.",
-    "recommended_activities": [
-      "photography",
-      "short walk",
-      "sunset watching"
-    ],
-    "what_to_bring": [
-      "camera"
-    ],
-    "seasonal_notes": "Pleasant year-round",
     "accessibility_notes": true,
     "parking": "free",
-    "verified": false,
     "duration": "short",
     "companions": [
       "solo",
@@ -1237,6 +1043,12 @@
       "friends",
       "family",
       "dog"
+    ],
+    "why": "A quiet, uncrowded view spot for a quick evening stop.",
+    "activities": [
+      "photography",
+      "short walk",
+      "sunset watching"
     ]
   }
 ]

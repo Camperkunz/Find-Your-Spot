@@ -20,13 +20,8 @@ export function filterDestinations({ destinations, city, vibe, duration, compani
 
         // Tags
         const placeTags = place.tags || [];
-        const placeActivities = place.recommended_activities || [];
 
         if (placeTags.some(tag => tag === vibe || matchedCategories.includes(tag))) {
-            score += 4;
-        }
-
-        if (placeActivities.some(act => act === vibe || matchedCategories.includes(act))) {
             score += 4;
         }
 
@@ -42,7 +37,7 @@ export function filterDestinations({ destinations, city, vibe, duration, compani
 
         // Hidden Gems
         if (vibe === "hidden_gem") {
-            const text = `${place.description || ''} ${place.why_visit_today || ''}`.toLowerCase();
+            const text = `${place.description || ''} ${place.why || ''}`.toLowerCase();
             const keywords = ["unique", "charming", "local", "unusual", "hidden", "quiet", "off-the-radar", "secret"];
             if (keywords.some(word => text.includes(word))) {
                 score += 5;
