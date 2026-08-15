@@ -12,7 +12,7 @@ export default function WelcomeStep() {
                     You don't <br />need to plan.
                 </h2>
                 <p className="text-ink-soft text-base sm:text-lg mt-4">
-                    Stop scrolling through endless maps. Get one perfect idea and just go!
+                    Just go. Discover your next adventure across Canada. Find a spot and go!
                 </p>
             </div>
             {/* City Selector */}

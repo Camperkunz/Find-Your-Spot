@@ -8,7 +8,7 @@ export default function Header() {
         <header className="flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8 border-b border-surface-muted bg-surface shrink-0">
             <button onClick={() => setStep('welcome')} className="flex items-center cursor-pointer">
                 <h1 className="text-xl md:text-2xl font-bold text-accent">
-                    Where should I go?
+                    Find Your Spot
                 </h1>
             </button>
             {hasSaved && (
