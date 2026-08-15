@@ -53,7 +53,7 @@ export default function AdventureApp() {
   };
 
   // DECK step needs a wider container (for the Card component on lg screens)
-  const isWideStep = step === 'cards';
+  const isWideStep = step === 'cards' || step === 'saved';
 
   return (
     <Layout wide={isWideStep}>
