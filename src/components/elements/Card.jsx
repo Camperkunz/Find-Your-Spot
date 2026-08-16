@@ -5,6 +5,7 @@ import { preloadImages } from '../../utils/imagePreloader.js';
 
 export default function Card({ deck, currentIndex, handleDecision }) {
 
+    // Fetch and preload images for the next two cards 
     useEffect(() => {
         if (!deck) return;
 
@@ -20,7 +21,20 @@ export default function Card({ deck, currentIndex, handleDecision }) {
     const currentPlace = deck[currentIndex];
 
     return (
-        <div className="w-full h-full md:h-[clamp(400px,65vh,550px)] flex flex-col lg:flex-row bg-surface-card rounded-4xl border border-ink-faint/15 shadow-xl overflow-hidden">
+        <div className="w-full h-full md:h-[clamp(400px,65vh,550px)] flex flex-col lg:flex-row bg-surface-card rounded-4xl border border-ink-faint/15 shadow-xl overflow-hidden relative">
+
+            {/* Back arrow */}
+            {currentIndex > 0 && (
+                <button
+                    onClick={() => handleDecision('back')}
+                    className="absolute top-4 left-4 z-20 size-10 md:size-11 rounded-full bg-surface/80 backdrop-blur-md text-ink border border-ink-faint/50 flex items-center justify-center transition-all duration-200 hover:bg-surface hover:scale-105 active:scale-95 shadow-sm"
+                    title="Previous place"
+                    aria-label="Previous place"
+                >
+                    <span className="text-xl font-medium">←</span>
+                </button>
+            )}
+
             {/* Image */}
             <div className="h-48 lg:h-auto w-full lg:w-2/5 relative bg-black overflow-hidden select-none shrink-0">
                 <img
@@ -37,12 +51,14 @@ export default function Card({ deck, currentIndex, handleDecision }) {
 
             {/* Content */}
             <div className="flex-1 min-h-0 p-6 md:p-8 flex flex-col justify-between overflow-hidden relative">
+
                 <CardBadges
                     parking={currentPlace.parking}
                     accessibility={currentPlace.accessibility_notes}
                 />
 
                 <div className="flex-1 min-h-0 overflow-y-auto space-y-4 md:space-y-4 pr-1 scrollbar-thin mb-4">
+                    {/* body of text */}
                     <div className="text-xs font-mono font-bold tracking-widest text-ink-soft uppercase">
                         {currentPlace.region}
                     </div>
@@ -53,6 +69,7 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                     <p className="text-sm text-ink-soft leading-relaxed">
                         {currentPlace.description}
                     </p>
+                    {/* Why today */}
                     <div className="border-l-2 border-accent pl-3 py-0.5 my-2">
                         <span className="text-xs font-bold uppercase tracking-wider text-accent block">
                             Why today
@@ -62,6 +79,7 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                         </p>
                     </div>
 
+                    {/* Activities */}
                     <div className="space-y-1.5 pt-1">
                         <span className="text-xs font-bold text-ink-soft uppercase tracking-wider block">
                             Things to do:
@@ -81,6 +99,7 @@ export default function Card({ deck, currentIndex, handleDecision }) {
 
                 {/* Action Buttons */}
                 <div className="flex items-center gap-4 sm:gap-6 pt-4 border-t border-ink-faint/10 shrink-0">
+                    {/* Skip */}
                     <button
                         onClick={() => handleDecision('Skip')}
                         className="size-14 md:size-16 rounded-full bg-ink-faint/40 text-ink-soft border border-ink-faint/10 flex items-center justify-center transition-all duration-200 hover:bg-danger-soft hover:text-danger hover:border-danger/30 hover:-translate-y-0.5 active:scale-90"
@@ -90,6 +109,7 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                         <span className="text-xl font-bold">✕</span>
                     </button>
 
+                    {/* Let's Go */}
                     <div className="flex-1 flex flex-col items-center gap-1.5">
                         <button
                             onClick={() => openDirections(currentPlace)}
@@ -100,6 +120,7 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                         </button>
                     </div>
 
+                    {/* Save */}
                     <button
                         onClick={() => handleDecision('save')}
                         className="size-14 md:size-16 rounded-full bg-surface-card border border-ink-faint/50 text-ink-soft flex items-center justify-center transition-all duration-200 hover:bg-accent-soft hover:text-accent hover:border-accent/40 hover:-translate-y-0.5 active:scale-90"

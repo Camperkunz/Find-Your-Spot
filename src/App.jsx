@@ -46,8 +46,12 @@ export default function AdventureApp() {
         const place = deck[currentIndex];
         return prev.some((p) => p.id === place.id) ? prev : [...prev, place];
       });
+      setCurrentIndex((prev) => prev + 1);
+    } else if (action === 'back') {
+      setCurrentIndex((prev) => Math.max(0, prev - 1));
+    } else {
+      setCurrentIndex((prev) => prev + 1);
     }
-    setCurrentIndex((prev) => prev + 1);
   };
 
   const isWideStep = step === 'cards' || step === 'saved';
