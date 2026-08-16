@@ -6,13 +6,14 @@ const AppContext = createContext();
 const STORAGE_KEYS = {
     savedPlaces: 'savedPlaces',
     filters: 'filters',
+    userCoords: 'userCoords',
 };
 
 export function AppProvider({ children }) {
     // Steps
     const [step, setStep] = useState('welcome');
 
-    // Filters (restored from localStorage if present)
+    // Filters from localStorage
     const [city, setCity] = useState(() => {
         try {
             const stored = localStorage.getItem(STORAGE_KEYS.filters);
@@ -21,6 +22,17 @@ export function AppProvider({ children }) {
             return 'Ottawa';
         }
     });
+
+    // Geolocation from localStorage
+    const [userCoords, setUserCoords] = useState(() => {
+        try {
+            const stored = localStorage.getItem(STORAGE_KEYS.userCoords);
+            return stored ? JSON.parse(stored) : null;
+        } catch {
+            return null;
+        }
+    });
+
     const [duration, setDuration] = useState(() => {
         try {
             const stored = localStorage.getItem(STORAGE_KEYS.filters);
@@ -60,7 +72,7 @@ export function AppProvider({ children }) {
         }
     });
 
-    // Persist savedPlaces whenever it changes
+    // savedPlaces whenever it changes
     useEffect(() => {
         try {
             localStorage.setItem(STORAGE_KEYS.savedPlaces, JSON.stringify(savedPlaces));
@@ -69,7 +81,7 @@ export function AppProvider({ children }) {
         }
     }, [savedPlaces]);
 
-    // Persist filters whenever any of them changes
+    // Filters whenever any of them changes
     useEffect(() => {
         try {
             const filters = { city, duration, vibe, companion };
@@ -79,30 +91,33 @@ export function AppProvider({ children }) {
         }
     }, [city, duration, vibe, companion]);
 
+    // userCoords whenever it changes
+    useEffect(() => {
+        try {
+            if (userCoords) {
+                localStorage.setItem(STORAGE_KEYS.userCoords, JSON.stringify(userCoords));
+            } else {
+                localStorage.removeItem(STORAGE_KEYS.userCoords);
+            }
+        } catch (e) {
+            console.error('Failed to save coordinates to localStorage', e);
+        }
+    }, [userCoords]);
+
     const value = {
-        step,
-        setStep,
+        step, setStep,
 
-        city,
-        setCity,
+        city, setCity,
+        userCoords, setUserCoords,
 
-        duration,
-        setDuration,
+        duration, setDuration,
+        vibe, setVibe,
+        companion, setCompanion,
 
-        vibe,
-        setVibe,
+        deck, setDeck,
+        currentIndex, setCurrentIndex,
 
-        companion,
-        setCompanion,
-
-        deck,
-        setDeck,
-
-        currentIndex,
-        setCurrentIndex,
-
-        savedPlaces,
-        setSavedPlaces,
+        savedPlaces, setSavedPlaces,
     };
 
     return (
@@ -114,10 +129,8 @@ export function AppProvider({ children }) {
 
 export function useAppContext() {
     const context = useContext(AppContext);
-
     if (!context) {
         throw new Error('useAppContext must be used inside AppProvider');
     }
-
     return context;
 }

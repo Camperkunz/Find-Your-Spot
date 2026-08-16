@@ -1,6 +1,14 @@
 import { VIBE_MAPPING } from './categories.js';
+import { calculateRouteEstimate } from '../utils/location.js';
 
-export function filterDestinations({ destinations, city, vibe, duration, companion }) {
+// Cities basics
+const CITY_COORDINATES = {
+    'ottawa': { latitude: 45.4215, longitude: -75.6972 },
+    'toronto': { latitude: 43.6532, longitude: -79.3832 },
+    'montreal': { latitude: 45.5017, longitude: -73.5673 }
+};
+
+export function filterDestinations({ destinations, city, userCoords, vibe, duration, companion }) {
     if (!destinations || !destinations.length) return [];
 
     const cleanCity = (city || '').trim().toLowerCase();
@@ -8,10 +16,22 @@ export function filterDestinations({ destinations, city, vibe, duration, compani
         place.city_base?.toLowerCase().includes(cleanCity)
     );
 
+    const originCoords = userCoords || CITY_COORDINATES[cleanCity] || CITY_COORDINATES['ottawa'];
     const matchedCategories = VIBE_MAPPING[vibe] || [vibe];
 
     const scoredPlaces = cityPlaces.map(place => {
-        let score = 1; // Not empty anyway
+        let score = 1;
+
+        const destinationCoords = place.coordinates || { lat: place.lat, lng: place.lng };
+
+        let dynamicDistance = place.distance_km || 0;
+        let dynamicDuration = place.travel_time_min || 0;
+
+        if (destinationCoords && destinationCoords.lat && destinationCoords.lng) {
+            const estimate = calculateRouteEstimate(originCoords, destinationCoords, 'driving');
+            dynamicDistance = estimate.distanceKm;
+            dynamicDuration = estimate.durationMin;
+        }
 
         // Category
         if (matchedCategories.includes(place.category)) {
@@ -20,7 +40,6 @@ export function filterDestinations({ destinations, city, vibe, duration, compani
 
         // Tags
         const placeTags = place.tags || [];
-
         if (placeTags.some(tag => tag === vibe || matchedCategories.includes(tag))) {
             score += 4;
         }
@@ -45,8 +64,8 @@ export function filterDestinations({ destinations, city, vibe, duration, compani
         }
 
         // Distance
-        if (place.distance_km <= 10) score += 2;
-        else if (place.distance_km <= 30) score += 1;
+        if (dynamicDistance <= 10) score += 2;
+        else if (dynamicDistance <= 30) score += 1;
 
         // Family friendly
         if (companion === "family" && typeof place.accessibility_notes === "boolean") {
@@ -55,11 +74,12 @@ export function filterDestinations({ destinations, city, vibe, duration, compani
 
         return {
             ...place,
+            distance_km: dynamicDistance,
+            travel_time_min: dynamicDuration,
             score,
         };
     });
 
-    // return the top 15 scored places
     return scoredPlaces
         .sort((a, b) => b.score - a.score)
         .slice(0, 15);

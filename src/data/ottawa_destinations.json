@@ -6,8 +6,6 @@
     "region": "Quebec, near Chelsea/Gatineau",
     "address": "33 Scott Rd, Chelsea, QC J9B 1S5",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Pink-Lake-in-Fall.jpg/500px-Pink-Lake-in-Fall.jpg",
-    "distance_km": 15,
-    "travel_time_min": 25,
     "category": "hiking",
     "tags": [
       "nature",
@@ -34,18 +32,16 @@
       "picnic",
       "swimming (summer)"
     ],
-    "latitude": 45.5019,
-    "longitude": -75.8344
+    "lat": 45.5019,
+    "lng": -75.8344
   },
   {
     "id": "ottawa-luskville-falls",
     "name": "Luskville Falls",
     "city_base": "Ottawa",
-    "region": "Quebec, Gatineau Park",
+    "region": "Gatineau, Quebec",
     "address": "Luskville, QC (Gatineau Park, off Hwy 148)",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Luskville_Falls%2C_Gatineau_Park_%2810493741843%29.jpg/500px-Luskville_Falls%2C_Gatineau_Park_%2810493741843%29.jpg",
-    "distance_km": 35,
-    "travel_time_min": 35,
     "category": "hiking",
     "tags": [
       "waterfall",
@@ -67,8 +63,8 @@
       "hiking",
       "photography"
     ],
-    "latitude": 45.5358,
-    "longitude": -75.9818
+    "lat": 45.5358,
+    "lng": -75.9818
   },
   {
     "id": "ottawa-mer-bleue-bog",
@@ -77,8 +73,6 @@
     "region": "Ottawa, Ontario",
     "address": "200 Ridge Rd, Ottawa, ON K1B",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Mer_Bleue_Peat_Bog%2C_Ottawa%2C_Ontario_%288169736985%29.jpg/500px-Mer_Bleue_Peat_Bog%2C_Ottawa%2C_Ontario_%288169736985%29.jpg",
-    "distance_km": 20,
-    "travel_time_min": 25,
     "category": "nature",
     "tags": [
       "boardwalk",
@@ -103,8 +97,8 @@
       "photography",
       "birdwatching"
     ],
-    "latitude": 45.3941,
-    "longitude": -75.5097
+    "lat": 45.3941,
+    "lng": -75.5097
   },
   {
     "id": "ottawa-canadian-museum-history",
@@ -113,8 +107,6 @@
     "region": "Gatineau, Quebec",
     "address": "100 Laurier St, Gatineau, QC J8X 4H2",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Gatineau_-_QC_-_Museum_of_Civilisation.jpg/500px-Gatineau_-_QC_-_Museum_of_Civilisation.jpg",
-    "distance_km": 5,
-    "travel_time_min": 10,
     "category": "art",
     "tags": [
       "museum",
@@ -139,8 +131,8 @@
       "photography",
       "art"
     ],
-    "latitude": 45.4295,
-    "longitude": -75.7092
+    "lat": 45.4295,
+    "lng": -75.7092
   },
   {
     "id": "ottawa-national-gallery",
@@ -149,8 +141,6 @@
     "region": "Ottawa, Ontario",
     "address": "380 Sussex Dr, Ottawa, ON K1N 9N4",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/National_Gallery_of_Canada%2C_Ottawa.JPG/500px-National_Gallery_of_Canada%2C_Ottawa.JPG",
-    "distance_km": 3,
-    "travel_time_min": 8,
     "category": "art",
     "tags": [
       "indoor",
@@ -174,8 +164,8 @@
       "photography",
       "art"
     ],
-    "latitude": 45.4295,
-    "longitude": -75.6983
+    "lat": 45.4295,
+    "lng": -75.6983
   },
   {
     "id": "ottawa-wakefield-village",
@@ -184,8 +174,6 @@
     "region": "Quebec, near Gatineau Park",
     "address": "Wakefield, QC J0X 3G0",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/WakefieldBridge.jpg/500px-WakefieldBridge.jpg",
-    "distance_km": 35,
-    "travel_time_min": 40,
     "category": "hidden_gem",
     "tags": [
       "small_town",
@@ -212,8 +200,8 @@
       "shopping",
       "photography"
     ],
-    "latitude": 45.6375,
-    "longitude": -75.9238
+    "lat": 45.6375,
+    "lng": -75.9238
   },
   {
     "id": "ottawa-vincent-massey-park",
@@ -222,8 +210,6 @@
     "region": "Ottawa, Ontario",
     "address": "Riverside Dr, Ottawa, ON K1H",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Vincent_Massey_Park.JPG/500px-Vincent_Massey_Park.JPG",
-    "distance_km": 8,
-    "travel_time_min": 15,
     "category": "nature",
     "tags": [
       "riverside",
@@ -233,7 +219,7 @@
       "relaxing"
     ],
     "description": "A calm park along the Rideau River with shaded picnic areas and easy trails.",
-    "accessibility_notes": false,
+    "accessibility_notes": true,
     "parking": "free",
     "duration": "short",
     "companions": [
@@ -249,8 +235,8 @@
       "walking",
       "relaxing"
     ],
-    "latitude": 45.3858,
-    "longitude": -75.6881
+    "lat": 45.3858,
+    "lng": -75.6881
   },
   {
     "id": "ottawa-diefenbunker",
@@ -259,8 +245,6 @@
     "region": "Carp, Ontario",
     "address": "3929 Carp Rd, Carp, ON K0A 1L0",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Diefenbunker.JPG/500px-Diefenbunker.JPG",
-    "distance_km": 30,
-    "travel_time_min": 35,
     "category": "art",
     "tags": [
       "museum",
@@ -270,7 +254,7 @@
       "unusual"
     ],
     "description": "An underground Cold War-era bunker turned museum — four floors below ground with original interiors.",
-    "accessibility_notes": false,
+    "accessibility_notes": true,
     "parking": "free",
     "duration": "half_day",
     "companions": [
@@ -284,8 +268,8 @@
       "guided tour",
       "museum visit"
     ],
-    "latitude": 45.3524,
-    "longitude": -76.0475
+    "lat": 45.3524,
+    "lng": -76.0475
   },
   {
     "id": "ottawa-omega-park",
@@ -294,8 +278,6 @@
     "region": "Montebello, Quebec",
     "address": "399 Route 323, Montebello, QC J0V 1L0",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/A_Wapiti_%28Elk%29_eats_carrots_from_a_visitor_at_Parc_Omega%2C_a_drive-through_safari_park_in_Montebello%2C_Quebec_%28Canada%29.jpg/500px-A_Wapiti_%28Elk%29_eats_carrots_from_a_visitor_at_Parc_Omega%2C_a_drive-through_safari_park_in_Montebello%2C_Quebec_%28Canada%29.jpg",
-    "distance_km": 65,
-    "travel_time_min": 60,
     "category": "nature",
     "tags": [
       "wildlife",
@@ -319,8 +301,8 @@
       "driving tour",
       "hiking trails"
     ],
-    "latitude": 45.6708,
-    "longitude": -74.9536
+    "lat": 45.6708,
+    "lng": -74.9536
   },
   {
     "id": "ottawa-major-hill-park",
@@ -329,8 +311,6 @@
     "region": "Ottawa, Ontario",
     "address": "2 Mackenzie Ave, Ottawa, ON K1N",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Major%27s_Hill_Park.jpg/500px-Major%27s_Hill_Park.jpg",
-    "distance_km": 2,
-    "travel_time_min": 6,
     "category": "nature",
     "tags": [
       "viewpoint",
@@ -356,8 +336,8 @@
       "photography",
       "picnic"
     ],
-    "latitude": 45.427,
-    "longitude": -75.698
+    "lat": 45.427,
+    "lng": -75.698
   },
   {
     "id": "ottawa-rideau-canal",
@@ -366,8 +346,6 @@
     "region": "Ottawa, Ontario",
     "address": "Rideau Canal, Ottawa, ON",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Canal_Rideau_-_021.jpg/500px-Canal_Rideau_-_021.jpg",
-    "distance_km": 1,
-    "travel_time_min": 5,
     "category": "nature",
     "tags": [
       "walk",
@@ -393,8 +371,8 @@
       "cycling",
       "ice skating (winter)"
     ],
-    "latitude": 45.4222,
-    "longitude": -75.6936
+    "lat": 45.4222,
+    "lng": -75.6936
   },
   {
     "id": "ottawa-britannia-beach",
@@ -403,8 +381,6 @@
     "region": "Ottawa, Ontario",
     "address": "2805 Cassels St, Ottawa, ON K2B",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/BritanniaBeach.jpg/500px-BritanniaBeach.jpg",
-    "distance_km": 12,
-    "travel_time_min": 20,
     "category": "nature",
     "tags": [
       "beach",
@@ -430,8 +406,8 @@
       "sunbathing",
       "picnic"
     ],
-    "latitude": 45.3622,
-    "longitude": -75.8017
+    "lat": 45.3622,
+    "lng": -75.8017
   },
   {
     "id": "ottawa-fitzroy-provincial-park",
@@ -440,8 +416,6 @@
     "region": "Ontario, near Fitzroy Harbour",
     "address": "Dixon Point Rd, Fitzroy Harbour, ON K0A 1X0",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Fitzroy_Harbour.jpg/500px-Fitzroy_Harbour.jpg",
-    "distance_km": 45,
-    "travel_time_min": 45,
     "category": "hiking",
     "tags": [
       "provincial_park",
@@ -467,8 +441,8 @@
       "picnic",
       "camping"
     ],
-    "latitude": 45.4746,
-    "longitude": -76.2163
+    "lat": 45.4746,
+    "lng": -76.2163
   },
   {
     "id": "ottawa-arboretum",
@@ -477,8 +451,6 @@
     "region": "Ottawa, Ontario",
     "address": "Prince of Wales Dr, Ottawa, ON K1A 0C6",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Giant_Salix.jpg/500px-Giant_Salix.jpg",
-    "distance_km": 6,
-    "travel_time_min": 12,
     "category": "nature",
     "tags": [
       "botanical",
@@ -503,8 +475,8 @@
       "picnic",
       "photography"
     ],
-    "latitude": 45.3892,
-    "longitude": -75.7061
+    "lat": 45.3892,
+    "lng": -75.7061
   },
   {
     "id": "ottawa-pink-lake",
@@ -513,8 +485,6 @@
     "region": "Quebec, Gatineau Park",
     "address": "Gatineau Park, near Old Chelsea, QC",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Pink_Lake_in_August.jpg/500px-Pink_Lake_in_August.jpg",
-    "distance_km": 18,
-    "travel_time_min": 28,
     "category": "hiking",
     "tags": [
       "lake",
@@ -537,8 +507,8 @@
       "hiking",
       "photography"
     ],
-    "latitude": 45.4673,
-    "longitude": -75.8037
+    "lat": 45.4673,
+    "lng": -75.8037
   },
   {
     "id": "ottawa-byward-market",
@@ -547,8 +517,6 @@
     "region": "Ottawa, Ontario",
     "address": "55 ByWard Market Square, Ottawa, ON K1N 9C3",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Byward_Market_Ottawa_View_East.jpg/500px-Byward_Market_Ottawa_View_East.jpg",
-    "distance_km": 2,
-    "travel_time_min": 6,
     "category": "food",
     "tags": [
       "market",
@@ -574,8 +542,8 @@
       "walking",
       "food"
     ],
-    "latitude": 45.4277,
-    "longitude": -75.6924
+    "lat": 45.4277,
+    "lng": -75.6924
   },
   {
     "id": "ottawa-champlain-lookout",
@@ -584,8 +552,6 @@
     "region": "Quebec, Gatineau Park",
     "address": "Champlain Parkway, Gatineau Park, QC",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Ottawa_Valley_%2810105639985%29.jpg/500px-Ottawa_Valley_%2810105639985%29.jpg",
-    "distance_km": 25,
-    "travel_time_min": 30,
     "category": "nature",
     "tags": [
       "viewpoint",
@@ -611,8 +577,8 @@
       "short walk",
       "sunset watching"
     ],
-    "latitude": 45.51,
-    "longitude": -75.9123
+    "lat": 45.51,
+    "lng": -75.9123
   },
   {
     "id": "ottawa-almonte",
@@ -621,8 +587,6 @@
     "region": "Ontario, Mississippi Mills",
     "address": "Almonte, ON K0A 1A0",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Almonte_ON_3.JPG/500px-Almonte_ON_3.JPG",
-    "distance_km": 45,
-    "travel_time_min": 45,
     "category": "hidden_gem",
     "tags": [
       "small_town",
@@ -649,8 +613,8 @@
       "shopping",
       "photography"
     ],
-    "latitude": 45.2255,
-    "longitude": -76.1953
+    "lat": 45.2255,
+    "lng": -76.1953
   },
   {
     "id": "ottawa-canada-agriculture-museum",
@@ -659,8 +623,6 @@
     "region": "Ottawa, Ontario",
     "address": "901 Prince of Wales Dr, Ottawa, ON K1A 0C7",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/CEF_Agricultural_Museum.jpg/500px-CEF_Agricultural_Museum.jpg",
-    "distance_km": 6,
-    "travel_time_min": 12,
     "category": "art",
     "tags": [
       "museum",
@@ -683,8 +645,8 @@
       "museum visit",
       "walking"
     ],
-    "latitude": 45.3853,
-    "longitude": -75.7067
+    "lat": 45.3853,
+    "lng": -75.7067
   },
   {
     "id": "ottawa-shirleys-bay",
@@ -693,8 +655,6 @@
     "region": "Ottawa, Ontario",
     "address": "Rifle Rd, Ottawa, ON K2K",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Shirleys_Bay.jpg/500px-Shirleys_Bay.jpg",
-    "distance_km": 20,
-    "travel_time_min": 25,
     "category": "hidden_gem",
     "tags": [
       "quiet",
@@ -703,7 +663,7 @@
       "off_the_radar"
     ],
     "description": "A little-known waterfront area on the Ottawa River, popular with birdwatchers and anyone looking for quiet.",
-    "accessibility_notes": false,
+    "accessibility_notes": true,
     "parking": "free",
     "duration": "short",
     "companions": [
@@ -717,8 +677,8 @@
       "walking",
       "relaxing"
     ],
-    "latitude": 45.3789,
-    "longitude": -75.8978
+    "lat": 45.3789,
+    "lng": -75.8978
   },
   {
     "id": "ottawa-king-mountain-trail",
@@ -727,8 +687,6 @@
     "region": "Quebec, Gatineau Park",
     "address": "King Mountain Trailhead, Gatineau Park, QC",
     "image_url": "https://medias.ncc-ccn.ca/ncc/images/mont-king.jpg",
-    "distance_km": 20,
-    "travel_time_min": 28,
     "category": "hiking",
     "tags": [
       "moderate_hike",
@@ -751,8 +709,8 @@
       "hiking",
       "photography"
     ],
-    "latitude": 45.4912,
-    "longitude": -75.8625
+    "lat": 45.4912,
+    "lng": -75.8625
   },
   {
     "id": "ottawa-wolf-trail",
@@ -761,8 +719,6 @@
     "region": "Quebec, Gatineau Park",
     "address": "Gatineau Park, Old Chelsea sector, QC",
     "image_url": "https://i0.wp.com/audeladupaysage.com/wp-content/uploads/2020/09/Sentierdesloups3.jpg?resize=800%2C600&ssl=1",
-    "distance_km": 18,
-    "travel_time_min": 27,
     "category": "hiking",
     "tags": [
       "forest",
@@ -785,8 +741,8 @@
       "hiking",
       "photography"
     ],
-    "latitude": 45.519,
-    "longitude": -75.877
+    "lat": 45.519,
+    "lng": -75.877
   },
   {
     "id": "ottawa-hogs-back-falls",
@@ -795,8 +751,6 @@
     "region": "Ottawa, Ontario",
     "address": "Hog's Back Rd, Ottawa, ON K1V",
     "image_url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/ab/e2/d1/photo0jpg.jpg?w=500&h=500&s=1",
-    "distance_km": 10,
-    "travel_time_min": 18,
     "category": "nature",
     "tags": [
       "waterfall",
@@ -821,8 +775,8 @@
       "walking",
       "photography"
     ],
-    "latitude": 45.3708,
-    "longitude": -75.6988
+    "lat": 45.3708,
+    "lng": -75.6988
   },
   {
     "id": "ottawa-mackenzie-king-estate",
@@ -831,8 +785,6 @@
     "region": "Quebec, Gatineau Park",
     "address": "Gatineau Park, Kingsmere sector, QC",
     "image_url": "https://admin.tourismeoutaouais.com/api/photos/file/domaine-mackenzie-king-7-620x620.webp",
-    "distance_km": 22,
-    "travel_time_min": 30,
     "category": "hiking",
     "tags": [
       "historic",
@@ -857,8 +809,8 @@
       "photography",
       "picnic"
     ],
-    "latitude": 45.4784,
-    "longitude": -75.8504
+    "lat": 45.4784,
+    "lng": -75.8504
   },
   {
     "id": "ottawa-carbide-willson-ruins",
@@ -867,8 +819,6 @@
     "region": "Quebec, Gatineau Park",
     "address": "Gatineau Park, near Meech Lake, QC",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Carbide_Willson_ruins_%2845672277162%29.jpg/500px-Carbide_Willson_ruins_%2845672277162%29.jpg",
-    "distance_km": 22,
-    "travel_time_min": 30,
     "category": "hidden_gem",
     "tags": [
       "ruins",
@@ -891,8 +841,8 @@
       "hiking",
       "photography"
     ],
-    "latitude": 45.5133,
-    "longitude": -75.853
+    "lat": 45.5133,
+    "lng": -75.853
   },
   {
     "id": "ottawa-lac-philippe",
@@ -901,8 +851,6 @@
     "region": "Quebec, Gatineau Park",
     "address": "Lac Philippe, Gatineau Park, QC",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Lac_Phillipe.jpg/500px-Lac_Phillipe.jpg",
-    "distance_km": 45,
-    "travel_time_min": 50,
     "category": "nature",
     "tags": [
       "lake",
@@ -928,8 +876,8 @@
       "hiking",
       "picnic"
     ],
-    "latitude": 45.6033,
-    "longitude": -75.9922
+    "lat": 45.6033,
+    "lng": -75.9922
   },
   {
     "id": "ottawa-andrew-haydon-park",
@@ -938,8 +886,6 @@
     "region": "Ottawa, Ontario",
     "address": "3810 Carling Ave, Ottawa, ON K2H",
     "image_url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/54/f7/eb/andrew-haydon-park.jpg?w=500&h=500&s=1",
-    "distance_km": 15,
-    "travel_time_min": 20,
     "category": "nature",
     "tags": [
       "waterfront",
@@ -965,8 +911,8 @@
       "picnic",
       "photography"
     ],
-    "latitude": 45.3508,
-    "longitude": -75.8278
+    "lat": 45.3508,
+    "lng": -75.8278
   },
   {
     "id": "ottawa-merrickville",
@@ -975,8 +921,6 @@
     "region": "Ontario, near the Rideau Canal",
     "address": "Merrickville, ON K0G 1N0",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sunny_Downtown_Merrickville_%286957667645%29.jpg/500px-Sunny_Downtown_Merrickville_%286957667645%29.jpg",
-    "distance_km": 65,
-    "travel_time_min": 55,
     "category": "hidden_gem",
     "tags": [
       "small_town",
@@ -1002,8 +946,8 @@
       "shopping",
       "photography"
     ],
-    "latitude": 44.9168,
-    "longitude": -75.8384
+    "lat": 44.9168,
+    "lng": -75.8384
   },
   {
     "id": "ottawa-dows-lake",
@@ -1012,8 +956,6 @@
     "region": "Ottawa, Ontario",
     "address": "Dow's Lake, Ottawa, ON K1S",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Dow%27s_Lake_aerial_view_2025.jpg/500px-Dow%27s_Lake_aerial_view_2025.jpg",
-    "distance_km": 4,
-    "travel_time_min": 10,
     "category": "nature",
     "tags": [
       "lake",
@@ -1039,8 +981,8 @@
       "coffee",
       "pedal boating"
     ],
-    "latitude": 45.397,
-    "longitude": -75.7008
+    "lat": 45.397,
+    "lng": -75.7008
   },
   {
     "id": "ottawa-mont-cascades",
@@ -1049,8 +991,6 @@
     "region": "Quebec, Cantley",
     "address": "Mont Cascades, Cantley, QC J8V 3B4",
     "image_url": "https://i0.wp.com/audeladupaysage.com/wp-content/uploads/2020/09/Cascades2.jpg?fit=640%2C680&ssl=1",
-    "distance_km": 30,
-    "travel_time_min": 35,
     "category": "hiking",
     "tags": [
       "hiking",
@@ -1073,8 +1013,8 @@
       "hiking",
       "photography"
     ],
-    "latitude": 45.5882,
-    "longitude": -75.8625
+    "lat": 45.5882,
+    "lng": -75.8625
   },
   {
     "id": "ottawa-rockcliffe-lookout",
@@ -1083,8 +1023,6 @@
     "region": "Ottawa, Ontario",
     "address": "Lisgar Rd, Ottawa, ON K1M",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/McKay_Lake_Rockcliffe.jpg/500px-McKay_Lake_Rockcliffe.jpg",
-    "distance_km": 6,
-    "travel_time_min": 12,
     "category": "nature",
     "tags": [
       "viewpoint",
@@ -1110,8 +1048,8 @@
       "short walk",
       "sunset watching"
     ],
-    "latitude": 45.4523,
-    "longitude": -75.6888
+    "lat": 45.4523,
+    "lng": -75.6888
   },
   {
     "id": "ottawa-dao-cafe",
@@ -1120,8 +1058,6 @@
     "region": "Ottawa, Ontario",
     "address": "1558 Merivale Rd Unit 102, Ottawa, ON K2G 3J9",
     "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnvfESSNWsTsI3em73ptGDWnNDkDwVj4aShQXNmeuM9Q&s=10",
-    "distance_km": 12,
-    "travel_time_min": 18,
     "category": "food",
     "tags": [
       "bakery",
@@ -1145,8 +1081,8 @@
       "dessert tasting",
       "photography"
     ],
-    "latitude": 45.3571,
-    "longitude": -75.7358
+    "lat": 45.3571,
+    "lng": -75.7358
   },
   {
     "id": "ottawa-les-moulins-la-fayette",
@@ -1155,8 +1091,6 @@
     "region": "Ottawa, Ontario",
     "address": "1000 Wellington St W Unit 103, Ottawa, ON K1Y 2X9",
     "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz-lr8GneXKj-pWCcnnfRYGVueS0xYCNuCNstqPo3fBg&s=10",
-    "distance_km": 4,
-    "travel_time_min": 10,
     "category": "food",
     "tags": [
       "bakery",
@@ -1180,7 +1114,7 @@
       "pastries",
       "breakfast"
     ],
-    "latitude": 45.4045,
-    "longitude": -75.7225
+    "lat": 45.4045,
+    "lng": -75.7225
   }
 ]

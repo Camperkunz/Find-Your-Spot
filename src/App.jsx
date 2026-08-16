@@ -1,36 +1,35 @@
 import './App.css';
 import React from 'react';
 import { useAppContext } from './context/AppContext';
-//
+
 import destinationsData from './data/ottawa_destinations.json';
-//
 import { filterDestinations } from './logic/sorting.js';
-//
+
 import Layout from './components/ui/Layout.jsx';
 import Card from './components/elements/Card.jsx';
-//
+
 import WelcomeStep from './steps/Welcome.jsx';
 import OnboardingStep from './steps/Onboarding.jsx';
 import SavedStep from './steps/Saved.jsx';
 
-
-// Start of the main Part of App
 export default function AdventureApp() {
   const {
     step, setStep,
     savedPlaces, setSavedPlaces,
     city,
+    userCoords,
     duration,
     vibe,
     companion,
     deck, setDeck,
-    currentIndex, setCurrentIndex } = useAppContext();
+    currentIndex, setCurrentIndex
+  } = useAppContext();
 
-  // Call of filtering function (logic/sorting)
   const handleStartDiscovery = () => {
     const finalDeck = filterDestinations({
       destinations: destinationsData,
       city,
+      userCoords,
       duration,
       vibe,
       companion
@@ -41,7 +40,6 @@ export default function AdventureApp() {
     setStep('cards');
   };
 
-  // Saving and Skipping
   const handleDecision = (action) => {
     if (action === 'save') {
       setSavedPlaces((prev) => {
@@ -52,18 +50,14 @@ export default function AdventureApp() {
     setCurrentIndex((prev) => prev + 1);
   };
 
-  // DECK step needs a wider container (for the Card component on lg screens)
   const isWideStep = step === 'cards' || step === 'saved';
 
   return (
     <Layout wide={isWideStep}>
-      {/* WELCOME */}
       {step === 'welcome' && <WelcomeStep />}
 
-      {/* ONBOARDING */}
       {step === 'onboarding' && <OnboardingStep onStart={handleStartDiscovery} />}
 
-      {/* DECK */}
       {step === 'cards' && (
         <div className="w-full h-full flex-1 min-h-0 flex justify-center items-stretch">
           {currentIndex < deck.length ? (
@@ -73,7 +67,6 @@ export default function AdventureApp() {
               handleDecision={handleDecision}
             />
           ) : (
-            /* out of cards */
             <div className="text-center space-y-6 py-12 max-w-md w-full mx-auto">
               <span className="text-5xl">🗺️</span>
 
@@ -122,7 +115,7 @@ export default function AdventureApp() {
           )}
         </div>
       )}
-      {/* SAVED PLACES */}
+
       {step === 'saved' && (
         <SavedStep />
       )}

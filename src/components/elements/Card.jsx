@@ -5,7 +5,6 @@ import { preloadImages } from '../../utils/imagePreloader.js';
 
 export default function Card({ deck, currentIndex, handleDecision }) {
 
-    // Fetch and preload images for the next two cards 
     useEffect(() => {
         if (!deck) return;
 
@@ -32,21 +31,18 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                 />
                 {/* Distance */}
                 <div className="absolute bottom-4 left-4 backdrop-blur-md bg-ink/40 text-white border border-white/10 text-xs px-3 py-1.5 rounded-pill font-medium">
-                    ~ {currentPlace.distance_km} km ({currentPlace.travel_time_min} min)
+                    ~ {currentPlace.distance_km ?? 0} km ({currentPlace.travel_time_min ?? 0} min)
                 </div>
             </div>
 
             {/* Content */}
             <div className="flex-1 min-h-0 p-6 md:p-8 flex flex-col justify-between overflow-hidden relative">
-
-                {/* Бейджи рендерятся одной лаконичной строчкой */}
                 <CardBadges
                     parking={currentPlace.parking}
                     accessibility={currentPlace.accessibility_notes}
                 />
 
                 <div className="flex-1 min-h-0 overflow-y-auto space-y-4 md:space-y-4 pr-1 scrollbar-thin mb-4">
-                    {/* body of text */}
                     <div className="text-xs font-mono font-bold tracking-widest text-ink-soft uppercase">
                         {currentPlace.region}
                     </div>
@@ -57,7 +53,6 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                     <p className="text-sm text-ink-soft leading-relaxed">
                         {currentPlace.description}
                     </p>
-                    {/* Why today */}
                     <div className="border-l-2 border-accent pl-3 py-0.5 my-2">
                         <span className="text-xs font-bold uppercase tracking-wider text-accent block">
                             Why today
@@ -67,7 +62,6 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                         </p>
                     </div>
 
-                    {/* Activities */}
                     <div className="space-y-1.5 pt-1">
                         <span className="text-xs font-bold text-ink-soft uppercase tracking-wider block">
                             Things to do:
@@ -87,7 +81,6 @@ export default function Card({ deck, currentIndex, handleDecision }) {
 
                 {/* Action Buttons */}
                 <div className="flex items-center gap-4 sm:gap-6 pt-4 border-t border-ink-faint/10 shrink-0">
-                    {/* Skip */}
                     <button
                         onClick={() => handleDecision('Skip')}
                         className="size-14 md:size-16 rounded-full bg-ink-faint/40 text-ink-soft border border-ink-faint/10 flex items-center justify-center transition-all duration-200 hover:bg-danger-soft hover:text-danger hover:border-danger/30 hover:-translate-y-0.5 active:scale-90"
@@ -97,7 +90,6 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                         <span className="text-xl font-bold">✕</span>
                     </button>
 
-                    {/* Let's Go */}
                     <div className="flex-1 flex flex-col items-center gap-1.5">
                         <button
                             onClick={() => openDirections(currentPlace)}
@@ -108,7 +100,6 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                         </button>
                     </div>
 
-                    {/* Save */}
                     <button
                         onClick={() => handleDecision('save')}
                         className="size-14 md:size-16 rounded-full bg-surface-card border border-ink-faint/50 text-ink-soft flex items-center justify-center transition-all duration-200 hover:bg-accent-soft hover:text-accent hover:border-accent/40 hover:-translate-y-0.5 active:scale-90"
