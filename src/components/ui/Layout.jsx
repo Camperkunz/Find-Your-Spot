@@ -6,7 +6,7 @@ import { DURATIONS, VIBES, COMPANIONS } from "../../logic/categories.js";
 const getLabel = (list, id) => list.find((item) => item.id === id)?.label ?? id;
 
 export default function Layout({ children, wide = false }) {
-    const { step, duration, vibe, companion } = useAppContext();
+    const { step, duration, vibe, companion, setStep } = useAppContext();
     const showSelectionSummary = step !== 'welcome' && step !== 'onboarding';
 
     const selectionSummary = [
@@ -23,8 +23,16 @@ export default function Layout({ children, wide = false }) {
                     }`}
             >
                 {showSelectionSummary && (
-                    <div className="text-sm md:text-xs text-ink-soft font-mono mb-3 truncate">
-                        {selectionSummary}
+                    <div className="flex items-center justify-between gap-2 mb-3">
+                        <span className="text-xs text-ink-soft font-mono truncate">
+                            {selectionSummary}
+                        </span>
+                        <button
+                            onClick={() => setStep('onboarding')}
+                            className="text-xs text-ink-soft font-mono shrink-0 hover:text-ink"
+                        >
+                            Reset filters
+                        </button>
                     </div>
                 )}
                 {children}

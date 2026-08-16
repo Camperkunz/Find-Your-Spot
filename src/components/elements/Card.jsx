@@ -122,11 +122,11 @@ export default function Card({ deck, currentIndex, handleDecision }) {
                     {/* Save */}
                     <button
                         onClick={() => handleDecision('save')}
-                        className="size-14 md:size-16 rounded-full bg-surface-card border border-ink-faint/50 text-ink-soft flex items-center justify-center transition-all duration-200 hover:bg-accent-soft hover:text-accent hover:border-accent/40 hover:-translate-y-0.5 active:scale-90"
+                        className="size-14 md:size-16 rounded-full bg-surface-card border border-ink-faint/50 text-ink-soft flex items-center justify-center transition-all duration-200 hover:bg-accent-soft hover:text-accent hover:border-accent/40 hover:-translate-y-0.5 active:scale-90 "
                         title="Save Adventure"
                         aria-label="Save"
                     >
-                        <span className="text-xl transition-transform duration-200 hover:scale-110">❤️</span>
+                        <span className="text-2xl transition-transform duration-200 hover:scale-115">❤️</span>
                     </button>
                 </div>
             </div>
