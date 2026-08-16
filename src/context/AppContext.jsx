@@ -38,9 +38,9 @@ export function AppProvider({ children }) {
             const stored = localStorage.getItem(STORAGE_KEYS.filters);
             const parsed = stored ? JSON.parse(stored).duration : null;
             if (Array.isArray(parsed)) return parsed;
-            return parsed ? [parsed] : ['2-3 hours'];
+            return parsed ? [parsed] : ['short'];
         } catch {
-            return ['2-3 hours'];
+            return ['short'];
         }
     });
 
