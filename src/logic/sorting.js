@@ -86,8 +86,8 @@ export function filterDestinations({ destinations, city, userCoords, vibe, durat
             score,
         };
     });
-
+    // return top 20
     return scoredPlaces
         .sort((a, b) => b.score - a.score)
-        .slice(0, 15);
+        .slice(0, 20);
 }

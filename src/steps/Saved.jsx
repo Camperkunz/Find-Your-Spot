@@ -37,7 +37,7 @@ export default function SavedStep() {
     };
 
     const handleClearAll = () => {
-        if (window.confirm('Are you sure you want to clear your entire bucket list?')) {
+        if (window.confirm('Are you sure you want to clear your entire list?')) {
             setSavedPlaces([]);
             setStep('welcome');
         }
@@ -48,7 +48,7 @@ export default function SavedStep() {
             {/* Header */}
             <div className="flex justify-between items-center">
                 <h3 className="text-2xl font-extrabold tracking-tight text-ink">
-                    Your saved bucket list
+                    Your saved places
                 </h3>
                 <button
                     type="button"
@@ -59,7 +59,7 @@ export default function SavedStep() {
                 </button>
             </div>
 
-            {/* Toolbar: Counter & Actions */}
+            {/* Toolbar */}
             {savedPlaces.length > 0 && (
                 <div className="flex justify-between items-center bg-surface-card p-3 rounded-card border border-ink-faint/10 text-xs">
                     <span className="text-ink-soft font-medium">
@@ -83,7 +83,7 @@ export default function SavedStep() {
                     <div className="text-center py-12 px-4 rounded-card max-w-md mx-auto">
                         <span className="text-4xl block mb-2" role="img" aria-label="Balloon">🎈</span>
                         <p className="text-sm font-medium text-ink-soft mb-4">
-                            Your bucket list is empty!
+                            Your list is empty!
                         </p>
                         <button
                             type="button"

@@ -22,7 +22,6 @@ export default function Card({ deck, currentIndex, handleDecision }) {
 
     return (
         <div className="w-full h-full md:h-[clamp(400px,65vh,550px)] flex flex-col lg:flex-row bg-surface-card rounded-4xl border border-ink-faint/15 shadow-xl overflow-hidden relative">
-
             {/* Back arrow */}
             {currentIndex > 0 && (
                 <button
