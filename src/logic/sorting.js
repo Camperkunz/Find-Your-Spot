@@ -1,7 +1,6 @@
 import { VIBE_MAPPING } from './categories.js';
 import { calculateRouteEstimate } from '../utils/location.js';
 
-// Cities basics
 const CITY_COORDINATES = {
     'ottawa': { latitude: 45.4215, longitude: -75.6972 },
     'toronto': { latitude: 43.6532, longitude: -79.3832 },
@@ -17,7 +16,15 @@ export function filterDestinations({ destinations, city, userCoords, vibe, durat
     );
 
     const originCoords = userCoords || CITY_COORDINATES[cleanCity] || CITY_COORDINATES['ottawa'];
-    const matchedCategories = VIBE_MAPPING[vibe] || [vibe];
+
+    const selectedVibes = Array.isArray(vibe) ? vibe : [vibe].filter(Boolean);
+    const matchedCategories = selectedVibes.reduce((acc, v) => {
+        const mapped = VIBE_MAPPING[v] || [v];
+        return [...acc, ...mapped];
+    }, []);
+
+    const selectedDurations = Array.isArray(duration) ? duration : [duration].filter(Boolean);
+    const selectedCompanions = Array.isArray(companion) ? companion : [companion].filter(Boolean);
 
     const scoredPlaces = cityPlaces.map(place => {
         let score = 1;
@@ -40,22 +47,22 @@ export function filterDestinations({ destinations, city, userCoords, vibe, durat
 
         // Tags
         const placeTags = place.tags || [];
-        if (placeTags.some(tag => tag === vibe || matchedCategories.includes(tag))) {
+        if (selectedVibes.some(v => placeTags.includes(v) || matchedCategories.includes(v))) {
             score += 4;
         }
 
         // Duration
-        if (place.duration === duration) {
+        if (selectedDurations.includes(place.duration)) {
             score += 5;
         }
 
         // Companion
-        if (place.companions?.includes(companion)) {
+        if (selectedCompanions.some(comp => place.companions?.includes(comp))) {
             score += 4;
         }
 
         // Hidden Gems
-        if (vibe === "hidden_gem") {
+        if (selectedVibes.includes("hidden_gem")) {
             const text = `${place.description || ''} ${place.why || ''}`.toLowerCase();
             const keywords = ["unique", "charming", "local", "unusual", "hidden", "quiet", "off-the-radar", "secret"];
             if (keywords.some(word => text.includes(word))) {
@@ -68,7 +75,7 @@ export function filterDestinations({ destinations, city, userCoords, vibe, durat
         else if (dynamicDistance <= 30) score += 1;
 
         // Family friendly
-        if (companion === "family" && typeof place.accessibility_notes === "boolean") {
+        if (selectedCompanions.includes("family") && typeof place.accessibility_notes === "boolean") {
             score += place.accessibility_notes ? 3 : -4;
         }
 

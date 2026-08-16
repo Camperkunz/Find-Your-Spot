@@ -36,25 +36,33 @@ export function AppProvider({ children }) {
     const [duration, setDuration] = useState(() => {
         try {
             const stored = localStorage.getItem(STORAGE_KEYS.filters);
-            return stored ? JSON.parse(stored).duration ?? '2-3 hours' : '2-3 hours';
+            const parsed = stored ? JSON.parse(stored).duration : null;
+            if (Array.isArray(parsed)) return parsed;
+            return parsed ? [parsed] : ['2-3 hours'];
         } catch {
-            return '2-3 hours';
+            return ['2-3 hours'];
         }
     });
+
     const [vibe, setVibe] = useState(() => {
         try {
             const stored = localStorage.getItem(STORAGE_KEYS.filters);
-            return stored ? JSON.parse(stored).vibe ?? 'nature' : 'nature';
+            const parsed = stored ? JSON.parse(stored).vibe : null;
+            if (Array.isArray(parsed)) return parsed;
+            return parsed ? [parsed] : ['nature'];
         } catch {
-            return 'nature';
+            return ['nature'];
         }
     });
+
     const [companion, setCompanion] = useState(() => {
         try {
             const stored = localStorage.getItem(STORAGE_KEYS.filters);
-            return stored ? JSON.parse(stored).companion ?? 'solo' : 'solo';
+            const parsed = stored ? JSON.parse(stored).companion : null;
+            if (Array.isArray(parsed)) return parsed;
+            return parsed ? [parsed] : ['solo'];
         } catch {
-            return 'solo';
+            return ['solo'];
         }
     });
 

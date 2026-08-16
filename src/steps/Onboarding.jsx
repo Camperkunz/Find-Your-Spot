@@ -2,7 +2,6 @@ import React from 'react';
 import { useAppContext } from '../context/AppContext';
 import { DURATIONS, VIBES, COMPANIONS } from '../logic/categories.js';
 
-// Shared active/inactive styling for selectable option buttons (Duration, Vibe, Companion)
 const selectableBtn = (isActive) =>
     `font-medium transition flex items-center justify-center gap-1.5 border select-none ${isActive
         ? 'bg-accent text-surface-card border-accent font-semibold shadow-md'
@@ -19,6 +18,16 @@ export default function OnboardingStep({ onStart }) {
         companion,
         setCompanion
     } = useAppContext();
+    // 
+    const toggleSelection = (currentList, itemID, setter) => {
+        if (currentList.includes(itemID)) {
+            if (currentList.length > 1) {
+                setter(currentList.filter(id => id !== itemID));
+            }
+        } else {
+            setter([...currentList, itemID]);
+        }
+    };
 
     return (
         <div className="space-y-6">
@@ -37,15 +46,18 @@ export default function OnboardingStep({ onStart }) {
                     How much time do you have?
                 </label>
                 <div className="grid grid-cols-2 gap-2">
-                    {DURATIONS.map((item) => (
-                        <button
-                            key={item.id}
-                            onClick={() => setDuration(item.id)}
-                            className={`py-3 px-4 rounded-card text-sm text-left ${selectableBtn(duration === item.id)}`}
-                        >
-                            <span>{item.label}</span>
-                        </button>
-                    ))}
+                    {DURATIONS.map((item) => {
+                        const isActive = duration.includes(item.id);
+                        return (
+                            <button
+                                key={item.id}
+                                onClick={() => toggleSelection(duration, item.id, setDuration)}
+                                className={`py-3 px-4 rounded-card text-sm text-left ${selectableBtn(isActive)}`}
+                            >
+                                <span>{item.label}</span>
+                            </button>
+                        );
+                    })}
                 </div>
             </div>
 
@@ -55,16 +67,19 @@ export default function OnboardingStep({ onStart }) {
                     What sounds good?
                 </label>
                 <div className="flex flex-wrap gap-2">
-                    {VIBES.map((item) => (
-                        <button
-                            key={item.id}
-                            onClick={() => setVibe(item.id)}
-                            className={`py-2 px-4 rounded-pill text-sm ${selectableBtn(vibe === item.id)}`}
-                        >
-                            {item.icon && <span>{item.icon}</span>}
-                            <span>{item.label}</span>
-                        </button>
-                    ))}
+                    {VIBES.map((item) => {
+                        const isActive = vibe.includes(item.id);
+                        return (
+                            <button
+                                key={item.id}
+                                onClick={() => toggleSelection(vibe, item.id, setVibe)}
+                                className={`py-2 px-4 rounded-pill text-sm ${selectableBtn(isActive)}`}
+                            >
+                                {item.icon && <span>{item.icon}</span>}
+                                <span>{item.label}</span>
+                            </button>
+                        );
+                    })}
                 </div>
             </div>
 
@@ -74,16 +89,19 @@ export default function OnboardingStep({ onStart }) {
                     Who is joining?
                 </label>
                 <div className="grid grid-cols-3 gap-2">
-                    {COMPANIONS.map((item) => (
-                        <button
-                            key={item.id}
-                            onClick={() => setCompanion(item.id)}
-                            className={`py-2.5 px-3 rounded-card text-sm ${selectableBtn(companion === item.id)}`}
-                        >
-                            {item.icon && <span>{item.icon}</span>}
-                            <span>{item.label}</span>
-                        </button>
-                    ))}
+                    {COMPANIONS.map((item) => {
+                        const isActive = companion.includes(item.id);
+                        return (
+                            <button
+                                key={item.id}
+                                onClick={() => toggleSelection(companion, item.id, setCompanion)}
+                                className={`py-2.5 px-3 rounded-card text-sm ${selectableBtn(isActive)}`}
+                            >
+                                {item.icon && <span>{item.icon}</span>}
+                                <span>{item.label}</span>
+                            </button>
+                        );
+                    })}
                 </div>
             </div>
 
