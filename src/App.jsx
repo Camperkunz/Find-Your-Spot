@@ -40,6 +40,10 @@ export default function AdventureApp() {
     setStep('cards');
   };
 
+  const handleRestartDeck = () => {
+    setCurrentIndex(0);
+  };
+
   const handleDecision = (action) => {
     if (action === 'save') {
       setSavedPlaces((prev) => {
@@ -90,10 +94,23 @@ export default function AdventureApp() {
                       View Saved Places ({savedPlaces.length})
                     </button>
                     <button
+                      onClick={handleRestartDeck}
+                      className="btn-outline-lg w-full"
+                    >
+                      Replay Deck 👀
+                    </button>
+                    {/*  */}
+                    <div className="flex items-center gap-3 text-ink-faint/70">
+                      <div className="h-px bg-current flex-1"></div>
+                      <span className="text-sm uppercase font-bold tracking-widest">OR</span>
+                      <div className="h-px bg-current flex-1"></div>
+                    </div>
+                    {/*  */}
+                    <button
                       onClick={() => setStep('onboarding')}
                       className="btn-outline-lg w-full"
                     >
-                      Change Filters 🔄
+                      Change Filters 🔁
                     </button>
                   </div>
                 </>
@@ -107,10 +124,23 @@ export default function AdventureApp() {
                   </div>
                   <div className="pt-4 space-y-2 max-w-xs mx-auto w-full">
                     <button
-                      onClick={() => setStep('onboarding')}
+                      onClick={handleRestartDeck}
                       className="btn-primary-lg w-full"
                     >
-                      Change Filters 🔄
+                      Replay Deck 👀
+                    </button>
+                    {/*  */}
+                    <div className="flex items-center gap-3 text-ink-faint/70">
+                      <div className="h-px bg-current flex-1"></div>
+                      <span className="text-sm uppercase font-bold tracking-widest">OR</span>
+                      <div className="h-px bg-current flex-1"></div>
+                    </div>
+                    {/*  */}
+                    <button
+                      onClick={() => setStep('onboarding')}
+                      className="btn-outline-lg w-full"
+                    >
+                      Change Filters 🔁
                     </button>
                   </div>
                 </>
