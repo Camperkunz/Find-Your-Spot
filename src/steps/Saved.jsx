@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useAppContext } from '../context/AppContext';
 import { openDirections } from '../logic/maps';
+import Card from '../components/elements/Card.jsx';
+import Modal from '../components/ui/Modal.jsx';
 
 // Compact thumbnail component with fallback and accessibility optimization
 function PlaceThumbnail({ src }) {
@@ -20,7 +22,7 @@ function PlaceThumbnail({ src }) {
     return (
         <img
             src={src}
-            alt="" // Decorative image, main information is provided in text
+            alt=""
             aria-hidden="true"
             loading="lazy"
             onError={() => setHasError(true)}
@@ -32,7 +34,10 @@ function PlaceThumbnail({ src }) {
 export default function SavedStep() {
     const { savedPlaces, setSavedPlaces, setStep } = useAppContext();
 
-    const handleRemovePlace = (id) => {
+    const [selectedPlace, setSelectedPlace] = useState(null);
+
+    const handleRemovePlace = (id, e) => {
+        e.stopPropagation();
         setSavedPlaces((prev) => prev.filter((p) => p.id !== id));
     };
 
@@ -44,12 +49,9 @@ export default function SavedStep() {
     };
 
     return (
-        <div className="space-y-6 flex flex-col h-full w-full">
+        <div className="space-y-4 flex flex-col h-full w-full">
             {/* Header */}
-            <div className="flex justify-between items-center">
-                <h3 className="text-2xl font-extrabold tracking-tight text-ink">
-                    Your saved places
-                </h3>
+            <div className="flex justify-between items-center rounded-card text-xs mt-4">
                 <button
                     type="button"
                     onClick={() => setStep('cards')}
@@ -58,24 +60,11 @@ export default function SavedStep() {
                     ← Back to Deck
                 </button>
             </div>
-
-            {/* Toolbar */}
-            {savedPlaces.length > 0 && (
-                <div className="flex justify-between items-center bg-surface-card p-3 rounded-card border border-ink-faint/10 text-xs">
-                    <span className="text-ink-soft font-medium">
-                        Saved places: <strong className="text-ink">{savedPlaces.length}</strong>
-                    </span>
-
-                    <button
-                        type="button"
-                        onClick={handleClearAll}
-                        className="text-danger hover:underline font-medium transition-colors"
-                        aria-label="Clear all saved places from list"
-                    >
-                        Clear All
-                    </button>
-                </div>
-            )}
+            <div className="flex justify-between items-center">
+                <h3 className="text-2xl font-extrabold tracking-tight text-ink">
+                    Your saved places
+                </h3>
+            </div>
 
             {/* List / Empty State */}
             <div className="flex-1 min-h-0 overflow-y-auto pr-1 scrollbar-thin">
@@ -98,7 +87,8 @@ export default function SavedStep() {
                         {savedPlaces.map((place) => (
                             <div
                                 key={place.id}
-                                className="bg-surface-card p-3 rounded-card border border-ink-faint/10 flex items-center gap-3 shadow-sm hover:border-ink-faint/25 transition-all"
+                                onClick={() => setSelectedPlace(place)}
+                                className="bg-surface-card p-3 rounded-card border border-ink-faint/10 flex items-center gap-3 shadow-sm hover:border-ink-faint/25 hover:shadow-md cursor-pointer transition-all"
                             >
                                 <PlaceThumbnail src={place.imageUrl || place.image_url || place.photo} />
 
@@ -116,7 +106,7 @@ export default function SavedStep() {
                                 <div className="flex items-center gap-2 shrink-0">
                                     <button
                                         type="button"
-                                        onClick={() => handleRemovePlace(place.id)}
+                                        onClick={(e) => handleRemovePlace(place.id, e)}
                                         className="text-ink-soft hover:text-danger text-xs px-2 py-1 transition-colors underline-offset-2 hover:underline"
                                         aria-label={`Remove ${place.name} from list`}
                                     >
@@ -124,11 +114,14 @@ export default function SavedStep() {
                                     </button>
                                     <button
                                         type="button"
-                                        onClick={() => openDirections(place)}
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            openDirections(place);
+                                        }}
                                         className="btn-primary py-2 px-3.5 text-xs font-bold"
                                         aria-label={`Navigate to ${place.name}`}
                                     >
-                                        Check on Map ↗
+                                        Check on Map
                                     </button>
                                 </div>
                             </div>
@@ -136,6 +129,15 @@ export default function SavedStep() {
                     </div>
                 )}
             </div>
+
+            {/* Modal */}
+            <Modal isOpen={Boolean(selectedPlace)} onClose={() => setSelectedPlace(null)}>
+                <Card
+                    place={selectedPlace}
+                    isModal={true}
+                    onClose={() => setSelectedPlace(null)}
+                />
+            </Modal>
         </div>
     );
 }
