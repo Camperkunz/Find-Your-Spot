@@ -1,3 +1,5 @@
+import { FiRotateCcw } from "react-icons/fi";
+// 
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
 import { useAppContext } from "../../context/AppContext";
@@ -29,8 +31,9 @@ export default function Layout({ children, wide = false }) {
                         </span>
                         <button
                             onClick={() => setStep('onboarding')}
-                            className="text-xs text-ink-soft font-mono shrink-0 hover:text-ink"
+                            className="self-end sm:self-auto shrink-0 flex items-center gap-1 text-[11px] font-mono text-ink-soft border border-ink-soft/20 rounded-full px-2.5 py-1 hover:text-ink hover:border-ink-soft/40 transition-colors"
                         >
+                            <FiRotateCcw className="w-3 h-3" />
                             Reset filters
                         </button>
                     </div>
