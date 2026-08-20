@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@layer base {
+    button:not(:disabled) {
+        @apply cursor-pointer;
+    }
+}
+
 @theme {
     /* backgrounds */
     --color-surface: #F3F6F8;
