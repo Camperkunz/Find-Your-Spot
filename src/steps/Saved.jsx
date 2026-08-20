@@ -44,7 +44,7 @@ export default function SavedStep() {
     const handleClearAll = () => {
         if (window.confirm('Are you sure you want to clear your entire list?')) {
             setSavedPlaces([]);
-            setStep('welcome');
+            setStep('onboarding');
         }
     };
 
@@ -60,10 +60,19 @@ export default function SavedStep() {
                     ← Back to Deck
                 </button>
             </div>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center gap-2">
                 <h3 className="text-2xl font-extrabold tracking-tight text-ink">
                     Your saved places
                 </h3>
+                {savedPlaces.length > 0 && (
+                    <button
+                        type="button"
+                        onClick={handleClearAll}
+                        className="btn-outline-danger text-sm px-3 py-1.5"
+                    >
+                        Clear all
+                    </button>
+                )}
             </div>
 
             {/* List / Empty State */}
@@ -88,7 +97,7 @@ export default function SavedStep() {
                             <div
                                 key={place.id}
                                 onClick={() => setSelectedPlace(place)}
-                                className="bg-surface-card p-3 rounded-card border border-ink-faint/10 flex items-center gap-3 shadow-sm hover:border-ink-faint/25 hover:shadow-md cursor-pointer transition-all"
+                                className="bg-surface-card p-3 rounded-card border border-ink-faint/10 flex items-center gap-2 sm:gap-3 shadow-sm hover:border-ink-faint/25 hover:shadow-md cursor-pointer transition-all"
                             >
                                 <PlaceThumbnail src={place.imageUrl || place.image_url || place.photo} />
 
@@ -103,14 +112,15 @@ export default function SavedStep() {
                                     </p>
                                 </div>
 
-                                <div className="flex items-center gap-2 shrink-0">
+                                <div className="flex items-center gap-3 sm:gap-2 shrink-0">
                                     <button
                                         type="button"
                                         onClick={(e) => handleRemovePlace(place.id, e)}
-                                        className="text-ink-soft hover:text-danger text-xs px-2 py-1 transition-colors underline-offset-2 hover:underline"
+                                        className="text-ink-soft hover:text-danger active:text-danger text-xs w-8 h-8 sm:w-auto sm:h-auto sm:px-2 sm:py-1 flex items-center justify-center transition-colors underline-offset-2 hover:underline"
                                         aria-label={`Remove ${place.name} from list`}
                                     >
-                                        Remove
+                                        <span className="sm:hidden leading-none text-lg font-bold">✕</span>
+                                        <span className="hidden sm:inline">Remove</span>
                                     </button>
                                     <button
                                         type="button"
@@ -118,10 +128,11 @@ export default function SavedStep() {
                                             e.stopPropagation();
                                             openDirections(place);
                                         }}
-                                        className="btn-primary py-2 px-3.5 text-xs font-bold"
+                                        className="btn-primary flex items-center justify-center gap-1.5 w-9 h-9 sm:w-auto sm:h-auto sm:py-2 sm:px-3.5 text-xs font-bold"
                                         aria-label={`Navigate to ${place.name}`}
                                     >
-                                        Check on Map
+                                        <span className="text-base leading-none sm:hidden">🗺️</span>
+                                        <span className="hidden sm:inline">Check on Map</span>
                                     </button>
                                 </div>
                             </div>
