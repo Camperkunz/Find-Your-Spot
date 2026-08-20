@@ -21,6 +21,12 @@ export const COMPANIONS = [
     { id: 'dog', label: 'Dog', icon: '🐕', matchValues: ['dog', 'dog_friendly', 'pets'] }
 ];
 
+export const CITIES = [
+    { id: 'Ottawa', label: 'Ottawa, ON', disabled: false },
+    { id: 'Toronto', label: 'Toronto', disabled: true },
+    { id: 'Montreal', label: 'Montreal', disabled: true },
+];
+
 export const VIBE_MAPPING = VIBES.reduce((acc, item) => {
     acc[item.id] = item.tags;
     return acc;

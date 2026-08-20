@@ -1,46 +1,20 @@
 import React, { useState } from 'react';
 import { useAppContext } from '../context/AppContext';
+import { CITIES } from '../logic/categories.js';
+// 
+import { useGeolocation } from '../hooks/useGeolocation.js';
 
 export default function WelcomeStep() {
-    const {
-        city, setCity,
-        setStep,
-        setUserCoords
-    } = useAppContext();
-
-    const [isLocating, setIsLocating] = useState(false);
-    const [geoError, setGeoError] = useState(null);
-
-    const handleGetLocation = () => {
-        setGeoError(null);
-        setIsLocating(true);
-
-        if (!navigator.geolocation) {
-            setGeoError("Geolocation is not supported by your browser.");
-            setIsLocating(false);
-            return;
+    const { city, setCity, setStep, setUserCoords } = useAppContext();
+    const { getLocation, isLocating, error: geoError } = useGeolocation();
+    // 
+    const handleGetLocation = async () => {
+        try {
+            const coords = await getLocation();
+            setUserCoords(coords);
+            setStep("onboarding");
         }
-
-        navigator.geolocation.getCurrentPosition(
-            (position) => {
-                setUserCoords({
-                    lat: position.coords.latitude,
-                    lng: position.coords.longitude
-                });
-                setIsLocating(false);
-                setStep('onboarding');
-            },
-            (error) => {
-                console.warn(error.message);
-                setGeoError("Couldn't get location. You can select a city instead.");
-                setIsLocating(false);
-            },
-            {
-                enableHighAccuracy: true,
-                timeout: 8000,
-                maximumAge: 0
-            }
-        );
+        catch { }
     };
 
     return (
@@ -97,9 +71,11 @@ export default function WelcomeStep() {
                             }}
                             className="w-full bg-surface border border-surface-muted rounded-card px-4 py-3 text-ink font-medium appearance-none cursor-pointer"
                         >
-                            <option value="Ottawa">Ottawa, ON</option>
-                            <option value="Toronto" disabled>Toronto (Coming Soon)</option>
-                            <option value="Montreal" disabled>Montreal (Coming Soon)</option>
+                            {CITIES.map(({ id, label, disabled }) => (
+                                <option key={id} value={id} disabled={disabled}>
+                                    {label}{disabled ? ' (Coming Soon)' : ''}
+                                </option>
+                            ))}
                         </select>
                         <div
                             aria-hidden="true"
