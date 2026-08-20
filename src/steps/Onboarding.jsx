@@ -106,22 +106,19 @@ export default function OnboardingStep({ onStart }) {
             </div>
 
             {/* Actions */}
-            <div className="pt-4 pb-2 space-y-3">
+            <div className="pt-4 pb-2 space-y-3 text-center">
                 <button
                     onClick={onStart}
                     className="btn-primary-hero w-full text-center py-4 text-lg shadow-lg"
                 >
                     Generate Idea ⚡
                 </button>
-
-                <div className="text-center">
-                    <button
-                        onClick={() => setStep('welcome')}
-                        className="text-sm text-ink-soft hover:text-ink transition-colors inline-flex items-center gap-1 font-medium"
-                    >
-                        ← Change selected location
-                    </button>
-                </div>
+                <button
+                    onClick={() => setStep('welcome')}
+                    className="text-sm text-ink-soft hover:text-ink transition-colors inline-flex items-center gap-1 font-medium pt-2"
+                >
+                    ← Change selected location
+                </button>
             </div>
         </div>
     );
