@@ -37,7 +37,7 @@ export default function WelcomeStep() {
             },
             {
                 enableHighAccuracy: true,
-                timeout: 5000,
+                timeout: 8000,
                 maximumAge: 0
             }
         );
