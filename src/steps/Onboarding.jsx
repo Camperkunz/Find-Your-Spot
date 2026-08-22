@@ -2,11 +2,36 @@ import React from 'react';
 import { useAppContext } from '../context/AppContext';
 import { DURATIONS, VIBES, COMPANIONS } from '../logic/categories.js';
 
-const selectableBtn = (isActive) =>
-    `font-medium transition flex items-center justify-center gap-1.5 border select-none ${isActive
+const selectableBtn = (isActive, sizeClassName) =>
+    `${sizeClassName} font-medium transition flex items-center justify-center gap-1.5 border select-none ${isActive
         ? 'bg-accent text-surface-card border-accent font-semibold shadow-md'
         : 'bg-surface-card text-ink border-surface-muted hover:border-ink-soft'
     }`;
+
+function SelectableGroup({ label, items, selected, onToggle, layoutClassName, sizeClassName }) {
+    return (
+        <div className="space-y-3">
+            <label className="text-xs font-semibold text-ink-soft uppercase tracking-wider block">
+                {label}
+            </label>
+            <div className={layoutClassName}>
+                {items.map((item) => {
+                    const isActive = selected.includes(item.id);
+                    return (
+                        <button
+                            key={item.id}
+                            onClick={() => onToggle(item.id)}
+                            className={selectableBtn(isActive, sizeClassName)}
+                        >
+                            {item.icon && <span>{item.icon}</span>}
+                            <span>{item.label}</span>
+                        </button>
+                    );
+                })}
+            </div>
+        </div>
+    );
+}
 
 export default function OnboardingStep({ onStart }) {
     const {
@@ -18,7 +43,7 @@ export default function OnboardingStep({ onStart }) {
         companion,
         setCompanion
     } = useAppContext();
-    // 
+
     const toggleSelection = (currentList, itemID, setter) => {
         if (currentList.includes(itemID)) {
             if (currentList.length > 1) {
@@ -40,70 +65,32 @@ export default function OnboardingStep({ onStart }) {
                 </span>
             </div>
 
-            {/* Duration */}
-            <div className="space-y-3">
-                <label className="text-xs font-semibold text-ink-soft uppercase tracking-wider block">
-                    How much time do you have?
-                </label>
-                <div className="grid grid-cols-2 gap-2">
-                    {DURATIONS.map((item) => {
-                        const isActive = duration.includes(item.id);
-                        return (
-                            <button
-                                key={item.id}
-                                onClick={() => toggleSelection(duration, item.id, setDuration)}
-                                className={`py-3 px-4 rounded-card text-sm text-left ${selectableBtn(isActive)}`}
-                            >
-                                <span>{item.label}</span>
-                            </button>
-                        );
-                    })}
-                </div>
-            </div>
+            <SelectableGroup
+                label="How much time do you have?"
+                items={DURATIONS}
+                selected={duration}
+                onToggle={(id) => toggleSelection(duration, id, setDuration)}
+                layoutClassName="grid grid-cols-2 gap-2"
+                sizeClassName="py-3 px-4 rounded-card text-sm text-left"
+            />
 
-            {/* Experience / Vibe */}
-            <div className="space-y-3">
-                <label className="text-xs font-semibold text-ink-soft uppercase tracking-wider block">
-                    What sounds good?
-                </label>
-                <div className="flex flex-wrap gap-2">
-                    {VIBES.map((item) => {
-                        const isActive = vibe.includes(item.id);
-                        return (
-                            <button
-                                key={item.id}
-                                onClick={() => toggleSelection(vibe, item.id, setVibe)}
-                                className={`py-2 px-4 rounded-pill text-sm ${selectableBtn(isActive)}`}
-                            >
-                                {item.icon && <span>{item.icon}</span>}
-                                <span>{item.label}</span>
-                            </button>
-                        );
-                    })}
-                </div>
-            </div>
+            <SelectableGroup
+                label="What sounds good?"
+                items={VIBES}
+                selected={vibe}
+                onToggle={(id) => toggleSelection(vibe, id, setVibe)}
+                layoutClassName="flex flex-wrap gap-2"
+                sizeClassName="py-2 px-4 rounded-pill text-sm"
+            />
 
-            {/* Companion */}
-            <div className="space-y-3">
-                <label className="text-xs font-semibold text-ink-soft uppercase tracking-wider block">
-                    Who is joining?
-                </label>
-                <div className="grid grid-cols-3 gap-2">
-                    {COMPANIONS.map((item) => {
-                        const isActive = companion.includes(item.id);
-                        return (
-                            <button
-                                key={item.id}
-                                onClick={() => toggleSelection(companion, item.id, setCompanion)}
-                                className={`py-2.5 px-3 rounded-card text-sm ${selectableBtn(isActive)}`}
-                            >
-                                {item.icon && <span>{item.icon}</span>}
-                                <span>{item.label}</span>
-                            </button>
-                        );
-                    })}
-                </div>
-            </div>
+            <SelectableGroup
+                label="Who is joining?"
+                items={COMPANIONS}
+                selected={companion}
+                onToggle={(id) => toggleSelection(companion, id, setCompanion)}
+                layoutClassName="grid grid-cols-3 gap-2"
+                sizeClassName="py-2.5 px-3 rounded-card text-sm"
+            />
 
             {/* Actions */}
             <div className="pt-4 pb-2 space-y-3 text-center">
@@ -115,7 +102,7 @@ export default function OnboardingStep({ onStart }) {
                 </button>
                 <button
                     onClick={() => setStep('welcome')}
-                    className="text-sm text-ink-soft hover:text-ink transition-colors inline-flex items-center gap-1 font-medium pt-2"
+                    className="text-sm text-ink-soft hover:text-ink transition-colors inline-flex items-center gap-1 font-medium pt-2 cursor-pointer"
                 >
                     ← Change selected location
                 </button>
