@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
 import { useAppContext } from '../context/AppContext';
 import { CITIES } from '../logic/categories.js';
 // 
 import { useGeolocation } from '../hooks/useGeolocation.js';
+// 
+import OrDivider from '../components/elements/OrDivider.jsx';
 
 export default function WelcomeStep() {
     const { city, setCity, setStep, setUserCoords } = useAppContext();
@@ -48,11 +49,7 @@ export default function WelcomeStep() {
                     </p>
                 )}
 
-                <div className="flex items-center gap-3 text-ink-faint/70">
-                    <div className="h-px bg-current flex-1"></div>
-                    <span className="text-sm uppercase font-bold tracking-widest">OR</span>
-                    <div className="h-px bg-current flex-1"></div>
-                </div>
+                <OrDivider />
 
                 <div className="bg-surface-card p-6 rounded-card border border-ink-faint/30 shadow-md">
                     <label
