@@ -1,10 +1,13 @@
 import { memo } from 'react';
 import {
     TbParkingCircleFilled,
-    TbAccessibleFilled,
-    TbAccessibleOff,
     TbCurrencyDollar
 } from "react-icons/tb";
+
+import {
+    MdOutlineAccessible,
+    MdNotAccessible
+} from "react-icons/md";
 // 
 const PARKING_BADGES = {
     paid: { label: 'Paid parking', Icon: TbParkingCircleFilled, color: 'text-amber-500', showFee: true },
@@ -12,8 +15,8 @@ const PARKING_BADGES = {
 };
 
 const ACCESSIBILITY_BADGES = {
-    true: { label: 'Accessible', Icon: TbAccessibleFilled, color: 'text-accent' },
-    false: { label: 'Not accessible', Icon: TbAccessibleOff, color: 'text-danger' },
+    true: { label: 'Accessible', Icon: MdOutlineAccessible, color: 'text-accent' },
+    false: { label: 'Not accessible', Icon: MdNotAccessible, color: 'text-danger' },
 };
 
 const CornerBadge = memo(function CornerBadge({ label, Icon, color, showFee }) {
@@ -23,7 +26,7 @@ const CornerBadge = memo(function CornerBadge({ label, Icon, color, showFee }) {
             aria-label={label}
             className={`relative flex items-center justify-center size-8 md:size-9 rounded-full ${color}`}
         >
-            {Icon && <Icon className="size-7 md:size-8" />}
+            {Icon && <Icon className="size-7.5 md:size-8" />}
             {showFee && (
                 <span
                     className="absolute -bottom-0.5 -right-1 flex items-center justify-center size-4 md:size-4 rounded-full bg-amber-500 text-white ring-2 ring-surface-card"
