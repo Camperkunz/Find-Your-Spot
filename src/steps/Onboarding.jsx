@@ -60,9 +60,6 @@ export default function OnboardingStep({ onStart }) {
                 <h3 className="text-xl font-bold text-ink">
                     What's the mood?
                 </h3>
-                <span className="text-xs text-ink-soft font-mono">
-                    STEP 2 OF 2
-                </span>
             </div>
 
             <SelectableGroup
