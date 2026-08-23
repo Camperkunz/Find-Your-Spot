@@ -2,6 +2,9 @@ import { FiRotateCcw } from "react-icons/fi";
 // 
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
+// 
+import { Analytics } from "@vercel/analytics/react"
+// 
 import { useAppContext } from "../../context/AppContext";
 import { DURATIONS, VIBES, COMPANIONS } from "../../logic/categories.js";
 
@@ -28,6 +31,7 @@ export default function Layout({ children, wide = false }) {
                 className={`flex-1 min-h-0 flex flex-col px-4 sm:px-6 lg:px-8 py-6 sm:py-8 w-full mx-auto ${hideScrollbar ? 'overflow-hidden' : 'overflow-y-auto'
                     } ${wide ? 'max-w-md lg:max-w-5xl' : 'max-w-md'}`}
             >
+                <Analytics />
                 {showSelectionSummary && (
                     <div className="flex items-center justify-between gap-2 mb-3 shrink-0">
                         <span className="text-xs text-ink-soft font-mono truncate min-w-0">
