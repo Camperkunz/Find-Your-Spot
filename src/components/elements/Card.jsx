@@ -2,6 +2,9 @@ import { useEffect } from 'react';
 import { openDirections } from '../../logic/maps';
 import CardBadges from '../../utils/CardBadges.jsx';
 import { preloadImages } from '../../utils/imagePreloader.js';
+// 
+import { MdArrowBack } from "react-icons/md";
+import { GrClose } from "react-icons/gr";
 
 export default function Card({
     deck,
@@ -38,7 +41,7 @@ export default function Card({
                     title="Previous place"
                     aria-label="Previous place"
                 >
-                    <span className="text-xl font-medium">←</span>
+                    <span className="text-xl font-medium"><MdArrowBack /></span>
                 </button>
             )}
 
@@ -51,7 +54,7 @@ export default function Card({
                     title="Close"
                     aria-label="Close"
                 >
-                    <span className="text-lg font-bold">✕</span>
+                    <span className="text-lg font-bold"><GrClose /></span>
                 </button>
             )}
             {/*  */}
@@ -125,7 +128,7 @@ export default function Card({
                             title="Skip"
                             aria-label="Skip"
                         >
-                            <span className="text-xl font-bold">✕</span>
+                            <span className="text-xl font-bold"><GrClose /></span>
                         </button>
                     )}
 
