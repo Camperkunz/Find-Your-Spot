@@ -55,7 +55,7 @@ export default function Card({
                 </button>
             )}
             {/*  */}
-            <div className="h-48 lg:h-auto w-full lg:w-2/5 relative bg-black overflow-hidden select-none shrink-0">
+            <div className="h-32 lg:h-auto w-full lg:w-2/5 relative bg-black overflow-hidden select-none shrink-0">
                 <img
                     loading="lazy"
                     src={imageUrl}
