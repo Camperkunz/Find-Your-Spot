@@ -27,7 +27,7 @@ export default function Modal({ isOpen, onClose, children }) {
             aria-modal="true"
         >
             <div
-                className="w-full max-w-4xl max-h-[90vh] flex flex-col outline-none border-none"
+                className="w-full max-w-4xl max-h-[90dvh] flex flex-col outline-none border-none"
                 onClick={(e) => e.stopPropagation()}
             >
                 {children}

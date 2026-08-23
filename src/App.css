@@ -6,6 +6,12 @@
     }
 }
 
+html,
+body {
+    @apply bg-surface;
+    overscroll-behavior-y: none;
+}
+
 @theme {
     /* backgrounds */
     --color-surface: #F3F6F8;

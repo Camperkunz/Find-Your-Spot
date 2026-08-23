@@ -12,9 +12,8 @@ const getLabel = (list, id) => list.find((item) => item.id === id)?.label ?? id;
 
 export default function Layout({ children, wide = false }) {
     const { step, duration, vibe, companion, setStep } = useAppContext();
-    // 
+
     const showSelectionSummary = step !== 'welcome' && step !== 'onboarding';
-    const hideScrollbar = step === 'saved' || step === 'cards';
 
     const selectionSummary = showSelectionSummary
         ? [
@@ -25,11 +24,11 @@ export default function Layout({ children, wide = false }) {
         : '';
 
     return (
-        <div className="h-dvh bg-surface text-ink flex flex-col font-sans">
+        <div className="min-h-dvh sm:h-dvh bg-surface text-ink flex flex-col font-sans">
             <Header />
             <main
-                className={`flex-1 min-h-0 flex flex-col px-4 sm:px-6 lg:px-8 py-6 sm:py-8 w-full mx-auto ${hideScrollbar ? 'overflow-hidden' : 'overflow-y-auto'
-                    } ${wide ? 'max-w-md lg:max-w-5xl' : 'max-w-sm md:max-w-md'}`}
+                className={`flex-1 sm:min-h-0 flex flex-col px-4 sm:px-6 lg:px-8 py-6 sm:py-8 w-full mx-auto sm:overflow-y-auto ${wide ? 'max-w-md lg:max-w-5xl' : 'max-w-sm md:max-w-md'
+                    }`}
             >
                 <Analytics />
                 {showSelectionSummary && (
