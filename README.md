@@ -1,3 +1,8 @@
+
+<p align="center">
+  <img src="./public/og-image.webp" alt="Find Your Spot" width="600">
+</p>
+
 # Find Your Spot
 
 Find Your Spot is a location-aware discovery app that turns “what should we do?” into a few quick choices and a curated deck of nearby destinations. Pick how much time you have, what kind of vibe you're after, and who's coming along, then browse through a deck of curated local spots and save the ones you like.
